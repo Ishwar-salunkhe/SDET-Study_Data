@@ -36,3 +36,46 @@ System.out.println(rev);
         }
 
 ======================================x=====================================================
+
+      //Find Duplicate Charcters in String
+        String str="Ishwarhs";
+
+        for(int i=0; i<str.length(); i++)
+        {
+            for(int j=i+1; j<str.length(); j++)
+            {
+                if(str.charAt(i)==str.charAt(j))
+                {
+                    System.out.println("Duplicate is : "+str.charAt(i)); 
+                }
+            }
+        }
+
+
+       //Find Duplicate Number in Array
+
+          int a[]={1,2,1,3,5,3};
+          
+          for(int i=0; i<a.length; i++)
+          {
+            for(int j=i+1; j<a.length; j++)
+            {
+                if(a[i]==a[j])
+                {
+                    System.out.println("Duplicate Number is :"+a[i]);
+                }
+            }
+          }
+
+===============================x======================================================
+
+
+
+
+
+
+
+
+
+
+  

@@ -10,26 +10,41 @@
 8. What is the fastest locator in Selenium?
    ID → Name → CSS Selector
 9. How do you handle dropdowns in Selenium?
+10. How do you handle frames and iframes in Selenium?
+11. How do you handle alerts and popups in Selenium?
+12. What are waits in Selenium? Explain implicit and explicit waits.
+13. How do you take a screenshot in Selenium?
+14. What is Page Object Model (POM)? Why is it used?
+15. How do you handle multiple windows in Selenium?
+16. What is the difference between findElement() and findElements()?
+17. How do you perform mouse hover actions in Selenium?
+18. How to open browser in Incognito mode?
+19. What are Preceding Sibling and Following Sibling in XPath?
+20. What is the difference between Selenium 3 and Selenium 4?
+21. How to perform keyboard actions in Selenium?
+22. How to scroll up/down and scroll right/left to a specific element?
+23. From which package do we import WebElement?
+    org.openqa.selenium
+24. Can we overload and override a constructor?
+25. How are you using Gen AI/ChatGPT in your Testing OR Automation Testing?
+26. What is Selenium Grid? How do you use it?
+27. How do you capture all broken links?
+28. How do you select all checkboxes?
+29. How do you handle CAPTCHA or OTP in Selenium?
+30. How do you test file uploads and downloads in Selenium?
+31. Where can we use JavaScriptExecutor in Selenium?
+32. What is an ITestListener? How do you use it in TestNG?
+33. What are the dependencies you have added to your project?
+34. How do you read OTP from Gmail? -> Using JavaMail API OR Gmail API  
+35. How do you use Data-Driven Testing in Selenium?
+36. What is a headless browser? How do you use it with Selenium?
+37. Explain your Automation Testing Framework.
+38. How do you select test cases for Automation?
 
- Intermediate Selenium Interview Questions 
-How do you handle frames and iframes in Selenium? 
-How do you handle alerts and popups in Selenium? 
-What are waits in Selenium? Explain implicit and explicit waits. 
-How do you take a screenshot in Selenium? 
-What is Page Object Model (POM)? Why is it used? 
-How do you handle multiple windows in Selenium? 
-What is the difference between find Element() and find Elements()? 
-How do you perform mouse hover actions in Selenium? 
-How to open browser in Incognito mode? 
-Preceding sibling and following sibling? 
-Diff between selenium 3 and selenium 4? 
-How to perform keyboard actions? 
-How to scroll up/down and scroll right/left to specific element? 
-Web element we are importing from-> org.openqa.selenium 
-Can we overload and override constructor? 
-How you are using Gen AI/Chat GPT in your Testing OR Automation testing? 
 
-🔵 Advanced Selenium Interview Questions 
+
+
+
 What is Selenium Grid? How do you use it? 
 How to capture all broken links? 
 How to select All check boxex? 
@@ -39,8 +54,6 @@ Where we can use java script executor?
 Itest Lisner? 
 What are the dependency you have added for your project? 
 How to read OTP from gmail-> using javamail Api OR gmail APi 
-
-⚙️ Selenium with Frameworks & Tools 
 How do you use Data-Driven Testing in Selenium? 
 What is a headless browser? How do you use it with Selenium? 
 Explain Framework? 

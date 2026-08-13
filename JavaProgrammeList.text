@@ -1,0 +1,34 @@
+
+=================> Java Programme [String, Integer Number] <===================
+1. Reverse a String.
+2. Reverse the entire String sentence, such as "Java to Welcome".
+3. Find whether the given String is a palindrome or not.
+4. Remove all special characters from a String.
+5. Find the occurrence of a specific character in a String.
+6. Count vowels and consonants in a String.
+7. Remove all spaces from a String. (Use replaceAll method: "[\\s+]").
+8. Get the index value of each character in a String.
+9. Use substring() function to print a specific character from a String.
+10. Count uppercase and lowercase characters in a String.
+11. How to get the count of each character in a String?
+12. Convert uppercase to lowercase and lowercase to uppercase. (Example: "SeLeNiUm")
+13. Reverse an integer number.
+14. Check whether a number is a palindrome or not.
+15. Swap two numbers using + and - logic.
+16. Find the largest number among three numbers.
+17. Count even and odd numbers in a given number.
+18. Print even and odd numbers from the range 1 to 19.
+19. Write a program to find the factorial of a number.
+20. Write a program to print the Fibonacci series.
+21. Find duplicate characters in a String using a nested for loop. Use the same logic to find duplicate elements in an array.
+
+
+==========> Array Programme <==============
+1. Array – Move zero elements to the right (end) side.
+2. Array – Move zero elements to the left side.
+3. Array – Find the missing number in an array.
+4. Array – Sort the array in ascending order.
+5. Find duplicate numbers in an array using a nested for loop.
+6. Reverse an array.
+7. Calculate the sum of elements in an array.
+8. Find the largest and smallest elements in an array.

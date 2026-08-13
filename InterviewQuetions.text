@@ -1,14 +1,15 @@
 ---> Selenium <-------
 
-What is Selenium? What are its components? 
-What are the different types of locators in Selenium? 
-Diff between absolute and Relative x path 
-What are the advantages and limitations of Selenium?  
-How do you launch a browser in Selenium WebDriver? 
-What are the commonly used WebDriver methods? 
-How do you handle dynamic elements in Selenium? 
-Fastest locator in selenium-> Id, name then CSS selector 
-How do you handle dropdowns in Selenium? 
+1. What is Selenium? What are its components?
+2. What are the different types of locators in Selenium?
+3. What is the difference between Absolute XPath and Relative XPath?
+4. What are the advantages and limitations of Selenium?
+5. How do you launch a browser in Selenium WebDriver?
+6. What are the commonly used WebDriver methods?
+7. How do you handle dynamic elements in Selenium?
+8. What is the fastest locator in Selenium?
+   ID → Name → CSS Selector
+9. How do you handle dropdowns in Selenium?
 
  Intermediate Selenium Interview Questions 
 How do you handle frames and iframes in Selenium? 
@@ -218,6 +219,8 @@ What Accepatance criteria?
 Challenges in Agile? 
 
 Agile Ceremonies? 
+
+
 
  
  

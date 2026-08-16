@@ -15,41 +15,41 @@ System.out.println(rev);
 
   //Int Number Reverse Progarmme And Check Number is Palindrome or Not
 
-        int num=12321;
-        int orgNum=num;
-        int rev=0;
+int num=12321;
+int orgNum=num;
+int rev=0;
 
-        while(num!=0)
-        {
-            rev=rev*10+num%10;
-            num=num/10;
-        }
+   while(num!=0)
+      {
+          rev=rev*10+num%10;
+          num=num/10;
+      }
 
-        //System.out.println(rev);
-        if(rev==orgNum)
-        {
-            System.out.println(orgNum+" Palindorme Number");
-        }
-        else
-        {
-            System.out.println(orgNum+" No Palindrome");
-        }
+      //System.out.println(rev);
+      if(rev==orgNum)
+      {
+          System.out.println(orgNum+" Palindorme Number");
+      }
+      else
+      {
+          System.out.println(orgNum+" No Palindrome");
+      }
 
 ======================================x=====================================================
 
       //Find Duplicate Charcters in String
-        String str="Ishwarhs";
+String str="Ishwarhs";
 
-        for(int i=0; i<str.length(); i++)
-        {
-            for(int j=i+1; j<str.length(); j++)
+for(int i=0; i<str.length(); i++)
+   {
+ for(int j=i+1; j<str.length(); j++)
+     {
+          if(str.charAt(i)==str.charAt(j))
             {
-                if(str.charAt(i)==str.charAt(j))
-                {
-                    System.out.println("Duplicate is : "+str.charAt(i)); 
-                }
+              System.out.println("Duplicate is : "+str.charAt(i)); 
             }
-        }
+      }
+   }
 
 
     //Same above programme with Duplicate Count

@@ -69,6 +69,32 @@ System.out.println(rev);
 
 ===============================x======================================================
 
+  //Get The Count of each Characters in the string
+
+       String str="Welcome to Automation";
+     str=str.replace(" ","");
+     char a[]=str.toCharArray();
+     HashMap<Character,Integer> hm = new HashMap<>();
+
+     for(char ch:a)
+     {
+        hm.put(ch,hm.getOrDefault(ch,0)+1);
+     }
+
+     for(char c:hm.keySet())
+     {
+        System.out.println(c+" : "+hm.get(c));
+     }
+
+     //Instead of KeySet- We can use EntrySet as well- Just Alternate Option
+     for(Map.Entry<Character, Integer> entry : hm.entrySet())
+     {
+         System.out.println(entry.getKey() + " : " + entry.getValue());
+     }
+
+===========================================x=============================================
+    
+
 
 
 

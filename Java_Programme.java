@@ -134,6 +134,49 @@ for(int i=0; i<str.length(); i++)
 ===========================x=========================================
 
 
+//Move all zero element to end of the array
+int a[]={1,0,3,0,8,12};
+int result[]= new int[a.length];
+int index=0;
+
+for(int i=0; i<a.length; i++)
+  {
+    if(a[i]!=0)
+      {
+          result[index]=a[i];
+          index++;
+      }
+  }
+
+for(int num:result)
+  {
+    System.out.print(num+" ");
+  }
+
+
+//Move all zero element to Start of the array
+//Only index need to start from reverse side and then decrement the index
+int a[]={1,0,3,0,8,12};
+int result[]= new int[a.length];
+int index=a.length-1;
+
+for(int i=0; i<a.length; i++)
+  {
+    if(a[i]!=0)
+      {
+          result[index]=a[i];
+          index--;
+      }
+  }
+
+for(int num:result)
+  {
+    System.out.print(num+" ");
+  }
+
+=================================x===================================
+
+
 
 
 

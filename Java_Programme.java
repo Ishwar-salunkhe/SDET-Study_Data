@@ -92,6 +92,9 @@ System.out.println(rev);
          System.out.println(entry.getKey() + " : " + entry.getValue());
      }
 
+    //import java.util.HashMap; -> Need to import this If you keySet method
+    //import java.util.Map;  -> need to import both if you use entrySet Method
+
 ===========================================x=============================================
     
 

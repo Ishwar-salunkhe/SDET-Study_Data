@@ -176,6 +176,36 @@ for(int num:result)
 
 =================================x===================================
 
+//Find max number in array  
+int a[]={1,2,6,7,8,12};
+int max=a[0];
+
+for(int i=1; i<a.length; i++)
+  {
+    if(a[i]>max)
+      {
+        max=a[i];
+      }
+  }
+
+System.out.println(max);  
+
+
+//Find Min number in array  
+int a[]={1,3,6,7,8,12};
+int min=a[0];
+
+for(int i=1; i<a.length; i++)
+  {
+    if(a[i]<min)
+      {
+        min=a[i];
+      }
+  }
+
+System.out.println(min);
+
+====================x===============================x================================================
 
 
 

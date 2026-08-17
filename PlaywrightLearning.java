@@ -33,3 +33,14 @@ page.onDialog(dialog -> {
     dialog.dismiss();
 });
 //onDialog is a method 
+
+
+//To Get All options from Drodown
+Locator options = page.locator("#country option");
+
+int count = options.count();
+
+for (int i = 0; i < count; i++) {
+    String optionText = options.nth(i).innerText();
+    System.out.println(optionText);
+}

@@ -99,3 +99,8 @@ File source = ts.getScreenshotAs(OutputType.FILE);
 File destination = new File("C:\\Screenshots\\test.png");
 FileUtils.copyFile(source, destination);
 
+//Xapth and Xpath axex
+//xpath by contains
+//div[contains(text(),'Order food & groceries.')]
+//button[contains(@id,'submit')]
+

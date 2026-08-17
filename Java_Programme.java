@@ -218,6 +218,15 @@ for(int i=0; i<a.length; i++)
 System.out.println(sum);
 
 ==================x========================x========================================
+
+//Print Array Element Indices(Index)
+int[] arr = {10, 20, 30, 40, 50};
+for (int i = 0; i < arr.length; i++)
+  {
+      System.out.println("Index: " + i);
+  }
+
+======================================x========================================
   
 
 

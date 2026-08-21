@@ -1,7 +1,52 @@
-SDLC?
+What is SDLC?
 Requirement Gathering
 Design
 Development
 Testing
 Deployment
 Maintenance
+
+Q-Verification and Validation?
+Verification is process orient, such as Verification of the process document
+Validation- Product Oriented, Validating functionality of the software
+
+What is STLC?
+Requirement Analysis
+Test Planning
+Test Case Design
+Test Case Execution
+Test Closure
+
+Test Scenario? VS Test Case
+Sceanrion- What to test-> Login Functionality
+Test case-> How to test-> Verify user login with valid/invalid data
+
+What is a Defect/Bug?
+deviation between the actual result and expected result.
+
+Severity and Priority?
+Severity-> Seriusness of the bug/ How badly bug will impact on the application
+Priority-> Importance of the bug which need to be fix asap
+  High Severity + High Priority:
+  Application crashes when clicking Login.
+
+High Priority + Low Severity 
+Company logo Not corretc/Blur/ Company Tag line Mis spelled
+
+High Severity + Low Priority:
+Bank app-> Bank statement for 1 year is not working properly
+Low Priority + Low Severity -> Miss spelled
+
+Explain the Bug Life Cycle.
+What is Regression Testing?
+Exploratory Testing
+What is Retesting?
+
+
+
+
+
+
+
+
+

@@ -2,3 +2,46 @@
 select city, count(city) as City_count
 from patients
 group by city;
+
+SELECT * FROM OrderDetails
+where Quantity between 10 and 12;
+
+//To Declare Primary Key
+Create table Employee (
+  EmpID int PRIMAR KEY,
+  FirstName varchar(255),
+  City varchar(255)
+  )
+
+//Joins
+//Inner Join-----> Will return the matching records from both tables
+Select * from employee as e
+inner join department as d
+ON e.empID=d.empID;
+
+//Left Join--> Will return entire data from left side table and matching records from right side table
+Select * from employee as e
+Left Join department as d
+ON e.empID=d.empID;
+
+//Right Join  --> Will return entire data from right side table and matching records from the lft side table
+Select * from employee as e
+Right join department as d
+ON e.empID=d.empID;
+
+//Full Outer Join
+Select * from employee as e
+Left Join department as d
+ON e.empID=d.empID;
+Union
+Select * from employee as e
+Right join department as d
+ON e.empID=d.empID;
+
+
+
+
+
+
+
+

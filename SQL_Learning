@@ -1,1 +1,4 @@
-
+//Find the city and city count for the city
+select city, count(city) as City_count
+from patients
+group by city;

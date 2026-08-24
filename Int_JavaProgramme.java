@@ -22,7 +22,7 @@ for (int i = 1; i <= 4; i++)
 
 =================x==================================================
 
-  //Prime Number 
+  //Prime Number ==> Number which is divided by 1 and by itself which is prime Number
      int num=7;
      int count=0;
 

@@ -19,3 +19,28 @@ for (int i = 1; i <= 4; i++)
      System.out.println();
 
  }
+
+=================x==================================================
+
+  //Prime Number 
+     int num=7;
+     int count=0;
+
+     for(int i=1; i<=num; i++)
+     {
+        if(num%i == 0)
+        {
+            count++;
+        }
+     }
+
+     if(count==2)
+     {
+        System.out.println(num+" NUmber is prime");
+     }
+     else
+     {
+        System.out.println(num+ "Not prime");
+     }
+
+//==================================================================================

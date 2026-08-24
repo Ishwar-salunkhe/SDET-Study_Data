@@ -23,4 +23,22 @@ for(Object list:mylist)
   }
 
 
+//HashMap
+//Declaration
+HashMap<Character,Integer> hm= new HashMap<>();
+HasgMap hm = new HashMap();
+//HasnMpa Methods
+// 1. put(key, value) → Adds a key-value pair to the HashMap.
+// 2. putAll(map) → Adds all key-value pairs from another Map.
+// 3. get(key) → Returns the value associated with the given key.
+// 4. getOrDefault(key, defaultValue) → Returns the value for a key, or default value if 
+// 5. containsKey(key) → Checks whether the given key exists.
+// 6. containsValue(value) → Checks whether the given value exists.
+// 12. size() → Returns the number of key-value pairs.
+// 13. isEmpty() → Checks whether the HashMap is empty.
+// 15. keySet() → Returns all keys as a Set.
+//  17. entrySet() → Returns all key-value pairs as a Set.
+  
+
+
 

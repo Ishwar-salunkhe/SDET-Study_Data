@@ -1,1 +1,68 @@
+//Git Commands
+
+git --version → Used to check the installed Git version.
+
+git init → Used to create a new local Git repository.
+
+git config --global user.name "Your Name" → Used to configure your Git username globally. Usually, this is a one-time setup.
+
+git config --global user.email "Your Email" → Used to configure your Git email address globally. Usually, this is a one-time setup.
+
+git status → Shows the current status of the repository, including untracked, modified, and staged files.
+
+git add -A → Used to add all changes, including files and folders, to the staging area.
+
+git add . → Used to add all changes in the current directory to the staging area.
+
+git add <fileName> → Used to add a specific file to the staging area.
+
+After using git add, the staged files are generally shown in green in Git status.
+
+git commit -m "Commit Message" → Used to save the staged changes into the local Git repository.
+
+After committing the files, they are removed from the staging area.
+
+git remote add origin "Repository URL" → Used to connect the local Git repository with a remote GitHub repository.
+
+git push origin master → Used to push code from the local repository to the remote repository.
+
+For the first push, GitHub authentication may be required using a browser login or Personal Access Token.
+
+git branch → Displays all local branches.
+
+git branch -r → Displays all remote branches.
+
+git branch -a → Displays both local and remote branches.
+
+git checkout <branch-name> → Used to switch to another branch.
+
+git revert <commit-hash> → Used to undo the changes introduced by a specific commit by creating a new commit.
+ls → Used to list all files and folders in the current directory.
+git log → Used to view the complete commit history.
+git log --oneline → Used to view commit history in a short, one-line format.
+clear → Used to clear the Git Bash or terminal screen.
+Staging Area → A temporary area where changes are prepared before committing them to the local repository.
+vim <fileName> → Used to create or edit a file using the Vim editor.
+git merge <branch-name> → Used to merge the specified branch into the current branch.
+git branch -d <branch-name> → Used to delete a local branch.
+
+git pull origin master → Used to fetch the latest changes from the remote master branch and merge them into the current local branch.
+
+git pull = git fetch + git merge
+
+Example:
+git pull origin master
+
+git clone <repository-URL> → Used to copy or download a remote repository to your local machine.
+
+git pull -> downloads the latest changes and merges them into your current branch.
+
+git fetch -> downloads the latest changes from the remote repository.
+
+Q- When you want to switch to another branch without commit your code then how you can do this?
+git stash -> temporarily saves your uncommitted changes.
+git stash pop -> bring those changes back:
+
+
+
 

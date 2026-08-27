@@ -64,5 +64,33 @@ git stash -> temporarily saves your uncommitted changes.
 git stash pop -> bring those changes back:
 
 
+============= Maven Life Cycle ================================
+
+Maven is a build automation and project management tool used to manage dependencies, compile code, run tests, and build Java projects.
+
+1. Clean – Deletes the previous build files and generated artifacts.
+   Command: mvn clean
+
+2. Validate – Checks whether the project is correct and all required information is available.
+   Command: mvn validate
+
+3. Compile – Compiles the Java source code into bytecode (.class files).
+   Command: mvn compile
+
+4. Test – Run Unit test
+   Command: mvn test
+
+5. Package – Packages the application/code into JAR/WAR.
+   Command: mvn package
+
+6. Install – Installs the packaged JAR/WAR into the local Maven repository.
+   Command: mvn install
+
+7. Deploy – Deploys the packaged application to a remote Maven repository.
+   Command: mvn deploy
+
+8. Site – Generates project documentation and reports as a website.
+   Command: mvn site
+
 
 

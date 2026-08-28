@@ -40,24 +40,29 @@
 36. What is a headless browser? How do you use it with Selenium?
 37. Explain your Automation Testing Framework.
 38. How do you select test cases for Automation?
+39. What is Selenium Grid? How do you use it?
+40. How to capture all broken links?
+41. How to select all checkboxes?
+42. How do you handle CAPTCHA or OTP in Selenium?
+43. How do you test file uploads and downloads in Selenium?
+44. Where can we use JavaScript Executor?
+45. What is TestNG Listener?
+46. What dependencies have you added to your project?
+47. How to read OTP from Gmail?
+   - Using JavaMail API
+   - Using Gmail API
+
+48. How do you use Data-Driven Testing in Selenium?
+49. What is a headless browser? How do you use it with Selenium?
+50. Explain the Automation Framework.
+51. How will you select test cases for automation?
+   1. Test cases that are repeated frequently in every build.
+   2. Test cases that have a large or maximum number of steps.
+   3. Test cases that are complex in nature.
 
 
 
 
-
-What is Selenium Grid? How do you use it? 
-How to capture all broken links? 
-How to select All check boxex? 
-How do you handle Captcha or OTP in Selenium? 
-How do you test file uploads and downloads in Selenium? 
-Where we can use java script executor? 
-Itest Lisner? 
-What are the dependency you have added for your project? 
-How to read OTP from gmail-> using javamail Api OR gmail APi 
-How do you use Data-Driven Testing in Selenium? 
-What is a headless browser? How do you use it with Selenium? 
-Explain Framework? 
-How you will select the test cases for Automation?--->1.test cases which are most of time repeated in each build  2. test cases which having more or maximum No of steps  3. test cases those are complex in nature 
 
  
 ---------> Java <-----------------

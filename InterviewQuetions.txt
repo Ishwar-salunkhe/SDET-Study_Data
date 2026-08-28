@@ -59,6 +59,10 @@
    1. Test cases that are repeated frequently in every build.
    2. Test cases that have a large or maximum number of steps.
    3. Test cases that are complex in nature.
+52.Can you automate file upload/download in Selenium? What approach or tools do you use?
+53.How do you capture screenshots on test failures and attach them to Extent Reports?
+54.How to integrate your Selenium suite with Jenkins or GitHub Actions
+55.How would you handle a situation where the application has frequent UI changes?
 
 
 

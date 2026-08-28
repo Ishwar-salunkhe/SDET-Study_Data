@@ -1,13 +1,10 @@
 //Handling of Multiple Windows
 
 Set<String> windows = driver.getWindowHandles();
-
 for (String windowIDs : windows) {
 
     driver.switchTo().window(windowIDs);
-
     String title = driver.getTitle();
-
     if (title.contains("Google")) {
         System.out.println("Required window found");
         break;
@@ -103,4 +100,33 @@ FileUtils.copyFile(source, destination);
 //xpath by contains
 //div[contains(text(),'Order food & groceries.')]
 //button[contains(@id,'submit')]
+
+//How to get all Cell values from table OR How to handle table
+   List<WebElement> tableAllCellValues =driver.findElements(By.xpath("//table[@name='BookTable']//tbody//tr//td"));
+   for(WebElement cellValues:tableAllCellValues)
+    {
+      System.out.println(cellValues.getText());
+    }
+      System.out.println(tableAllCellValues.size());  //Get size of table cell values
+
+//To get All Column Name
+//th= Table header
+List<WebElement> tableHeaderRow =driver.findElements(By.xpath("//table[@name='BookTable']//tbody//tr[1]//th"));
+for(WebElement allColumnName:tableHeaderRow)
+    {
+       System.out.println(allColumnName.getText());
+    }
+
+//File Upload using send Keys  \n= new line charcter
+WebElement uploadFileButton = driver.findElement(By.xpath("//input[@type='file' and @id='multipleFilesInput']"));
+uploadFileButton.sendKeys("C:\\Screenshot\\imageNo1.png");  //For single file
+uploadFileButton.sendKeys("C:\\Screenshot\\imageNo1.png\n" +"C:\\Screenshot\\imageNo2.png"); //For Multiple files
+
+1. sendKeys()  → Best and recommended approach
+2. Robot Class → When a native file popup must be handled
+3. AutoIT      → Mainly for Windows native popup handling
+
+
+
+
 

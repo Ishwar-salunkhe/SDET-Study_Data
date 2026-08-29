@@ -44,3 +44,40 @@ for (int i = 1; i <= 4; i++)
      }
 
 //==================================================================================
+
+ //Int Number Reverse Progarmme And Check Number is Palindrome or Not
+int num=12321;
+int orgNum=num;
+int rev=0;
+
+   while(num!=0)
+      {
+          rev=rev*10+num%10;
+          num=num/10;
+      }
+
+      //System.out.println(rev);
+      if(rev==orgNum)
+      {
+          System.out.println(orgNum+" Palindorme Number");
+      }
+      else
+      {
+          System.out.println(orgNum+" No Palindrome");
+      }
+
+=====================================x=================================
+
+  //Swapping Int numbers without Third variable
+int a=10;
+int b=20;
+
+a=a+b;
+b=a-b;
+a=a-b;
+
+System.out.println("After swapping a: "+a);
+System.out.println("After swapping b: "+b);
+System.out.println("After swapping "+a);
+
+=========================================x==========================================================

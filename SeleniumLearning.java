@@ -134,11 +134,14 @@ System.out.println(file.exists());
 
 //To Read the Data from excel sheet
 String excelDataSheet = "D:\\AutomationTestdata\\testData.xlsx";
-FileInputStream file= new FileInputStream(excelDataSheet);
+FileInputStream file= new FileInputStream(excelDataSheet);  //FileInputStream opens the Excel file so that Java can read the data from it.
 XSSFWorkbook workbook = new XSSFWorkbook(file);
 XSSFSheet sheet =workbook.getSheet("Sheet");
 String cellValue=sheet.getRow(1).getCell(0).getStringCellValue();
 System.out.println(cellValue);
+
+//Similar we ave another method to get the Numeric Value
+String cellValue=sheet.getRow(1).getCell(0).getNumericCellValue();
 
 
 

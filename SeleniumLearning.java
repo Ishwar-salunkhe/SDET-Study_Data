@@ -127,6 +127,20 @@ uploadFileButton.sendKeys("C:\\Screenshot\\imageNo1.png\n" +"C:\\Screenshot\\ima
 3. AutoIT      → Mainly for Windows native popup handling
 
 
+ //Check file is exist or not
+String path = "D:\\AutomationTestdata\\testData.xlsx";
+File file = new File(path);
+System.out.println(file.exists());
+
+//To Read the Data from excel sheet
+String excelDataSheet = "D:\\AutomationTestdata\\testData.xlsx";
+FileInputStream file= new FileInputStream(excelDataSheet);
+XSSFWorkbook workbook = new XSSFWorkbook(file);
+XSSFSheet sheet =workbook.getSheet("Sheet");
+String cellValue=sheet.getRow(1).getCell(0).getStringCellValue();
+System.out.println(cellValue);
+
+
 
 
 

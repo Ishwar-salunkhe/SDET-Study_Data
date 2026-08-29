@@ -143,6 +143,17 @@ System.out.println(cellValue);
 //Similar we ave another method to get the Numeric Value
 String cellValue=sheet.getRow(1).getCell(0).getNumericCellValue();
 
+//Exceptions In selenium
+NoSuchElementException -> //Locator incorrect, Element is not present in the DOM, Page is not loaded properly, Element is inside the frame
+StaleElementReferenceException
+ElementNotInteractableException -> //Selenium finds the element, but cannot interact with it.
+//Selenium finds the element, but cannot interact with it.
+//Element is Disabled, Hidden
+ NoSuchWindowException ->//Selenium tries to switch to or interact with a browser window that does not exist.
+ NoAlertPresentException   
+    
+    
+
 
 
 

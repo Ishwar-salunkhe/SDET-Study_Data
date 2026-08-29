@@ -106,3 +106,20 @@ System.out.println("After swapping "+a);
       System.out.println("odd number count is "+ odd);
 
 ===============================x==================================================================
+
+  //Factorial Programme
+      int num=5;
+      int fact=1;
+
+      for(int i=1; i<=5; i++)
+      {
+         fact=fact*i;
+      }
+
+      System.out.println(fact);
+
+
+
+
+
+  

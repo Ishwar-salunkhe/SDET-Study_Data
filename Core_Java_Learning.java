@@ -38,6 +38,12 @@ HasgMap hm = new HashMap();
 // 13. isEmpty() → Checks whether the HashMap is empty.
 // 15. keySet() → Returns all keys as a Set.
 //  17. entrySet() → Returns all key-value pairs as a Set.
+
+//String
+String str="ishwar";
+System.out.println(str.indexOf('w'));  //Output==3
+System.out.println(str.indexOf('p'));  //If given element is not there then in that case it will give output as -1
+//If Character not found → returns -1.
   
 
 

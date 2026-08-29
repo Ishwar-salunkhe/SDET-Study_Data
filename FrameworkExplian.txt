@@ -1,1 +1,12 @@
+src/test -> we have 2 folder-> java and resource
+In Java folder-> We have packages -> pages, stpeDefinations, reusable, testRunner, Utilities
+In Resuable package-> We have UserActions class where All user Operation related methods are there
+Method in the User action class are all public static
 
+Test Runner class
+Hooks class
+Feature files Glue with the step defination class
+
+
+
+  

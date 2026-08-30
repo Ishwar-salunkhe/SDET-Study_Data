@@ -13,9 +13,6 @@ System.out.println(rev);
 
 ===============x==============x================x==========================x=
 
- 
-======================================x=====================================================
-
       //Find Duplicate Charcters in String
 String str="Ishwarhs";
 
@@ -78,20 +75,12 @@ for(int i=0; i<str.length(); i++)
     //import java.util.Map;  -> need to import both if you use entrySet Method
 
 ===========================================x=============================================
-    
-//Fibnoccie series
-     int n1=0;
-     int n2=1;
-     int sum=0;
-     System.out.print(n1+" "+n2);
-
-     for(int i=2; i<=10; i++)
-     {
-        sum=n1+n2;
-        System.out.print(" "+sum);
-        n1=n2;
-        n2=sum;
-     }
+    //Substring Programme
+//Print only specific charcters from string- such as Print only Automation
+//Count the index which we need to remove such as java need to remove so last index is 3+1=4  
+String str="JavaAutomation";
+String result=str.substring(4);
+System.out.println(result);
 
 ===========================x=========================================
   

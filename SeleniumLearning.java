@@ -150,7 +150,14 @@ ElementNotInteractableException -> //Selenium finds the element, but cannot inte
 //Selenium finds the element, but cannot interact with it.
 //Element is Disabled, Hidden
  NoSuchWindowException ->//Selenium tries to switch to or interact with a browser window that does not exist.
- NoAlertPresentException   
+ NoAlertPresentException
+
+//Drag And Drop Element
+WebElement dragElement =driver.findElement(By.xpath("//div[@id='draggable']"));
+WebElement dropEle =driver.findElement(By.xpath("//div[@id='draggable']"));   
+Actions act= new Actions(driver);
+act.dragAndDrop(dragElement,dropEle).build().perform();
+
     
     
 

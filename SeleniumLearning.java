@@ -96,6 +96,12 @@ File source = ts.getScreenshotAs(OutputType.FILE);
 File destination = new File("C:\\Screenshots\\test.png");
 FileUtils.copyFile(source, destination);
 
+//Java script executor
+JavascriptExecutor js= (JavascriptExecutor) driver;  //Type casting becuase driver is variable of WebDriver and if we want to use the same then we need to typecast
+js.executeScript("arguments[0].scrollIntoView(true);",uploadFileText);
+js.executeScript("arguments[0].click();",name);
+js.executeScript("arguments[0].value='testJava';",name);
+
 //Xapth and Xpath axex
 //xpath by contains
 //div[contains(text(),'Order food & groceries.')]

@@ -16,6 +16,7 @@ In Src/test/java
 2.stepDefinations
  -DeviceCreation
  -NavigatinnTreeCreation
+ -Hooks Class (Here we have added screenshot code if Scenario.isFailed then it will take the screen)
 
 
 3.resuable
@@ -24,6 +25,8 @@ In Src/test/java
  -TestRunnerClass
 
 5.utilities
+ -ReadGlobalData -> Logic code is there
+ -ReadLocators ->  Logic code is there
 -
 
 In Src/test/Resources Folder
@@ -33,9 +36,20 @@ We have below Folder
  -NavigationTree.feature
 
 2.Data
+
 3.locators
+ -device.properties
+ -navigation.properties
+
+
 4.Resource files
   -Test data
+  -Others files such as png. etc
+
+
+Extent Report data
+Features name-> How many Scenarios are there and there result as pass/failed -> How many steps
+
 
 
 

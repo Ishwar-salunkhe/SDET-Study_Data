@@ -158,6 +158,29 @@ WebElement dropEle =driver.findElement(By.xpath("//div[@id='draggable']"));
 Actions act= new Actions(driver);
 act.dragAndDrop(dragElement,dropEle).build().perform();
 
+//To Select All Checkboxex
+List<WebElement> checkboxes =driver.findElements(By.xpath("//input[contains(@value,'day') and @type='checkbox']"));
+for(WebElement checkbox:checkboxes)
+    {
+        checkbox.click();
+     }
+
+//To Select first 3 checkboxex
+List<WebElement> checkboxes =driver.findElements(By.xpath("//input[contains(@value,'day') and @type='checkbox']"));
+ for(int i=0; i<=2; i++)
+    {
+       checkboxes.get(i).click();
+    }
+
+//To Select last 3 checkboxex
+List<WebElement> checkboxes =driver.findElements(By.xpath("//input[contains(@value,'day') and @type='checkbox']"));
+ for(int i=checkboxes.size()-1; i>=4; i--)  //either you can start from last one or start from 4th Iteration
+    {
+       checkboxes.get(i).click();
+    }
+
+
+
     
     
 

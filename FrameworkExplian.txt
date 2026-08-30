@@ -3,9 +3,39 @@ In Java folder-> We have packages -> pages, stpeDefinations, reusable, testRunne
 In Resuable package-> We have UserActions class where All user Operation related methods are there
 Method in the User action class are all public static
 
-Test Runner class
+In Test Runner package -> we have Test Runner class
+In Utilities Package -> we have Read Global Data and Read Locators class is there
 Hooks class
 Feature files Glue with the step defination class
+
+In Src/test/java
+1.pages
+ -devicePageClass
+ -NavigationTreePageClass
+
+2.stepDefinations
+ -DeviceCreation
+ -NavigatinnTreeCreation
+
+
+3.resuable
+
+4.testRunner
+ -TestRunnerClass
+
+5.utilities
+-
+
+In Src/test/Resources Folder
+We have below Folder
+1.Feature files
+ -DeviceFeatureFile.feature
+ -NavigationTree.feature
+
+2.Data
+3.locators
+4.Resource files
+  -Test data
 
 
 

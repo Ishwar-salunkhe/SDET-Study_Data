@@ -15,7 +15,6 @@ System.out.println(rev);
 
   //TO Check Strig is Palindrom or not
         String str="ishwar";
-        String orgStr=str;
         String rev="";
         int len=str.length();
         
@@ -25,9 +24,9 @@ System.out.println(rev);
         }
       
 
-        if(rev.equals(orgStr))
+        if(rev.equals(str))
         {
-            System.out.println("String is Palindrome"+orgStr);
+            System.out.println("String is Palindrome "+str);
         }
         else
         {

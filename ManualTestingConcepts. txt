@@ -42,6 +42,10 @@ Explain the Bug Life Cycle.
 What is Regression Testing?
 Exploratory Testing
 What is Retesting?
+Alpha and Beta testing?
+->Alpha testing is performed internally by the QA team or developers in a controlled environment,
+whereas Beta testing is performed by real users in a real-world environment before the final product release.
+
 
 
 

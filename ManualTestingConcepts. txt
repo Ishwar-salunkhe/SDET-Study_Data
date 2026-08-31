@@ -45,6 +45,17 @@ What is Retesting?
 Alpha and Beta testing?
 ->Alpha testing is performed internally by the QA team or developers in a controlled environment,
 whereas Beta testing is performed by real users in a real-world environment before the final product release.
+What is Non-Functional Testing?
+What is Black Box Testing? White box?
+What is an RTM?
+->RTM (Requirement Traceability Matrix) is a document that maps requirements to test cases to ensure all
+requirements are covered by testing.
+What is Entry Criteria?
+->Entry criteria define the conditions that must be satisfied before testing can begin.
+such as Requirement are clear, test env is ready, Build is ready
+What is Exit Criteria?
+What is Defect Leakage?
+->Defect leakage occurs when a defect is missed during testing and is discovered in a later testing stage or production.
 
 
 

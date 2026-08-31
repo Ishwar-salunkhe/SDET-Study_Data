@@ -96,6 +96,9 @@ Try and catch Block?
 List and set we are importing from-> java.util 
 What are access modifiers in Java? 
 Diff between Array and ArrayList()? 
+24. StringBuilder and String Buffer diff?
+25. Single ton class?
+
 
  
 

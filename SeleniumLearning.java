@@ -11,6 +11,21 @@ for (String windowIDs : windows) {
     }
 }
 
+//Same Logic as above for New tabs 
+WebElement openTabButton=driver.findElement(By.xpath("//button[text()='New Tab']"));
+openTabButton.click();
+Set<String> tabIds=driver.getWindowHandles();
+for(String id:tabIds)
+ {
+    driver.switchTo().window(id);
+    String pageTitle=driver.getTitle();
+    if(pageTitle.contains("SDET-QA Blog"))
+         {
+            System.out.println("We are on the correct page :"+pageTitle);
+            break;
+        }
+    }
+
 //Explicit Wait
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));

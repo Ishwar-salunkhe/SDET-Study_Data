@@ -11,6 +11,29 @@ for(int i=len-1; i>=0; i--)
 
 System.out.println(rev);
 
+================x=============================x=============================================
+
+  //TO Check Strig is Palindrom or not
+        String str="ishwar";
+        String orgStr=str;
+        String rev="";
+        int len=str.length();
+        
+        for(int i=len-1; i>=0; i--)
+        {
+            rev=rev+str.charAt(i);
+        }
+      
+
+        if(rev.equals(orgStr))
+        {
+            System.out.println("String is Palindrome"+orgStr);
+        }
+        else
+        {
+            System.out.println("No Palindorme");
+        }
+
 ===============x==============x================x==========================x=
 
       //Find Duplicate Charcters in String

@@ -28,7 +28,8 @@ Severity and Priority?
 Severity-> Seriusness of the bug/ How badly bug will impact on the application
 Priority-> Importance of the bug which need to be fix asap
   High Severity + High Priority:
-  Application crashes when clicking Login.
+  1.Application crashes when clicking Login.
+  2.BOI- Money transfer feture is not working
 
 High Priority + Low Severity 
 Company logo Not corretc/Blur/ Company Tag line Mis spelled

@@ -11,6 +11,8 @@ page.navigate("https://example.com");
 //Browser browser = playwright.chromium().launch(
     //new BrowserType.LaunchOptions().setHeadless(false)
 //);
+//Playwright Arhitecture is suing- WebSocket Protocol for communication- client and server
+
 
 //To close
 browser.close();
@@ -64,6 +66,31 @@ page.locator("#male").check();
 
 //To Take the screenshot
 page.screenshot(new Page.ScreenshotOptions().setPath(Path.get("example.png"));
+
+//Frame Handling
+Locator frame = page.frameLocator("#myFrame") .locator("#username"); frame.fill("Ishwar");
+
+//Mouse hiver action
+page.locator("#menu").hover();
+
+//Playwright provides the dragTo() method.
+page.locator("#source").dragTo(
+    page.locator("#target"));
+
+//File Upload setInputFiles().
+page.locator("input[type='file']")
+    .setInputFiles("D:\\TestData\\sample.pdf");
+
+//File download-waitForDownload().
+Download download = page.waitForDownload(() -> {
+    page.getByText("Download").click();
+});
+
+download.saveAs(
+    Paths.get("D:\\Downloads\\file.pdf")
+);
+
+
 
 
 

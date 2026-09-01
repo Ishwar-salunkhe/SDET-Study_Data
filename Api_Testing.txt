@@ -1,1 +1,21 @@
+//Api Testing
+Bugs in Api
+->Incorrect error message handling, Performance related bug, Security related bugs
+such as After passing invalid token but still it is accpeting
 
+What things we are Validating in api testing
+-> response code, Body, header, schema, Error message handling
+
+-WE are getting 200 as response code when we use PUT
+-409 Conflict- When we trying to create the same data in the database which is already present
+-204 No Content- will get this code when we use Delete request
+
+In Postman we have chai assertion framework
+
+//We Can add the chai assertion validation under the script tab
+pm.test("status code name has string", () => {
+   pm.response.to.have.status(200)
+   });
+pm.test("status  string", () => {
+   pm.response.to.have.header("Content-Type")
+   });

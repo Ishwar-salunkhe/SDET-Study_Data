@@ -39,6 +39,140 @@ Select * from employee as e
 Right join department as d
 ON e.empID=d.empID;
 
+//Select max salary/2nd Highest Salary/nth Salary Queries
+
+//Select max/Highest salary from employee
+select max(salary) from employee;
+
+//If you want max salary with emp name then use below
+Select empName, Salary from emplyee
+where salary=(select max(salary) from employee);
+
+
+//Select 2nd Highest salary
+select max(salary) from employee
+where salary<(select max(salary) from employee);
+
+
+
+//From One Notes
+1. Joins in SQL? Inner join, left join, right join and Full outer join
+2. Contraint in SQL- Primary key, Forein key?
+3. Write the query to fetch the Highest salary?
+4. Write the query to fetch the 2nd Highest salary?
+5. Write the query to fetch the Nth Highest salary?
+6. Self join- It is join in table which join table itslef
+7. Schema means-> what type of data we are storing such as String, Integer, varchar like that
+• WHERE → Used to filter the rows. Does not use aggragate function such as max, avg, sum
+• HAVING → Used to Filter the Groups.after grouping.-> use agregate function
+8. Diff between drop and Truncate? -> DROP-> it will delete the all data from row and also delete the entire table structure as well. It is use when we do not required table in future TRUNCATE: It will delete the all records from the row but table structure will remain same. We can use this when we need to delete entire data from table but need t table in future.
+9. “DELETE is a DML command used to remove specific rows from a table and can be rolled back.
+10. TRUNCATE is a DDL command that deletes all rows at once, is faster, resets identity counters, and usually can’t be rolled back.
+• UNION → combines results from two tables and removes the duplicates.
+• UNION ALL → combines results from two tables and keeps duplicates result as well.
+• 2 types command types DDL and DML (data defination ad and data manipulation languge)
+• Contrainst: Rules applied to table columns
+• NOT NULL,  UNIQUE , Primary key, Forein key etc
+• A query inside another query is called subuquery
+• Data Defination Languge: 1.Use to modify the schema and structure of the table 2.commands are: Create, Alter, Drop, Truncate 3. We cannot rollback once executed 4.Execution speed is faster
+• Data Manipulation Lang: 1.use to manipulate or manage the data in the table 2.coomands are: select, insert, Update  3.We can rollback  4.speed is slow
+• Use select Distinct to fetch the unique data
+The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+
+
+
+
+
+
+Table employee:
+We can use between operator like this
+Select EmpId, EmpName, salary from employee
+where salary between 18000 and 25000;
+
+ALTER TABLE employee
+ADD email VARCHAR(100);
+
+We can use And Or operator as well
+select * from patients
+where city='Barrie' OR city='Ajax';
+
+To apply 2 condition with where cluase
+select * from patients
+where city='Ajax' and height=43;
+
+Select all employee apart from Pune city
+select * from employee
+where not AddressCity='Pune';
+
+We can combine 2 column value as single coulmn as well
+Select EmpName, Salary+variable as Total_salary 
+From Employee;
+
+Query: fetch the city and count of that city(here we can use group by)
+select city, count(city) as city_count
+from patients
+group by city;
+
+Q-Find the max, min and avg of salary
+select max(salary), min(salary), avg(salary)
+from employee;
+
+Q- To get the count of row in the given table
+select count(*) from employee;
+
+Q-Delete the employees who are working in sales department
+Delete from employee where department_id=(select department_id from department where name='Sales')
+
+Q-Fetch the employee where employee edge is greater than 25;
+select * from employee
+where EmpAge>25;
+
+Q- select salary which is greter than avg salary
+select * from employee
+where salary>(Select avg(salary) from employee);
+
+Q-Upadate table
+Update employee
+Set salary=25000
+Where empID=2;
+
+Q- filter the data with DOB
+select * from patients
+where birth_date ='1968-12-15';
+
+Q- for Null values
+select * from patients
+where allergies is not null
+
+Delet from employee
+Where empID=3;
+
+Use of In Operator
+select * from employee
+where AddressCity in ('Pune', 'Nashik','NDB');
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

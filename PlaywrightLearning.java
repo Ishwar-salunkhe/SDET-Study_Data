@@ -12,8 +12,18 @@ page.navigate("https://example.com");
     //new BrowserType.LaunchOptions().setHeadless(false)
 //);
 
-Locator username = page.locator("#username");
+//To close
+browser.close();
+
+//To wait for the element
+page.waitForSelector("#username");
+
+Locator username = page.locator("#username");  //Locator is preferred because it is more reliable and supports auto-waiting.
+//page.locator("//input[@id='username']");  //WE can use xpath like this as well
 username.fill("admin");
+//To Types characters one by one.
+username.type("admin"); //Older one
+username.pressSequentialy("admin");  //Latest one
 
 //Dropdown Handling
 page.locator("#country").selectOption("India");
@@ -44,3 +54,16 @@ for (int i = 0; i < count; i++) {
     String optionText = options.nth(i).innerText();
     System.out.println(optionText);
 }
+
+//For checkbox:
+page.locator("#terms").check();
+//To uncheck:
+page.locator("#terms").uncheck();
+//For radio button:
+page.locator("#male").check();
+
+//To Take the screenshot
+page.screenshot(new Page.ScreenshotOptions().setPath(Path.get("example.png"));
+
+
+

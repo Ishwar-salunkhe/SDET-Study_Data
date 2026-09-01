@@ -42,6 +42,8 @@ page.locator("#country").hover();
 
 //Inner Text
 Locator.innerText();
+List<String> texts = page.locator(".item").allInnerTexts();
+System.out.println(texts);
 
 //UI Check methods
 Locator.isEnabled();
@@ -73,13 +75,20 @@ page.onDialog(dialog -> {
 
 //To Get All options from Drodown
 Locator options = page.locator("#country option");
-
 int count = options.count();
-
 for (int i = 0; i < count; i++) {
     String optionText = options.nth(i).innerText();
     System.out.println(optionText);
 }
+
+//We Can get All dropdown option text with below as well
+Locator countryDropDown=page.locator("#countryDrp");
+List<String> optionList=countryDropDown.allInnerText();
+for(String allOption:optionList)
+    {
+        System.out.println(allOption); 
+    }
+
 
 //For checkbox:
 page.locator("#terms").check();
@@ -119,6 +128,9 @@ page.keyboard().press("Enter");
 page.keyboard().press("Tab");
 page.keyboard().press("Escape");
 page.keyboard().press("Control+A"); 
+
+//Playwright Exceptions
+
 
 
 

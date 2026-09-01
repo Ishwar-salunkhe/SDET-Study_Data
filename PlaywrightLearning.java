@@ -129,7 +129,22 @@ page.keyboard().press("Tab");
 page.keyboard().press("Escape");
 page.keyboard().press("Control+A"); 
 
+//Multiple Window/Tabs Handling
+Page page=context.newPage();
+Page newPage=context.waitForPage(()-> {
+    page.locator("#facebook-lin").click();
+        } );
+
+newPage.locator("#usernme").fill("test");  //To perform Fill operation, here will use 2nd page
+
+
+
+
 //Playwright Exceptions
+
+
+
+
 
 
 

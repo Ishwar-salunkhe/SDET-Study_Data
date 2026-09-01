@@ -14,6 +14,7 @@ Create table Employee (
   )
 
 //Joins
+The JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 //Inner Join-----> Will return the matching records from both tables
 Select * from employee as e
 inner join department as d

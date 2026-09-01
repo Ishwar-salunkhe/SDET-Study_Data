@@ -40,6 +40,15 @@ Locator.dblclick();
 //Hover
 page.locator("#country").hover();
 
+//Inner Text
+Locator.innerText();
+
+//UI Check methods
+Locator.isEnabled();
+Locator.isDisabled();
+Locator.isChecked();
+
+
 //Drag To
 Locator source = page.locator("#source");
 Locator target = page.locator("#target");

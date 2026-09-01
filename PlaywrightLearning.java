@@ -24,11 +24,26 @@ Locator username = page.locator("#username");  //Locator is preferred because it
 //page.locator("//input[@id='username']");  //WE can use xpath like this as well
 username.fill("admin");
 //To Types characters one by one.
+username.clear();  //To clear the textbox
 username.type("admin"); //Older one
 username.pressSequentialy("admin");  //Latest one
 
 //Dropdown Handling
 page.locator("#country").selectOption("India");
+
+//Count==> Returns the number of elements matching the locator.
+int count=page.locator("#username").count();
+
+//Double Click
+Locator.dblclick();
+
+//Hover
+page.locator("#country").hover();
+
+//Drag To
+Locator source = page.locator("#source");
+Locator target = page.locator("#target");
+source.dragTo(target);
 
 //By visible label:
 page.locator("#country").selectOption(
@@ -89,6 +104,12 @@ Download download = page.waitForDownload(() -> {
 download.saveAs(
     Paths.get("D:\\Downloads\\file.pdf")
 );
+
+//Keyboard Actions
+page.keyboard().press("Enter");
+page.keyboard().press("Tab");
+page.keyboard().press("Escape");
+page.keyboard().press("Control+A"); 
 
 
 

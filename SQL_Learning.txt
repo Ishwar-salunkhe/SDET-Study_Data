@@ -54,6 +54,12 @@ Select empName, Salary from employee
 where salary=(select max(salary) from employee
 where salary<(select max(salary) from employee));
 
+//Select Nth salary
+//here we are fetching 5th Highest salary
+select * from(select * from employee
+order by salary desc limit 5)emp
+order by salary limit 1;
+
 
 
 //From One Notes

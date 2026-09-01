@@ -49,9 +49,10 @@ Select empName, Salary from emplyee
 where salary=(select max(salary) from employee);
 
 
-//Select 2nd Highest salary
-select max(salary) from employee
-where salary<(select max(salary) from employee);
+//Select 2nd Highest salary with emp name
+Select empName, Salary from employee
+where salary=(select max(salary) from employee
+where salary<(select max(salary) from employee));
 
 
 

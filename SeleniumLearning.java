@@ -1,3 +1,11 @@
+//"Selenium WebDriver follows a client-server architecture.
+//We write our test script using the Selenium WebDriver API, for example in Java.
+//The WebDriver API communicates using the W3C WebDriver protocol with the browser-specific driver, such as ChromeDriver or GeckoDriver.
+//The browser driver then communicates with the actual browser and performs the requested action.
+//The response is sent back through the same communication path to our test script."
+
+
+
 //Handling of Multiple Windows
 
 Set<String> windows = driver.getWindowHandles();

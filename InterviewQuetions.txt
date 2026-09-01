@@ -232,18 +232,45 @@ What are the test case design technique?
  
 
 Agile Methodology 
-
 Diff between Agile and scrum? 
-
 Story point? 
-
 User story? 
-
 What Accepatance criteria? 
-
 Challenges in Agile? 
-
 Agile Ceremonies? 
+
+
+//Playwright- java
+1. What is Playwright?
+2. What are the advantages of Playwright over Selenium?
+3. Which browsers are supported by Playwright?
+4. What is the architecture of Playwright?
+5. What is Browser, BrowserContext, and Page in Playwright?
+6. What is the difference between BrowserContext and Page?
+7. How do you launch a browser in Playwright Java?
+8. How do you open a new page in Playwright?
+9. What is the difference between locator() and element handles?
+10. What are the different types of locators available in Playwright?
+11. What is the difference between CSS selector and XPath in Playwright?
+12. How do you handle dynamic elements in Playwright?
+13. What is auto-waiting in Playwright?
+14. What is the difference between auto-waiting and explicit wait?
+15. How do you handle dropdowns in Playwright Java?
+16. How do you handle checkboxes and radio buttons in Playwright?
+17. How do you handle alerts and popups in Playwright?
+18. How do you handle multiple tabs or multiple pages in Playwright?
+19. How do you handle frames and iframes in Playwright?
+20. How do you perform mouse hover actions in Playwright?
+21. How do you perform drag and drop in Playwright?
+22. How do you upload a file in Playwright?
+23. How do you download a file in Playwright?
+24. How do you take screenshots in Playwright?
+25. How do you handle authentication in Playwright?
+26. How do you run Playwright tests in headless and headed mode?
+27. How do you perform assertions in Playwright Java?
+28. How do you handle network requests and API mocking in Playwright?
+29. How do you implement Page Object Model (POM) in Playwright Java?
+30. How do you integrate Playwright Java with BDD Cucumber and CI/CD?
 
 
 

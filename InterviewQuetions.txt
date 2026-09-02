@@ -185,12 +185,22 @@ https://employee.com/users
 
 ====> Behavior Int Questions/Manegerial Quetions < =======
 
-Challenges in Automation OR software testing?  -> Unavailability of test data as test data required for each regression testing before each release, Environment issue, Communication gap between dev and qa (give example as dev making some changes in the dev and Not pushing those changes in the QA env. 
+Q-Challenges in Automation OR software testing?
+-> 1.Unavailability of test data as test data required for each regression testing before each release,
+2.Environment/Instance issue,
+3.To Handle the flaky test cases
+3.handle the dynamic elements
+4.Frequent UI changes – Application changes can break existing automation scripts.
+5.Maintenance – As the application grows, automation scripts and framework components require continuous maintenance
+
 
 What are the challenges in Agile methodology? 
-What type of test cases an have in smoke suit?---> URL is aaceebile, User should able to login and logout, basic navigation should working file such as Home page, dasboard, Pagination etc 
-How many test cases can have in smoke test suite--> depends on type of aplication..But roughly I can say 10-15 NO test cases. 
+
+Q-What type of test cases an have in smoke suit?
+---> URL is aaceebile, User should able to login and logout, basic navigation should working file such as Home page, dasboard, Pagination etc 
+
 How you will figured out the test cases for regression?---> Will mostly fig out the test cases those will cover the mainly core features of the appliction 
+
 How many time was release was happning in your team?--> So we were having release after 2 month which is equal to 8 NO of sprints ( 2 weeks of sprint) 
 
 Q-What would you do if a developer says, "It's not a bug"?
@@ -202,7 +212,18 @@ Q-What would you do if a developer says, "It's not a bug"?
 Q- Flecky test cases handling?
 -Test cases which are passing sometime and failing sometime
 -First will check the logs, reports and screenshots
--
+-Many times test cases are failing not only because of incorrect locator, It is failing many times due to environment issue, Network delay, Incorrect test data, Synchronization issue etc
+-So will indentify those reason and then will try to use stable locator
+
+Q-How do you handle pressure and tight deadlines?
+-> First i will check with the lead/Manager that what are the priority things OR task which need to be take as priority. So first will try to complete the priority task and meanwhile i will update the progress that what can be done from my side within the timeline
+
+Q-What do you do when requirements are unclear?
+-First i will do not make any assumptions about the unclear requirements. So what ever the unclear requirements, i will make a n= note of that and then will discuss with the product owner and will get the clarity on the unclear requirements.
+
+Q-Tell me about a time when your automation failed in CI/CD.
+-> When an automation build fails in Jenkins or another CI/CD environment, I first check the console logs, reports, screenshots, and error messages. I identify whether the issue is related to the application, automation script, environment, test data, dependency, or configuration. After identifying the root cause, I fix the issue and rerun the affected tests. I try not to immediately assume that every CI failure is an automation issue.
+
 
 Which selenium version you have use?---> Current version you can say 4.1 which was release on Oct 2021. 
 Which java version you are currently using--> Java 21 

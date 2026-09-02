@@ -77,13 +77,17 @@ page.locator("#country").selectOption(
     new SelectOption().setIndex(0)
 );
 
-//Alert Handling
+//Alert Handling ->//onDialog is a method 
+//here first you need to open the onDialog and then you are performing click on the Alert
 page.onDialog(dialog -> {
     System.out.println(dialog.message());
     dialog.accept();
     dialog.dismiss();
 });
-//onDialog is a method 
+    Locator popup=page.locator("//button[text()='Confirmation Alert']");
+    popup.click();
+
+
 
 
 //To Get All options from Drodown
@@ -94,12 +98,22 @@ for (int i = 0; i < count; i++) {
     System.out.println(optionText);
 }
 
-//We Can get All dropdown option text with below as well
+//We Can get All dropdown option text with below as well ( EASY Approch )
 Locator countryDropDown=page.locator("#countryDrp");
 List<String> optionList=countryDropDown.allInnerText();
 for(String allOption:optionList)
     {
         System.out.println(allOption); 
+    }
+
+//Another Way 
+ //To get All Options from dropdown
+Locator options=page.locator("//select[@id='country']/child::option");
+int count=options.count();
+for(int i=0; i<count;i++)
+    {
+        String optionText=options.nth(i).innerText();
+        System.out.println(optionText);
     }
 
 

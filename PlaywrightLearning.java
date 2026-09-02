@@ -165,13 +165,25 @@ page.keyboard().press("Tab");
 page.keyboard().press("Escape");
 page.keyboard().press("Control+A"); 
 
-//Multiple Window/Tabs Handling
-Page page=context.newPage();
+//switch to new Tab/Window and perform the operation on that
 Page newPage=context.waitForPage(()-> {
-    page.locator("#facebook-lin").click();
-        } );
+      page.locator("//button[text()='New Tab']").click();  //this will open new tab and return newPage
+} );
 
-newPage.locator("#usernme").fill("test");  //To perform Fill operation, here will use 2nd page
+//For Mutile window handling as well you need to use like below
+Page newPage=context.waitForPage(()-> {
+  page.locator("//button[text()='New Tab']").click();
+} );
+
+List<Page> pages=context.pages();
+System.out.println(pages.size());
+  for(Page p:pages)
+    {
+      System.out.println(p.title());
+    }
+page.bringToFront(); //Bring focus to particular tab/window- here page is the main tab so it will move focus to that tab
+
+
 
 
 

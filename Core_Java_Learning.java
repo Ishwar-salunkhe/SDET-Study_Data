@@ -44,6 +44,17 @@ String str="ishwar";
 System.out.println(str.indexOf('w'));  //Output==3
 System.out.println(str.indexOf('p'));  //If given element is not there then in that case it will give output as -1
 //If Character not found → returns -1.
+
+/*Constructor
+Constructor name must be the same as the class name.
+It does not have a return type, not even void.
+It is automatically called when an object is created.
+It is mainly used to initialize object variables.
+It can be public, and if not mentioned then it will be default
+-we can make constructor private as we do in singltone class
+-It can be overload but not Override becuase constructor is always refer to class not to object
+
+*/
   
 
 

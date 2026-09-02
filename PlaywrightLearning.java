@@ -19,7 +19,6 @@ Locator name=page.getByPlaceholder("Enter Name");
 Locator email=page.getByPlaceholder("Enter Email");
 
 
-
 //To close
 browser.close();
 
@@ -42,6 +41,9 @@ Locator.dblclick();
 
 //Hover
 page.locator("#country").hover();
+
+//Scroll To specific Element
+element.scrollIntoViewIfNeeded();
 
 //Inner Text
 Locator.innerText();

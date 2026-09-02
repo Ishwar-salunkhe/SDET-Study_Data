@@ -28,9 +28,6 @@ username.clear();  //To clear the textbox
 username.type("admin"); //Older one
 username.pressSequentialy("admin");  //Latest one
 
-//Dropdown Handling
-page.locator("#country").selectOption("India");
-
 //Count==> Returns the number of elements matching the locator.
 int count=page.locator("#username").count();
 
@@ -56,6 +53,9 @@ Locator source = page.locator("#source");
 Locator target = page.locator("#target");
 source.dragTo(target);
 
+//Dropdown Handling
+page.locator("#country").selectOption("India");
+
 //By visible label:
 page.locator("#country").selectOption(
     new SelectOption().setLabel("India"));
@@ -63,6 +63,11 @@ page.locator("#country").selectOption(
 //By value:
 page.locator("#country").selectOption(
     new SelectOption().setValue("IN"));
+
+//By Index:
+page.locator("#country").selectOption(
+    new SelectOption().setIndex(0)
+);
 
 //Alert Handling
 page.onDialog(dialog -> {

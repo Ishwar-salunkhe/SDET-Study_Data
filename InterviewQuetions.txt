@@ -65,10 +65,6 @@
 55.How would you handle a situation where the application has frequent UI changes?
 
 
-
-
-
- 
 ---------> Java <-----------------
 
 🟢 Basic OOPs Interview Questions (for Automation Test Engineers) 
@@ -98,9 +94,6 @@ What are access modifiers in Java?
 Diff between Array and ArrayList()? 
 24. StringBuilder and String Buffer diff?
 25. Single ton class?
-
-
- 
 
 ------------> BDD- Cucumber <-------------------- 
 
@@ -147,17 +140,13 @@ How do you ignore a test case in TestNG?
 Assertion in Test NG? 
 How you will execute only fail test cases in test ng? 
 
-
 🔹 Advanced Features 
-
 What are Listeners in TestNG? 
 What is the use of ITestListener interface? 
 How do you generate custom TestNG reports? 
 What is the difference between @Factory and @DataProvider in TestNG? 
 
- 
 --------> API Testing <-------------
-
 ✅ Basic API Testing Questions 
 
 What is an API? 
@@ -173,7 +162,6 @@ What is the response code we are getting when we use PUT and PATCH? -> 200
 
  
 🛠️ Practical/Tool-Based Questions 
-
 What is a collection in Postman? 
 How do you test a secured (authenticated) API in Postman? 
 How do you analyze headers and response codes in Postman? 
@@ -184,53 +172,43 @@ Path and query params?
 Rest API? Rest api gherkin format request 
 Diff between auth1.0 and 2.0? 
 
- 
- 
-
 🧠Extra Quetions 
 
 Pm is library 
-
 Chai is assertion library in postmana 
-
 Variables in Postman? 
-
 https://employee.com/users/page=2   get request sample used to explain 
-
 https://employee.com/users 
 
- 
+=======================x=======================================
 
- 
 
-Behavior Int Questions 
-
- 
+====> Behavior Int Questions/Manegerial Quetions < =======
 
 Challenges in Automation OR software testing?  -> Unavailability of test data as test data required for each regression testing before each release, Environment issue, Communication gap between dev and qa (give example as dev making some changes in the dev and Not pushing those changes in the QA env. 
 
 What are the challenges in Agile methodology? 
-
 What type of test cases an have in smoke suit?---> URL is aaceebile, User should able to login and logout, basic navigation should working file such as Home page, dasboard, Pagination etc 
-
 How many test cases can have in smoke test suite--> depends on type of aplication..But roughly I can say 10-15 NO test cases. 
-
 How you will figured out the test cases for regression?---> Will mostly fig out the test cases those will cover the mainly core features of the appliction 
-
 How many time was release was happning in your team?--> So we were having release after 2 month which is equal to 8 NO of sprints ( 2 weeks of sprint) 
 
+Q-What would you do if a developer says, "It's not a bug"?
+-> -Will validate first It is valid bug or not
+-/ Will collect the all evidence doc such as logs, screenshots, test report etc and will show case to dev
+- Will reproduce the issue again in front them
+-If still Disagree, Then will check same with the Product owner and then product owner will decide whether it is bug or not
+
+Q- Flecky test cases handling?
+-Test cases which are passing sometime and failing sometime
+-First will check the logs, reports and screenshots
+-
+
 Which selenium version you have use?---> Current version you can say 4.1 which was release on Oct 2021. 
-
 Which java version you are currently using--> Java 21 
-
 Current chrome browser version-> 138 
-
 How many manual test cases you can write? It depends on complexity of app, requirement understanding but roughly count-60+ test cases 
-
 What are the test case design technique? 
-
- 
-
 Agile Methodology 
 Diff between Agile and scrum? 
 Story point? 

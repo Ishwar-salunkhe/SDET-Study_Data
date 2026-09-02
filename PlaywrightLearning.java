@@ -216,6 +216,16 @@ where we can add the workers (Nothing but Thread)
 export default defineConfig({
 workers: 3
 
+## Playwright Retries for re run the failed test cases
+-In Playwright config.js file will add the retires value
+export default defineConfig({
+    retries: 2
+ -In Playwright Java itself does not provide a direct retries configuration like Playwright Test.
+ -Playwright Java + TestNG, you normally use TestNG's retry mechanism.-IRetryAnalyzer
+ 
+
+    
+
 
 
 

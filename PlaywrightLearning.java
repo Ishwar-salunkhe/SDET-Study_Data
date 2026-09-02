@@ -133,7 +133,7 @@ int count=checkboxes.count();  //To check the matching elements
     }
 
 //To Take the screenshot
-page.screenshot(new Page.ScreenshotOptions().setPath(Path.get("example.png"));
+page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("D:\AutomationTestdata.test.png"));
 
 //Frame Handling
 Locator frame = page.frameLocator("#myFrame") 

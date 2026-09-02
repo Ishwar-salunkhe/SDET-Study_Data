@@ -108,6 +108,14 @@ page.locator("#terms").uncheck();
 //For radio button:
 page.locator("#male").check();
 
+//To select All checkboxes
+Locator checkboxes =page.locator("//input[contains(@id,'day') and @type='checkbox']");
+int count=checkboxes.count();  //To check the matching elements
+    for(int i=0; i<count; i++)
+    {
+        checkboxes.nth(i).click();
+    }
+
 //To Take the screenshot
 page.screenshot(new Page.ScreenshotOptions().setPath(Path.get("example.png"));
 

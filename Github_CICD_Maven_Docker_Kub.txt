@@ -93,4 +93,16 @@ Maven is a build automation and project management tool used to manage dependenc
    Command: mvn site
 
 
+//Jenkins
+-It is CICD tool which is used to build , test and deploy the application automatically
+-CI- Continues integgration
+-CD- Conti Delivery/Deployement
+-Cont del required manual approval for the deployment and Conti deployement is Automatic
+
+Jenkins: Jenkins is a CI/CD tool that we use to automate the build and test execution process. From the QA Automation side, we mainly use Jenkins to execute our automation test suites automatically, generate test reports, and provide test execution results to the team.
+
+How Jenkins is used in QA Automation: Once the automation code is pushed to GitHub, Jenkins fetches the latest code from the repository and starts the configured job. Jenkins then executes the Maven command such as "mvn clean test" to build the project and execute the automation test cases. After execution, Jenkins generates or publishes the test reports, and based on the result, we can send notifications to the team.
+
+
+
 

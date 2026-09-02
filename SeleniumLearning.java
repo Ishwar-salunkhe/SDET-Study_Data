@@ -180,6 +180,16 @@ ElementNotInteractableException -> //Selenium finds the element, but cannot inte
 //Element is Disabled, Hidden
  NoSuchWindowException ->//Selenium tries to switch to or interact with a browser window that does not exist.
  NoAlertPresentException
+ ElementClickInterceptedException -> //It occurs when Selenium tries to click an element, but another element is covering/intercepting the click.
+   /* //More Possible reasons
+    -Popup/modal is covering the element
+    -Loader/spinner is still displayed
+    
+
+
+
+    */
+    
 
 //Drag And Drop Element
 WebElement dragElement =driver.findElement(By.xpath("//div[@id='draggable']"));

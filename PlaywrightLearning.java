@@ -88,6 +88,24 @@ page.onDialog(dialog -> {
     Locator popup=page.locator("//button[text()='Confirmation Alert']");
     popup.click();
 
+//Parallel execution in BDD Playwright Framework
+@CucumberOptions(
+    tags = "@Smoke",
+    features = "src/test/resources/featurefiles",
+    glue = {"stepdefinition"}
+    }
+)
+public class CucumberTestRunner extends AbstractTestNGCucumberTests {
+
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+}
+//Playwright have built-in Playwright Test runner.
+//Parallel execution is built into Playwright Test.
+
 
 
 
@@ -185,11 +203,12 @@ System.out.println(pages.size());
 page.bringToFront(); //Bring focus to particular tab/window- here page is the main tab so it will move focus to that tab
 
 
-
-
-
-
 //Playwright Exceptions
+
+
+
+//Playwright with Javascript Points
+//await page.goto('https://example.com');
 
 
 

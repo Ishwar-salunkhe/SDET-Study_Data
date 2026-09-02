@@ -14,6 +14,12 @@ page.navigate("https://example.com");
 //Playwright Arhitecture is suing- WebSocket Protocol for communication- client and server
 
 
+//Locators
+Locator name=page.getByPlaceholder("Enter Name");
+Locator email=page.getByPlaceholder("Enter Email");
+
+
+
 //To close
 browser.close();
 

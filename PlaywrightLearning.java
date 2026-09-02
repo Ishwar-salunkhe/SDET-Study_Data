@@ -106,7 +106,8 @@ page.locator("#male").check();
 page.screenshot(new Page.ScreenshotOptions().setPath(Path.get("example.png"));
 
 //Frame Handling
-Locator frame = page.frameLocator("#myFrame") .locator("#username"); frame.fill("Ishwar");
+Locator frame = page.frameLocator("#myFrame") 
+    frame.locator("#username").fill("Ishwar");
 
 //Mouse hiver action
 page.locator("#menu").hover();

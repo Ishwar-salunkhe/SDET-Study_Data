@@ -207,8 +207,19 @@ page.bringToFront(); //Bring focus to particular tab/window- here page is the ma
 
 
 
-//Playwright with Javascript Points
-//await page.goto('https://example.com');
+/*=====> Playwright with Javascript Points < =============
+await page.goto('https://example.com');
+The Java Playwright API is designed to feel synchronous, so you don't write async or await. 
+## Parelle test execution in Playwright javascript
+-> Using Playwright.config.js file
+where we can add the workers (Nothing but Thread)
+export default defineConfig({
+workers: 3
+
+
+
+
+    */
 
 
 

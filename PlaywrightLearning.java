@@ -17,6 +17,7 @@ page.navigate("https://example.com");
 //Locators
 Locator name=page.getByPlaceholder("Enter Name");
 Locator email=page.getByPlaceholder("Enter Email");
+Locator name=page.getByLabel("Name");
 
 
 //To close
@@ -147,8 +148,8 @@ page.locator("#source").dragTo(
     page.locator("#target"));
 
 //File Upload setInputFiles().
-page.locator("input[type='file']")
-    .setInputFiles("D:\\TestData\\sample.pdf");
+Locator uploadFileButton=page.locator("//input[@id='singleFileInput']");
+uploadFileButton.setInputFiles(Paths.get("C:\\Screenshot\\imageNo1.png"));
 
 //File download-waitForDownload().
 Download download = page.waitForDownload(() -> {

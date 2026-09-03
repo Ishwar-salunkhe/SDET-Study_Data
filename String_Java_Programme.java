@@ -105,6 +105,27 @@ String result=str.substring(4);
 System.out.println(result);
 
 ===========================x=========================================
+
+  //Find first Non repatable charcter in the string
+  String str="swiss";
+      HashMap<Character, Integer> hm = new HashMap<>();
+
+      char a[]=str.toCharArray();
+
+      for(char ch:a)
+      {
+        hm.put(ch,hm.getOrDefault(ch,0)+1);
+      }
+
+      for(char ch:a)
+      {
+        if(hm.get(ch)==1)
+        {
+            System.out.println("Charatcer is "+ch);
+            break;
+        }
+      }
+
   
 
 

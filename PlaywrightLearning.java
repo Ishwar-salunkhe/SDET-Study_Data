@@ -203,10 +203,16 @@ System.out.println(pages.size());
 page.bringToFront(); //Bring focus to particular tab/window- here page is the main tab so it will move focus to that tab
 
 
-//Playwright Exceptions
+/*//Playwright Exceptions
+1.TimeoutError-> Operation does not complete within the configured timeout
+2.PlaywrightException -> Generic Playwright-related error
+3.LocatorNotFound -> Given locator is not match, Incorrect locator etc
 
+//How to re run only failed test cases in Your framework
+-In test runner class- will dd the plugin as rerun file where it will store the all failsed scenarions
+-then will create the seperate test runner for the failed scenarion and will run from that
 
-
+*/
 /*=====> Playwright with Javascript Points < =============
 await page.goto('https://example.com');
 The Java Playwright API is designed to feel synchronous, so you don't write async or await. 
@@ -223,11 +229,6 @@ export default defineConfig({
  -In Playwright Java itself does not provide a direct retries configuration like Playwright Test.
  -Playwright Java + TestNG, you normally use TestNG's retry mechanism.-IRetryAnalyzer
  
-
-    
-
-
-
 
     */
 

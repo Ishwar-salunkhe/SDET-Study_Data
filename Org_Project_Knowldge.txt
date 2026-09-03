@@ -1,8 +1,11 @@
 //Eaton - Brighlayer
-Brightlayer software captures real-time data from devices to provide insights, control and predictions so you can reduce downtime, cut costs, and respond faster to risks.
+Brightlayer software captures real-time data from devices to provide insights,
+control and predictions so you can reduce downtime, cut costs, and respond faster to risks.
+-Communication is happening between application and device via Portocols
+-Modbus, SNMP, Backnet
 
 Frontend technology — Angular
 Backend technology - Node js
 
 -Electirical devices
--Power meter, UPS Rack, Electric Motor, Relay etc
+-Power meter, UPS Rack, Electric Motor, Relay, Controllers etc

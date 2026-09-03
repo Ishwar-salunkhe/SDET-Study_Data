@@ -86,6 +86,8 @@ Typecasting?
 Set and list Diff? 
 String class Methods?  Concat, trim, charAt, length, equals (case sensitive), equalsIgnoreCase,  split, ToUpperCase, Lowercase, replace 
 Final, Finally, and Finalize in java? 
+Static and Non static keyword?
+this and super keyword?
 What is the use of the super and this  keyword? 
 How do you implement reusability using inheritance or interfaces? 
 Try and catch Block? 

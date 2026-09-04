@@ -14,6 +14,15 @@ Q-SDLC models
 -V model -> Verification and Validation
 ->where development and testing activities are planned in parallel.
 
+Q- Smoke and Sanity testing
+Smoke->
+-It is build verification testing
+- we are doing this when we get any new build to verify that all the basic functionality are owrking ifne or not
+
+Sanity
+- It is subset of regression testing
+- where we are testing the perticular feature thoroughly
+
 Q-Diff Between Varifiaction and Validation
 -Verification- Checking whether we are building the right product - Process oriented
 -Validation means actula testing- Unit, SIT, Integration testing etc - Product Oriented
@@ -69,8 +78,20 @@ Bank app-> Bank statement for 1 year is not working properly
 Low Priority + Low Severity -> Miss spelled
 
 Explain the Bug Life Cycle.
+
 What is Regression Testing?
-Exploratory Testing
+Q-Exploratory Testing
+-testing the app without any documents
+-Testing the app by exploring it
+-New team member will perform this type of testing to understand the app
+-Perform testing without any prior knowledge of the software
+
+Q-Ad-hoc testing
+->Testing application randomly without any test cases OR without any doc OR business requirements
+-> main aim is to breake the software and find out the bug
+-> In this tester should have knowledge about the application
+
+
 What is Retesting?
 Alpha and Beta testing?
 ->Alpha testing is performed internally by the QA team or developers in a controlled environment,
@@ -100,6 +121,14 @@ Q-Non Funtional testing
 Q-Authentication And Authorization
 Authentication- Verify user is valid or not
 Authorization - Verify user is having access/Permission or not
+
+Q-End to End testing
+-> Testing the Overall functionality fo the application among the all the modules
+-For example- Login-> add user-> edit user -> delete user-> logout
+
+
+
+
 
 
 

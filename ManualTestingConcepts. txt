@@ -52,8 +52,11 @@ Validation- Product Oriented, Validating functionality of the software
 What is STLC?
 Requirement Analysis
 Test Planning
+Test Case Design
+Test Case Execution
+Test Closure
 
-Q-Test Case Design?
+Q-Test Case Design techniqs?
 -Boundry Value Analysis-> validating the functionality at boundry level
 -Equivalent Class partitioning -> Devcie the test data into diff classes such as valid and Invalid data
 -Decision table/cause and Effect Diagrame- Eg- Account Transfer- Will put donw all the conditions such as If account approve and OTP matche-
@@ -74,9 +77,6 @@ Q-Test deliverables are the documents, reports, and other outputs prepared by th
 -Test Execution Report
 -Test Summary Report
 -Test Closure report
-
-
-
 
 Test Case Execution
 Test Closure
@@ -150,6 +150,15 @@ Authorization - Verify user is having access/Permission or not
 Q-End to End testing
 -> Testing the Overall functionality fo the application among the all the modules
 -For example- Login-> add user-> edit user -> delete user-> logout
+
+Q- 7 testing principle
+1.Early testing- Start testing at the early stage of the developement
+2.Test Software in order to find defect
+3.Bug free apllication is Not possible
+4.Exautive testing- Do not use the same test cases and same test data becuase it will not give the any new bugs
+5.Testign is context based
+6.Pasticide paradox-> same test cases will not give the new defects
+7.Defect Declustring-> Indentify the module which will give 80% of the bugs
 
 
 

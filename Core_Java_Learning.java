@@ -53,8 +53,19 @@ It is mainly used to initialize object variables.
 It can be public, and if not mentioned then it will be default
 -we can make constructor private as we do in singltone class
 -It can be overload but not Override becuase constructor is always refer to class not to object
-
 */
+
+//String Study
+//Contains
+String str="Welcome";
+boolean status=str.contains("Wel");
+
+//substring 
+String str="Welcome";
+String result=str.substring(0,3);  //Add start Index and end index +1
+//If you pass invalid index- Exception will be - StringIndexOutOfBoundsException
+
+
   
 
 

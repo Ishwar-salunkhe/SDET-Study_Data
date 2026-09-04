@@ -1,3 +1,33 @@
+Q-Software testing- Chcking functionality of the s/w to which should be working fine as per the requirements
+
+Q-Project and Product Diff
+Project- Develop software for the specific customer based on there requirements
+Product- Develop software based on market requirements for the mutiple customers
+
+Q-SDLC models
+-Waterfall model-> where development happens in a sequential, step-by-step process.
+-Dis
+-Customer need to wait for long time to get software
+-Once Requirements collected from client it will be freeze
+
+-Spiral Model
+-V model -> Verification and Validation
+->where development and testing activities are planned in parallel.
+
+Q-Diff Between Varifiaction and Validation
+-Verification- Checking whether we are building the right product - Process oriented
+-Validation means actula testing- Unit, SIT, Integration testing etc - Product Oriented
+
+Q-Static Testing
+-> Testing the Project related document
+-> Walkthrough, review etc
+
+Q-Dynamic testing
+-> testing the Actual of the software
+-> Unit, Integration, System testing
+
+
+
 What is SDLC?
 Requirement Gathering
 Design
@@ -56,6 +86,20 @@ such as Requirement are clear, test env is ready, Build is ready
 What is Exit Criteria?
 What is Defect Leakage?
 ->Defect leakage occurs when a defect is missed during testing and is discovered in a later testing stage or production.
+
+Q-Non Funtional testing
+-> testing performanace, load and security, Responce of the app, Behaviour etc
+-Load testing
+-> Load testing checks how the application performs under the expected number of users/load.
+->If an application normally has 1,000 users, we test it with around 1,000 users to check response time and stability.
+
+-Stress Testing
+->Stress testing checks how the application behaves when the load is increased beyond its expected limit.
+->If the application is designed for 1,000 users, we gradually increase it to 2,000, 5,000, etc. to find the breaking point.
+
+Q-Authentication And Authorization
+Authentication- Verify user is valid or not
+Authorization - Verify user is having access/Permission or not
 
 
 

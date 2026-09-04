@@ -52,7 +52,32 @@ Validation- Product Oriented, Validating functionality of the software
 What is STLC?
 Requirement Analysis
 Test Planning
-Test Case Design
+
+Q-Test Case Design?
+-Boundry Value Analysis-> validating the functionality at boundry level
+-Equivalent Class partitioning -> Devcie the test data into diff classes such as valid and Invalid data
+-Decision table/cause and Effect Diagrame- Eg- Account Transfer- Will put donw all the conditions such as If account approve and OTP matche-
+Money Transfer, IF Account is invaid- Tansition failed 
+-State tarnsition
+-Error Guessing-A testing technique where testers use their experience and knowledge to predict likely errors
+and design test cases to find them.
+
+Q- Entry Criteria
+-> Entry criteria Set of conditions which should be satisfied before start of testing
+->Environment ready, Build should be stable, Requirement clear etc
+
+Q- Exit Criteria
+-> Exit criteria - Set of conditions which should be satisfied before Testing completed
+-> All planned test cases are executed, All Critical/High severity defects are closed
+
+Q-Test deliverables are the documents, reports, and other outputs prepared by the QA/testing team during the testing process.
+-Test Execution Report
+-Test Summary Report
+-Test Closure report
+
+
+
+
 Test Case Execution
 Test Closure
 

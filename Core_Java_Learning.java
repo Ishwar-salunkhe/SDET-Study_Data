@@ -85,6 +85,17 @@ String result=str.trim();
 String str="ishwar@gmail.com";
 String a[]=str.split("@");  //Output-> ishwar
 
+//concat() – Join two Strings
+
+//valueOf() – Convert other data types to String such as int, char, double
+int num=100;
+String str=String.valueOf(num);
+
+
+//indexOf() – Find index of character/text
+String str="Wecome";
+int ind =str.indexOf('c');  //Output-> 2
+
 
   
 

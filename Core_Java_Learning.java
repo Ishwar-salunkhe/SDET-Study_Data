@@ -55,7 +55,7 @@ It can be public, and if not mentioned then it will be default
 -It can be overload but not Override becuase constructor is always refer to class not to object
 */
 
-//String Study
+//======== > String Concepts <================
 //Contains
 String str="Welcome";
 boolean status=str.contains("Wel");
@@ -80,6 +80,10 @@ String result=str.replaceAll("[^a-zA-Z0-9]","");
 //trim() – Remove spaces from beginning and end
 String str="   Welcome  ";
 String result=str.trim();
+
+//split() – Split String using delimeter- @, ; : , etc
+String str="ishwar@gmail.com";
+String a[]=str.split("@");  //Output-> ishwar
 
 
   

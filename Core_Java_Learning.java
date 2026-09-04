@@ -65,6 +65,22 @@ String str="Welcome";
 String result=str.substring(0,3);  //Add start Index and end index +1
 //If you pass invalid index- Exception will be - StringIndexOutOfBoundsException
 
+//replace
+String str="Welcome";
+String result=str.replace('e','E');
+String result=str.replace("Wel","Cel");  //If we want to string replace then pass in the string format
+
+//replaceAll -> Replace using regex
+String str="Welcome123"; 
+String result=str.replaceAll("[0-9]",""); //Return=-> Welcome
+//If you want to remove special symbol from the string
+String str="Wel$%^come123";
+String result=str.replaceAll("[^a-zA-Z0-9]","");
+
+//trim() – Remove spaces from beginning and end
+String str="   Welcome  ";
+String result=str.trim();
+
 
   
 

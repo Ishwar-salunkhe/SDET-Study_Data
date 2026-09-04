@@ -160,6 +160,14 @@ Q- 7 testing principle
 6.Pasticide paradox-> same test cases will not give the new defects
 7.Defect Declustring-> Indentify the module which will give 80% of the bugs
 
+UAT testing
+Q- Alpha Testing
+Alpha testing is performed by the internal testing/development team at the developer's site before releasing
+the software to external users.
+
+Q-Beta testing
+Beta testing is performed by real users/customers in a real-world environment before the final release.
+
 
 
 

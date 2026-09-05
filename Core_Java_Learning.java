@@ -77,6 +77,18 @@ String result=str.replaceAll("[0-9]",""); //Return=-> Welcome
 String str="Wel$%^come123";
 String result=str.replaceAll("[^a-zA-Z0-9]","");
 
+//Scenario Based Quetions
+//Fetch the OTP from this user message
+String str = "Dear customer, your OTP is 458921. It is valid for 5 minutes.";
+String otp=str.replaceAll(".*\\b(\\d{6})\\b.*","$1");
+//Explaination
+//-> \\d{6} //\\d → any digit from 0-9 and {6} → exactly 6 digits and to The parentheses create a capturing group:(\\d{6})
+//-> \\b means word boundary.
+//-> "$1" -> Replace the entire matched string with Group 1.
+
+
+System.out.println(otp);
+
 //trim() – Remove spaces from beginning and end
 String str="   Welcome  ";
 String result=str.trim();

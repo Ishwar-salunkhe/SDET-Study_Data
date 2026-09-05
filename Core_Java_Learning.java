@@ -84,12 +84,26 @@ String result=str.trim();
 //split() – Split String using delimeter- @, ; : , etc
 String str="ishwar@gmail.com";
 String a[]=str.split("@");  //Output-> ishwar
+//Scenario Based Quetion on split methos
+//1.Fethc the only OTP from this text OR string
+String str="OTP:458921";
+String a[]=str.split(":");
+System.out.println(a[1]);
+
+//2. Fetch the OTP from this message
+String str="Your OTP is 782345. Please use it.";
+String result=str.replaceAll("[^0-9]","");
+
 
 //concat() – Join two Strings
 
 //valueOf() – Convert other data types to String such as int, char, double
 int num=100;
 String str=String.valueOf(num);
+
+//Convert String into Int
+String str = "123456";
+int number=Integer.parseInt(str);
 
 
 //indexOf() – Find index of character/text

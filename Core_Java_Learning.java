@@ -108,6 +108,9 @@ String str="Your OTP is 782345. Please use it.";
 String result=str.replaceAll("[^0-9]","");
 
 //concat() – Join two Strings
+String s1="Welcome";
+String s2=" To Java";
+System.out.println(s1.concat(s2));
 
 //valueOf() – Convert other data types to String such as int, char, double
 int num=100;
@@ -120,6 +123,16 @@ int number=Integer.parseInt(str);
 //indexOf() – Find index of character/text
 String str="Wecome";
 int ind =str.indexOf('c');  //Output-> 2
+
+//StringBuffer Declaration
+StringBuffer sf= new StringBuffer("welcome");
+System.out.println(sf);
+
+//StringBuilder Declaration
+StringBuilder sf= new StringBuilder("welcome");
+System.out.println(sf);
+
+
 
 
 

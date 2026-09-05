@@ -110,3 +110,36 @@ for (int i = 0; i < arr.length; i++)
 
 ===============================x=============================================x==================================================
 
+//Find 2nd Highest Number in int Array
+	
+int a[] = {2, 4, 10, 8, 18};
+ for(int i=0; i<a.length; i++)
+    {
+    for(int j=i+1; j<a.length; j++)
+    {
+        if(a[i]>a[j])  //this line is sorting the array in ascending order
+        {
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+  }
+
+System.out.println("secodn Higest Number is "+a[a.length-2]); //this is nothing but like a[3]
+
+==================================x===================================================
+//Same logic to Find 2nd lowest number in int array
+ int a[] = {2, 4, 10, 8, 18};
+ for(int i=0; i<a.length; i++)
+    {
+    for(int j=i+1; j<a.length; j++)
+    {
+        if(a[i]<a[j])  //this line is sorting the array in descending order
+        {
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+  }

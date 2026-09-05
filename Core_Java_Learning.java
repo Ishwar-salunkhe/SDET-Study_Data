@@ -69,6 +69,9 @@ String result=str.substring(0,3);  //Add start Index and end index +1
 String str="Welcome";
 String result=str.replace('e','E');
 String result=str.replace("Wel","Cel");  //If we want to string replace then pass in the string format
+//We can use like below as well
+String str="$15,20,30";  //Remove $ and , from string
+String result=str.replace("$","").replace(",","");
 
 //replaceAll -> Replace using regex
 String str="Welcome123"; 
@@ -85,8 +88,6 @@ String otp=str.replaceAll(".*\\b(\\d{6})\\b.*","$1");
 //-> \\d{6} //\\d → any digit from 0-9 and {6} → exactly 6 digits and to The parentheses create a capturing group:(\\d{6})
 //-> \\b means word boundary.
 //-> "$1" -> Replace the entire matched string with Group 1.
-
-
 System.out.println(otp);
 
 //trim() – Remove spaces from beginning and end
@@ -106,7 +107,6 @@ System.out.println(a[1]);
 String str="Your OTP is 782345. Please use it.";
 String result=str.replaceAll("[^0-9]","");
 
-
 //concat() – Join two Strings
 
 //valueOf() – Convert other data types to String such as int, char, double
@@ -117,10 +117,20 @@ String str=String.valueOf(num);
 String str = "123456";
 int number=Integer.parseInt(str);
 
-
 //indexOf() – Find index of character/text
 String str="Wecome";
 int ind =str.indexOf('c');  //Output-> 2
+
+
+
+
+
+//Arrays Method
+Arrays.toString() // To print Array in readable format
+Arrays.sort(a); //To sort the array in ascending order
+int a[]={12,1,24,56,60};
+Arrays.sort(a);
+System.out.println(Arrays.toString(a));  //Output: [1, 12, 24, 56, 60]
 
 
   

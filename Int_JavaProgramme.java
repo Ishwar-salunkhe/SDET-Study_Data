@@ -158,6 +158,20 @@ System.out.println("Missing number is "+missingNumber);
 
 =============================x===================================================
 
+//Find the sum of all numbers  
+int num = 12345;
+int sum = 0;
+
+while (num > 0) {
+    int digit = num % 10;
+    sum = sum + digit;
+    num = num / 10;
+}
+
+System.out.println(sum);
+
+===================x======================================x
+
 
 
 

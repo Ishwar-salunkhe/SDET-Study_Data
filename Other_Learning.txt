@@ -1,2 +1,7 @@
 Payment Gateway
+A payment gateway is a service that helps transfer payment information securely between the customer, merchant, bank, and payment processor.
+Payment Methods- Credit Card, Debit Card, UPI, Net Banking,
 Example- Razorpay, payu etc
+
+//Formula to Design/Wright test cases
+Functional + Positive + Negative + Boundary(max,min) + Validation(UI validation message,Mandtory firld etc) + Security + Performance + Edge Cases (What if Newtwork failed, Refresh,timeout)

@@ -145,6 +145,27 @@ int a[]={12,1,24,56,60};
 Arrays.sort(a);
 System.out.println(Arrays.toString(a));  //Output: [1, 12, 24, 56, 60]
 
+//To Add Multiple Conditions
+int a=2;
+int b=2;
+
+if(a==b)
+{
+     System.out.println("Both Are Equals");
+}
+else if(a>b)
+{
+     System.out.println("a Is gerater");
+}
+else if(a<b)
+{
+     System.out.println("b Is gerater");
+}
+else
+{
+     System.out.println("Invalid");
+}
+
 
   
 

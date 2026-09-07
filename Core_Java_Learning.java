@@ -166,6 +166,22 @@ else
      System.out.println("Invalid");
 }
 
+//SingleTone class
+class Singleton {
+
+    // Create one object of Singleton class
+    private static Singleton obj = new Singleton();
+
+    // Private constructor
+    private Singleton() {
+    }
+
+    // Method to get the object
+    public static Singleton getInstance() {
+        return obj;
+    }
+}
+
 
   
 

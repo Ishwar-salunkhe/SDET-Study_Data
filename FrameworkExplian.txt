@@ -67,7 +67,9 @@ src
                ├── CucumberTestRunner
         └── utilities
                ├── ReadGlobalData (Read lobal data from GlobalData.Properties file-That code is here)
-               ├── ReadLocators ((Read Locators from Locator.Properties file-That code is here)
+               ├── ReadLocators (Read Locators from Locator.Properties file-That code is here)
+               ├── ReadExcelData
+
 
     └── resources
             ├── data

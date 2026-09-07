@@ -51,6 +51,30 @@ Extent Report data
 Features name-> How many Scenarios are there and there result as pass/failed -> How many steps
 
 
+src
+└── test
+    └── java
+        ├── pages
+               ├── DevicePageClass
+               ├── DiscoveryPageClass
+
+        ├── reusables
+               ├── 
+        ├── stepdefinition
+               ├── StepDefinationDevicepageClass
+               ├── StepDefinationDiscoverypageClass
+               ├── HooksClass (Before and After sceanrio setup-Browser and tear down setup with screenshot code)
+        ├── support
+        ├── testrunner
+               ├── CucumberTestRunner
+
+        └── utilities
+               ├── ReadGlobalData (Read lobal data from GlobalData.Properties file-That code is here)
+               ├── ReadLocators ((Read Locators from Locator.Properties file-That code is here)
+
+    └── resources
+
+
 
 
   

@@ -16,5 +16,24 @@ test("Practice of locator method", async({page})=>{
     //You can store the String in the element like below
     const DataEntrytext = await page.getByText("Data Entry Form").textContent()
     console.log(DataEntrytext);
-    //GetByRole Locator
-    await page.getByRole('button', { name: 'Sign in' }).click();
+    //GetByRole Locator ->  //If element is matching with multiple then use first()
+    await page.getByRole('button', { name: 'Sign in' }).first().click();
+
+//Auto-retrying assertions
+await expect(locator).toBeVisible();
+await expect(locator).toBeHidden();
+await expect(locator).toBeEnabled();
+await expect(locator).toBeDisabled();
+await expect(locator).toHaveText("Login");
+await expect(locator).toContainText("Login");
+await expect(locator).toHaveValue("Ishwar");
+await expect(locator).toBeChecked();
+await expect(locator).toHaveAttribute("id", "login-button");
+await expect(locator).toHaveCount(5);
+
+//Below are page level
+await expect(page).toHaveTitle("Home Page");
+await expect(page).toHaveURL("https://example.com/home");
+
+//For Negative matcher we can use not
+await expect(page).not.toHaveTitle("Swag Labs");

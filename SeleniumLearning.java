@@ -19,6 +19,9 @@ for (String windowIDs : windows) {
     }
 }
 
+driver.switchTo().window(parentWindow);
+switchTo().defaultContent(); //switch to main page
+
 //Same Logic as above for New tabs 
 WebElement openTabButton=driver.findElement(By.xpath("//button[text()='New Tab']"));
 openTabButton.click();

@@ -124,6 +124,7 @@ JavascriptExecutor js= (JavascriptExecutor) driver;  //Type casting becuase driv
 js.executeScript("arguments[0].scrollIntoView(true);",uploadFileText);
 js.executeScript("arguments[0].click();",name);
 js.executeScript("arguments[0].value='testJava';",name);
+js.executeScript("window.scrollBy(0, 500);"); //Scroll By pixel
 
 //Xapth and Xpath axex
 //xpath by contains

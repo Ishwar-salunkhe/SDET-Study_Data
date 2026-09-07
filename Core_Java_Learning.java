@@ -39,6 +39,12 @@ HasgMap hm = new HashMap();
 // 15. keySet() → Returns all keys as a Set.
 //  17. entrySet() → Returns all key-value pairs as a Set.
 
+    //We Can store diff types of data in hashmap
+    HashMap<Object, Object> hm= new HashMap<>();
+    hm.put("Name","Ishwar");
+    hm.put("Roll No",12);
+    System.out.println(hm.entrySet());  //Ouput: [Roll No=12, Name=Ishwar]
+
 //String
 String str="ishwar";
 System.out.println(str.indexOf('w'));  //Output==3

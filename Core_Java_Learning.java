@@ -138,12 +138,6 @@ System.out.println(sf);
 StringBuilder sf= new StringBuilder("welcome");
 System.out.println(sf);
 
-
-
-
-
-
-
 //Arrays Method
 Arrays.toString() // To print Array in readable format
 Arrays.sort(a); //To sort the array in ascending order
@@ -187,6 +181,15 @@ class Singleton {
         return obj;
     }
 }
+
+
+//Read Data from Properties file
+String filepath="src/test/resource/data/GlobalData.properties";
+FileInputStream file= new FileInputStream(filepath);
+Properties properties= new Properties();
+properties.load(file);
+String value=properties.getProperty("Key");
+file.close();
 
 
   

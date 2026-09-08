@@ -37,9 +37,9 @@ pm.test("status  string", () => {
 
 4. API Key – Uses a unique key to identify and authorize the API request.
 
-5. OAuth 1.0 – Uses consumer key, consumer secret, access token, and token secret for authentication.
+5. OAuth 1.0 –  Uses signatures to authenticate API requests.
 
-6. OAuth 2.0 – Uses an access token obtained from an authorization server to access protected APIs.
+6. OAuth 2.0 – Uses access tokens to authorize API requests.
 
 7. JWT (JSON Web Token) – Uses a signed JWT token to securely authenticate API requests.
 

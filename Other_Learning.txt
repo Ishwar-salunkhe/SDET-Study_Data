@@ -43,4 +43,11 @@ grep-> I use grep to search for specific errors, exceptions, or keywords in appl
 How do you test an API from Linux
 -> "I can use curl to send GET, POST, PUT and DELETE requests and verify the HTTP response
 
+Q-You are accessing QA while the server is restarting. What error might you get?
+->503 Service Unavailable
+502 Bad Gateway
+504 Gateway Timeout
+Connection Refused
+Connection Reset
+
 

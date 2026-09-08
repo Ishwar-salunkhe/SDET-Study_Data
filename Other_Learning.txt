@@ -5,3 +5,42 @@ Example- Razorpay, payu etc
 
 //Formula to Design/Wright test cases
 Functional + Positive + Negative + Boundary(max,min) + Validation(UI validation message,Mandtory firld etc) + Security + Performance + Edge Cases (What if Newtwork failed, Refresh,timeout)
+
+//Linux and Unix commands
+Command        Use                              Example
+--------------------------------------------------------------------------------
+pwd            Show current directory           pwd
+ls             List files/folders               ls -l
+cd             Change directory                 cd /var/log
+mkdir          Create directory                 mkdir testlogs
+rm             Delete file/folder               rm test.txt
+cp             Copy files                       cp test.txt backup.txt
+mv             Move/rename file                 mv old.txt new.txt
+cat            Display file contents            cat application.log
+less           Read large files                 less application.log
+head           First few lines                  head -20 log.txt
+tail           Last few lines                   tail -20 log.txt
+tail -f        Monitor live logs                tail -f application.log
+grep           Search text in files             grep "ERROR" application.log 
+find           Find files                       find /var/log -name "*.log"
+chmod          Change permissions                chmod 755 script.sh
+ps             Check running processes          ps -ef
+top            Monitor CPU/memory/processes     top
+kill           Stop a process                   kill 1234
+df             Check disk space                 df -h
+du             Check folder/file size           du -sh logs/
+free           Check memory                     free -h
+date           Check server date/time           date
+whoami         Show current user                whoami
+hostname       Show server name                 hostname
+clear          Clear terminal                   clear
+
+Control+D To exit from the command
+
+//Imp commands
+grep-> I use grep to search for specific errors, exceptions, or keywords in application logs
+
+How do you test an API from Linux
+-> "I can use curl to send GET, POST, PUT and DELETE requests and verify the HTTP response
+
+

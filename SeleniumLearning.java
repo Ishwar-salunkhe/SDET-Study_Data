@@ -235,6 +235,18 @@ List<WebElement> checkboxes =driver.findElements(By.xpath("//input[contains(@val
        checkboxes.get(i).click();
     }
 
+//Keyboard Keys Actions
+driver.findElement(By.id("search")).sendKeys("Selenium", Keys.ENTER);
+
+//By Actions class
+Actions actions = new Actions(driver);
+actions.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();
+actions.sendKeys(Keys.ENTER);
+   
+       
+       
+      
+
 
 
     

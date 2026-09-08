@@ -26,3 +26,34 @@ pm.test("status  string", () => {
   "name": "Ishwar",
   "role": "QA Engineer"
 }
+
+
+//Auths used in API testing Postman
+1. No Auth – No authentication is required to access the API.
+
+2. Basic Auth – Uses a username and password to authenticate the API request.
+
+3. Bearer Token – Sends an access token in the Authorization header as "Bearer <token>".
+
+4. API Key – Uses a unique key to identify and authorize the API request.
+
+5. OAuth 1.0 – Uses consumer key, consumer secret, access token, and token secret for authentication.
+
+6. OAuth 2.0 – Uses an access token obtained from an authorization server to access protected APIs.
+
+7. JWT (JSON Web Token) – Uses a signed JWT token to securely authenticate API requests.
+
+8. Digest Auth – Uses a username, password, and hashed challenge-response mechanism for authentication.
+
+9. AWS Signature – Uses AWS access key, secret key, and request signature to authenticate AWS API requests.
+
+10. Hawk Authentication – Uses a cryptographic MAC (Message Authentication Code) to authenticate API requests.
+
+11. NTLM Authentication – Uses Windows-based credentials for authentication, commonly used in Microsoft environments.
+
+12. Client Certificate Authentication – Uses a client-side SSL/TLS certificate to authenticate the API client.
+
+13. Session/Cookie Authentication – Uses a session ID or cookie generated after login to authenticate subsequent requests.
+
+//Rest Assured
+

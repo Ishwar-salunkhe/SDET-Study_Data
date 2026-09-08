@@ -52,4 +52,33 @@ pm.test("status  string", () => {
 
 
 //Rest Assured
+In given we are passing below things
+-header
+-Content Type
+-Auth
+-Path and Query params
+
+In When
+-Add reuqedt type (get, post, Put, patc, delete)
+
+Then
+-Validation for response code and response body
+
+//Sample Get Request
+@Test
+void getUser()
+{
+     given()
+
+	 .when
+	  .get("https://example.com//useres")
+	  
+	
+	 .then()
+	  .statusCode(200
+	  .body("page", equalsTo(20))
+	  .log().all();
+	  
+}
+
 

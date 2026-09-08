@@ -50,4 +50,17 @@ Q-You are accessing QA while the server is restarting. What error might you get?
 Connection Refused
 Connection Reset
 
+Q-Your automation test failed. How will you check the application logs?
+->I can use tail and grep.
+tail -f application.log
+grep "ERROR" application.log
+I would check the application logs using tail and grep to identify errors or exceptions related to my failed test.
+
+Q-Your application is very slow. How will you troubleshoot using Linux?
+->I will check CPU, memory, disk, and running processes.
+top
+free -h
+df -h
+ps -ef
+
 

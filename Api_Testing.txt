@@ -47,13 +47,9 @@ pm.test("status  string", () => {
 
 9. AWS Signature – Uses AWS access key, secret key, and request signature to authenticate AWS API requests.
 
-10. Hawk Authentication – Uses a cryptographic MAC (Message Authentication Code) to authenticate API requests.
-
 11. NTLM Authentication – Uses Windows-based credentials for authentication, commonly used in Microsoft environments.
 
-12. Client Certificate Authentication – Uses a client-side SSL/TLS certificate to authenticate the API client.
 
-13. Session/Cookie Authentication – Uses a session ID or cookie generated after login to authenticate subsequent requests.
 
 //Rest Assured
 

@@ -60,6 +60,12 @@ select * from(select * from employee
 order by salary desc limit 5)emp
 order by salary limit 1;
 
+//How do you find duplicate records?
+SELECT employee_name, COUNT(*)
+FROM employee
+GROUP BY employee_name
+HAVING COUNT(*) > 1;
+
 
 
 //From One Notes

@@ -4,10 +4,7 @@
 //The browser driver then communicates with the actual browser and performs the requested action.
 //The response is sent back through the same communication path to our test script."
 
-
-
 //Handling of Multiple Windows
-
 Set<String> windows = driver.getWindowHandles();
 for (String windowIDs : windows) {
 
@@ -43,7 +40,6 @@ wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
 
 //IMplicitly Wait
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 
 //All Driver Methods
 1. driver.get()
@@ -188,11 +184,28 @@ ElementNotInteractableException -> //Selenium finds the element, but cannot inte
    /* //More Possible reasons
     -Popup/modal is covering the element
     -Loader/spinner is still displayed
-    
-
-
 
     */
+
+//Frame and Iframe handling
+ driver.switchTo().frame(0);
+ driver.switchTo().frame("loginFrame"); //By ID or Name
+ WebElement frame = driver.findElement(By.id("loginFrame"));
+ driver.switchTo().frame(frame);  //As webelement
+
+ //Sample code by me
+driver.switchTo().frame("courses-iframe");
+WebElement courseLink=driver.findElement(By.xpath("(//a[text()='Courses'])[1]"));
+courseLink.click();
+WebElement productText=driver.findElement(By.xpath("//h2[text()='Browse products']"));
+WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(10));
+wait.until(ExpectedConditions.visibilityOf(productText));
+if(productText.isDisplayed())
+{
+    System.out.println("We are on the frame");
+}
+
+driver.switchTo().defaultContent(); //Go back to main Page
     
 
 //Drag And Drop Element

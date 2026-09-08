@@ -103,6 +103,21 @@ Jenkins: Jenkins is a CI/CD tool that we use to automate the build and test exec
 
 How Jenkins is used in QA Automation: Once the automation code is pushed to GitHub, Jenkins fetches the latest code from the repository and starts the configured job. Jenkins then executes the Maven command such as "mvn clean test" to build the project and execute the automation test cases. After execution, Jenkins generates or publishes the test reports, and based on the result, we can send notifications to the team.
 
+//DEvops Docker Related
+Docker Image, Container and Kubernates
+	• Docker image-> Which consist source code and dependency which required to run the application
+	• Docker hub-> It is the hub from where we can download the docker image
+	• From docker image we can create containers
+	• We can pull docker image from docker hub
+	• We can create the container from image-> docker run imageName -> this will create the container
+	• Docker container->A running instance of a Docker image.
+	• Image is static-it does not change once it is built but docker container is dynamic which can be run, stop and modified.
+	• Docker images is nothing but like set of instructions and by using that we can create the container.
+	• Docker image we can create from docker file which is set of commands.
+	• Docker container will package the all the source code, dependencies, libraries etc
+	• Kubernates is container orchestration tool which will manage the multiple container.
+It will help to scaling up and down the container, distributing the load etc.
+
 
 
 

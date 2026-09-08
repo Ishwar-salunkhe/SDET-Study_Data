@@ -81,4 +81,32 @@ void getUser()
 	  
 }
 
+//Sample Post requets
+
+@Test
+ pubic void CreateUser()
+ {
+       
+	   HashMap data = new HashMap();
+	   data.put("Name":"Ishwar");
+	   data.put("Role":"QA");
+	   
+	  
+	   given()
+	   .boy(data)
+	   .contentType("application/json")
+	   .auth().basic("username", "password")()
+	   .pathParam("id", 123)
+	   .queryParam("page", 2)
+        
+	   
+	   .when()
+	    .post("httsp://example.com//api")
+	   
+	   .then()
+	    .statusCode(200)
+		.log().all();
+
+ }
+
 

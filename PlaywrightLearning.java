@@ -214,6 +214,11 @@ page.bringToFront(); //Bring focus to particular tab/window- here page is the ma
 
 */
 
+//Mouse Action with Playwright
+page.mouse().move(500, 300);
+page.mouse().click(500, 300);
+page.mouse().dblclick(500, 300);
+
 
 
 

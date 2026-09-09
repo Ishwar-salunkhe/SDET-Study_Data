@@ -198,9 +198,17 @@ List<Page> pages=context.pages();
 System.out.println(pages.size());
   for(Page p:pages)
     {
-      System.out.println(p.title());
+    
+       String title = p.title();
+       System.out.println("Page Title: " + title);
+
+    if (title.equals("DeviceHome")) {
+
+        p.bringToFront();
+        System.out.println("DeviceHome page found.");
+        break; 
     }
-page.bringToFront(); //Bring focus to particular tab/window- here page is the main tab so it will move focus to that tab
+//page.bringToFront(); -> Bring focus to particular tab/window- here page is the main tab so it will move focus to that tab
 
 
 /*//Playwright Exceptions

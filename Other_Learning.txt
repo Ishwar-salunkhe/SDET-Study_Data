@@ -27,7 +27,7 @@ chmod          Change permissions                chmod 755 script.sh
 ps             Check running processes          ps -ef
 top            Monitor CPU/memory/processes     top
 kill           Stop a process                   kill 1234
-df             Check disk space                 df -h
+df             Check disk space                 df -h (disk Free- Human readable)
 du             Check folder/file size           du -sh logs/
 free           Check memory                     free -h
 date           Check server date/time           date

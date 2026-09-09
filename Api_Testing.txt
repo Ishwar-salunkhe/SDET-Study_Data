@@ -109,4 +109,49 @@ void getUser()
 
  }
 
+//
+HTTP Response Codes:
+
+200 - OK
+Request successful.
+
+201 - Created
+New resource successfully created.
+
+202 - Accepted
+Request accepted for processing, but processing is not completed yet.
+
+204 - No Content
+Request successful, but there is no response body.
+
+400 - Bad Request
+Invalid request data or incorrect request format.
+
+401 - Unauthorized
+Authentication is required or authentication failed.
+
+403 - Forbidden
+User is authenticated but does not have permission.
+
+404 - Not Found
+Requested resource/API endpoint does not exist.
+
+409 - Conflict
+Request conflicts with the current state of the resource.
+
+500 - Internal Server Error
+Unexpected error occurred on the server.
+
+501 - Not Implemented
+Server does not support the requested functionality.
+
+502 - Bad Gateway
+Gateway/proxy received an invalid response from the upstream server.
+
+503 - Service Unavailable
+Server is temporarily unavailable./When Server is restarting
+
+504 - Gateway Timeout
+Gateway/proxy did not receive a response from the upstream server in time.
+
 

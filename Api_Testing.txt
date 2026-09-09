@@ -154,4 +154,36 @@ Server is temporarily unavailable./When Server is restarting
 504 - Gateway Timeout
 Gateway/proxy did not receive a response from the upstream server in time.
 
+Q- How do you validate API data against the database?
+First, I send the API request and capture the response. Then I use the relevant ID from the response to query the database.
+API:
+User ID = 101
+Name = Ishwar
+
+Database:
+SELECT * FROM users WHERE id = 101;
+
+Expected:
+ID = 101
+Name = Ishwar
+
+Q- What is database testing in backend testing?
+-> Database testing verifies whether data is correctly inserted, updated, deleted, and retrieved from the database. I also validate constraints, relationships, data types, duplicate records, and data consistency.
+
+Q-How do you test an event-driven workflow?
+-> In an event-driven system, one service produces an event and another service consumes it. I verify that the event is generated correctly, contains the expected data, reaches the consumer, and triggers the expected business action.
+
+Q-What is Kafka and how would you test Kafka-based workflows?
+Kafka is an event streaming platform used to send and consume messages between services.
+Producer sends the correct event
+Topic receives the event
+Message contains correct data
+Consumer receives the event
+Consumer performs the expected action
+Duplicate messages are handled correctly
+Failed messages are handled properly
+
+
+
+
 

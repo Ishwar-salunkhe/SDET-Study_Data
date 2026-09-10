@@ -191,6 +191,11 @@ properties.load(file);
 String value=properties.getProperty("Key");
 file.close();
 
+===============x====================================
+  //To Get the Input from User //import java.util.Scanner;
+Scanner sc= new Scanner(System.in);
+System.out.println("Enter the in Number :");
+int num=sc.nextInt();
 
   
 

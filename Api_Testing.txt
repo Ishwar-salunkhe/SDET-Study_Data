@@ -183,6 +183,12 @@ Consumer performs the expected action
 Duplicate messages are handled correctly
 Failed messages are handled properly
 
+Q-What is data consistency
+Data consistency means the same data should remain correct across different systems or layers.
+API → Order Amount = ₹1000
+Database → Order Amount = ₹1000
+Event → Order Amount = ₹1000
+
 
 
 

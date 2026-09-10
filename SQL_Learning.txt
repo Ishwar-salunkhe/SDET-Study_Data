@@ -173,6 +173,14 @@ CREATE TABLE Persons (
     PRIMARY KEY (ID)
 );
 
+| Primary Key                              | Foreign Key                               |
+| ---------------------------------------- | ----------------------------------------- |
+| Uniquely identifies each row             | Creates a relationship between two tables |
+| Must be **unique**                       | Can contain **duplicate values**          |
+| Cannot be `NULL`                         | Can be `NULL` (unless restricted)         |
+| One primary key constraint per table     | A table can have multiple foreign keys    |
+| Example: `customer_id` in Customer table | Example: `customer_id` in Orders table    |
+
 
 
 

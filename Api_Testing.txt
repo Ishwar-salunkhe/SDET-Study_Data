@@ -52,6 +52,10 @@ let jsonData=pm.response.json();
 
 11. NTLM Authentication – Uses Windows-based credentials for authentication, commonly used in Microsoft environments.
 
+Q-Diff between basic auth and Digest auth
+-> Basic auth Passing username and password in the auth section, It is not secure
+-> Digest auth-> Passing username and pass in the encrypted format hence it is more secure than basic auth
+
 
 
 //Rest Assured

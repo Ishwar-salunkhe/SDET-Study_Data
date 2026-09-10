@@ -26,6 +26,15 @@ pm.test("Name is Ishwar", function () {
     pm.expect(jsonData.name).to.eql("Ishwar");
 });
 
+//To Validate Data Type
+pm.test("ID is a number", function () {
+    pm.expect(jsonData.id).to.be.a("number");
+});
+
+pm.test("Name is a string", function () {
+    pm.expect(jsonData.name).to.be.a("string");
+});
+
 
 //JSON Body Format
 

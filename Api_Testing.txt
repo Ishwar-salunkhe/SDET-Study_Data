@@ -4,7 +4,7 @@ Bugs in Api
 such as After passing invalid token but still it is accpeting
 
 What things we are Validating in api testing
--> response code, Body, header, schema, Error message handling
+-> response code, Body, header(Content Type, Content Lenght,Connection) schema, Error message handling
 
 -WE are getting 200 as response code when we use PUT
 -409 Conflict- When we trying to create the same data in the database which is already present
@@ -19,6 +19,9 @@ pm.test("status code name has string", () => {
 pm.test("status  string", () => {
    pm.response.to.have.header("Content-Type")
    });
+
+//To get the entire json body and stored into variable
+let jsonData=pm.response.json();
 
 //JSON Body Format
 
@@ -154,6 +157,11 @@ Server is temporarily unavailable./When Server is restarting
 504 - Gateway Timeout
 Gateway/proxy did not receive a response from the upstream server in time.
 
+//TO use the Environment variable we can use like below
+//{{base_url}} 	//enter {{ it will automatically show the env url
+
+
+
 Q- How do you validate API data against the database?
 First, I send the API request and capture the response. Then I use the relevant ID from the response to query the database.
 API:
@@ -188,6 +196,24 @@ Data consistency means the same data should remain correct across different syst
 API → Order Amount = ₹1000
 Database → Order Amount = ₹1000
 Event → Order Amount = ₹1000
+
+Q-How do you handle negative testing for APIs?
+-> I intentionally send invalid or unexpected data and verify that the API returns the correct status code and error message without corrupting backend data.
+Missing required field
+Invalid data type
+Invalid ID
+Invalid token
+Expired token
+Duplicate request
+Invalid JSON
+Boundary values
+
+Q-How do you test API authentication and authorization?
+->Valid token → 200
+Invalid token → 401
+Expired token → 401
+No token → 401
+Valid token + insufficient permission → 403
 
 
 

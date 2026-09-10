@@ -35,6 +35,12 @@ pm.test("Name is a string", function () {
     pm.expect(jsonData.name).to.be.a("string");
 });
 
+pm.test("response time", function () {
+    pm.expect(pm.response.responseTime).to.be.below(1000);
+});
+
+
+
 
 //JSON Body Format
 

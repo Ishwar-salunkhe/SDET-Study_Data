@@ -44,7 +44,34 @@ HasgMap hm = new HashMap();
     hm.put("Name","Ishwar");
     hm.put("Roll No",12);
     System.out.println(hm.entrySet());  //Ouput: [Roll No=12, Name=Ishwar]
+=====================x============================================================================
 
+  //Interface Points
+  //Interface contain abstract, default and static method
+  //we can declare default method as below which can have body implementation
+  // For default method- we need to declare default keyword
+  //Methods are public abstract by default
+  //Variables are public static final by default
+  //we can achieve mulitple Inheritance
+  //We can not create object of interface but we can create ref varibale
+  default void show()
+    {     
+       System.out.println("Show"); // ✅ default method 
+    }
+
+  //Abstract method
+    void show();  //No need to declare public and abstartc keyword as it is by default in nature
+  
+  
+
+
+
+
+
+
+
+
+  
 //String
 String str="ishwar";
 System.out.println(str.indexOf('w'));  //Output==3
@@ -199,7 +226,14 @@ int num=sc.nextInt();
 
 /*========================================================================
  Q-What are the Java 8 Features 
-  – Lambda expressions, Stream API, Functional Interfaces, Optional and Date/Time API.
+  1.Lambda expressions,
+  2.Stream API,
+  3.Date/Time API.
+  4.Functional Interfaces,
+  5.Default and Static Methods in Interface
+  6.Method References
+  7.Optional class
+  8.MetaSpace
 
   */
 

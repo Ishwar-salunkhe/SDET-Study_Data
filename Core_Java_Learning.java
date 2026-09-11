@@ -55,6 +55,7 @@ HasgMap hm = new HashMap();
   //we can achieve mulitple Inheritance
   //We can not create object of interface but we can create ref varibale
   //An interface can have a main() method becuase main is a static method so we can have it
+  //We cannot override an interface static method in the child class
   default void show()
     {     
        System.out.println("Show"); // ✅ default method 
@@ -62,6 +63,9 @@ HasgMap hm = new HashMap();
 
   //Abstract method
     void show();  //No need to declare public and abstartc keyword as it is by default in nature
+
+  //Static methods cannot be overridden because they belong to the class rather than the object. 
+  //If a child class defines a static method with the same signature as the parent, it is called method hiding, not method overriding.
   
   
 
@@ -230,12 +234,31 @@ int num=sc.nextInt();
   1.Lambda expressions,
   2.Stream API,
   3.Date/Time API.
+  ->Java 8 Date and Time API provides classes like LocalDate, LocalTime, and LocalDateTime to handle dates and times more easily and safely.
   4.Functional Interfaces,
   5.Default and Static Methods in Interface
   6.Method References
   7.Optional class
+  ->Optional class is a Java 8 feature used to represent a value that may or may not be present and helps avoid NullPointerException.
   8.MetaSpace
 
+  4.Functional Interface
+  -> It should have only one abstract method which we can use with lambda expression and method references
+
+  #Lambda expressions,
+  -> short way of writing a function/implementation which reduce the boilerplate(repetitive) code.
+  ->list.forEach(options -> System.out.println(options));
+  -> Runnable obj = () -> System.out.println("Hello");
+
+  #Method References
+  -> Method reference used to refer to an existing method using :: instead of writing a Lambda expression.
+
+  #Stream API
+  -> It is used to Process Collections of data in a simple and efficient way using operations like filter(), map(), sort(), and collect().
+
+
+
+  
   */
 
   

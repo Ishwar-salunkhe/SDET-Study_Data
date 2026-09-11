@@ -65,8 +65,7 @@ for(int i=0; i<str.length(); i++)
             }
         }
 
-
-
+==========================================================================================================
     //Same above programme with Duplicate Count
     String str = "Ishwhara";
     for (int i = 0; i < str.length(); i++) {
@@ -85,6 +84,24 @@ for(int i=0; i<str.length(); i++)
         System.out.println("Duplicate character is "+ str.charAt(i) + " and count is " + count);
     }
 }
+
+===========================================================================================================
+
+      //Get the count of specific word in the string
+        String str="i love my india india is my love";
+        String a[]=str.split(" ");
+        int count=0;
+
+        for(int i=0; i<a.length; i++)
+        {
+            if(a[i].equals("india"))
+            {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+=========================================================================================================
 
 
   //Get The Count of each Characters in the string
@@ -114,6 +131,25 @@ for(int i=0; i<str.length(); i++)
     //import java.util.Map;  -> need to import both if you use entrySet Method
 
 ===========================================x=============================================
+
+     //Get the count of each word-(Not character) in the string
+        String str="i love my india india is my love";
+        String a[]=str.split(" ");
+
+        HashMap<String,Integer>hm = new HashMap<>();
+
+        for(String word:a)
+        {
+            hm.put(word,hm.getOrDefault(word,0)+1);
+        }
+
+        for(String wordText:hm.keySet())
+        {
+            System.out.println(wordText+" = "+hm.get(wordText));
+        }
+
+==========================================================================================================
+
     //Substring Programme
 //Print only specific charcters from string- such as Print only Automation
 //Count the index which we need to remove such as java need to remove so last index is 3+1=4  

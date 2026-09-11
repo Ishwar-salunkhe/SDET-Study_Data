@@ -40,11 +40,9 @@ await expect(page).toHaveURL("https://example.com/home");
 //For Negative matcher we can use not
 await expect(page).not.toHaveTitle("Swag Labs");
 
-
-
-
-
-
+//playwright.config.js file
+//We can retries if any test cases is failing
+  retries: 1,
 
 
 

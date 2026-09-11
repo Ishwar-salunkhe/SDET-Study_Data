@@ -73,6 +73,9 @@ Q-What is RAG?
 -> RAG = Retrieval-Augmented Generation
 - It is fetching the data from the external resources such as websites, databases, Documents and then provide the data to the LLM.
 
+Q-Agentic AI?
+Agentic AI is an AI system that can independently plan, make decisions, use tools, and perform multiple steps to achieve a goal.
+
 
 
 

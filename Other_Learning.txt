@@ -63,4 +63,24 @@ free -h
 df -h
 ps -ef
 
+===========================================x================================================
+
+// AI Related =====
+Q-What is an LLM?
+->LLM (Large Language Model) is an AI model trained on large amounts of text and code that can understand natural language and generate human-like responses or code.eg Github copilot, claude, gemin etc
+
+Q-What is RAG?
+-> RAG = Retrieval-Augmented Generation
+- It is fetching the data from the external resources such as websites, databases, Documents and then provide the data to the LLM.
+
+
+
+
+
+
+
+
+
+
+
 

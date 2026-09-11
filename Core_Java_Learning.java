@@ -66,6 +66,19 @@ HasgMap hm = new HashMap();
 
   //Static methods cannot be overridden because they belong to the class rather than the object. 
   //If a child class defines a static method with the same signature as the parent, it is called method hiding, not method overriding.
+
+//Encapsulation
+class Employee {
+    private String name;   // private data
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
   
   
 

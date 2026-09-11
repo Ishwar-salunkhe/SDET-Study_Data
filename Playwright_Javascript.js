@@ -1,10 +1,12 @@
 import {test} from "@playwright/test"
 
-test("Practice of locator method", async({page})=>{
+test("Login test", async({page})=>{
      await page.goto("https://www.saucedemo.com/");
      await page.locator("//input[@id='user-name']").fill("standard_user");
      await page.locator("//input[@id='password']").fill("secret_sauce");
      await page.locator("//input[@id='login-button']").click();
+     let status=await page.getByText("Swag Labs").isVisible()
+     console.log("It Is visible "+status)
 })
 
 //Locators
@@ -37,6 +39,13 @@ await expect(page).toHaveURL("https://example.com/home");
 
 //For Negative matcher we can use not
 await expect(page).not.toHaveTitle("Swag Labs");
+
+
+
+
+
+
+
 
 
 

@@ -48,6 +48,23 @@ for(int i=0; i<str.length(); i++)
             }
       }
    }
+==========================================================================================
+
+  //Find Duplicate word in the String
+        String str="i love my india india is my love";
+        String a[]=str.split(" ");
+
+        for(int i=0; i<a.length; i++)
+        {
+            for(int j=i+1; j<a.length; j++)
+            {
+                if(a[i].equals(a[j]))  //same apporch as we have used for other- just use equals here
+                {
+                    System.out.println(a[i]+" Duplicate words");
+                }
+            }
+        }
+
 
 
     //Same above programme with Duplicate Count

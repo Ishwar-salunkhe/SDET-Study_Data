@@ -54,6 +54,7 @@ HasgMap hm = new HashMap();
   //Variables are public static final by default
   //we can achieve mulitple Inheritance
   //We can not create object of interface but we can create ref varibale
+  //An interface can have a main() method becuase main is a static method so we can have it
   default void show()
     {     
        System.out.println("Show"); // ✅ default method 

@@ -245,6 +245,13 @@ Expired token → 401
 No token → 401
 Valid token + insufficient permission → 403
 
+Q-What is POJO?
+-> POJO is a simple Java class mainly used to represent and hold data, typically with private fields, getters, setters, and constructors.
+-> Here we are declaring the variables with private access modifier and with the setter and getter method
+
+Q- What is Serialization and Deserialization?
+-> Serialization is converting a Java object or POJO into JSON, usually for sending an API request. Deserialization is converting the JSON API response back into a Java object or POJO so that we can easily validate and use the response data."
+
 
 
 

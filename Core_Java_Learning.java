@@ -197,6 +197,12 @@ Scanner sc= new Scanner(System.in);
 System.out.println("Enter the in Number :");
 int num=sc.nextInt();
 
+/*========================================================================
+ Q-What are the Java 8 Features 
+  – Lambda expressions, Stream API, Functional Interfaces, Optional and Date/Time API.
+
+  */
+
   
 
 

@@ -9,6 +9,18 @@ test("Login test", async({page})=>{
      console.log("It Is visible "+status)
 })
 
+//If You do not use page fixture the you need to launch browser and app like below
+import { test,chromium } from "@playwright/test";
+
+test("test app",async()=> {
+
+const browser=await chromium.launch();
+const context=await browser.newContext();
+const page=await context.newPage();
+await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+
+})
+
 //Locators
     await page.getByPlaceholder("Enter Name").fill("John");
     await page.getByLabel("Name:").fill("John");

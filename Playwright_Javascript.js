@@ -92,6 +92,31 @@ for(let i=0; i<checkCount; i++)
      console.log("Checked all checkbox");
  }
 
+//To Handle Multiple Window
+const [newPage]=await Promise.all([
+page.waitForEvent("popup"), //here No need to use await as it is in the Promise.All
+page.getByText("Open Window").click(),
+]);
+
+await newPage.bringToFront();
+const pageTitle= await newPage.title();
+console.log(pageTitle);
+await newPage.close();
+await page.bringToFront();  //Back to the main page
+console.log(await page.title());
+
+//To Get the Count of Web Table Header Row
+const headers=await page.locator("//table[@id='product' and @name='courses']/tbody/tr/th");
+
+const count=await headers.count();
+console.log(count);
+
+for(let i=0; i<count; i++)
+  {
+     console.log(await headers.nth(i).innerText());
+  }
+
+
 
 
 

@@ -1,4 +1,4 @@
-import {test} from "@playwright/test"
+import {test} from "@playwright/test" // It is called module- @playwright/test
 
 test("Login test", async({page})=>{
      await page.goto("https://www.saucedemo.com/");
@@ -44,11 +44,60 @@ await expect(page).not.toHaveTitle("Swag Labs");
 //We can retries if any test cases is failing
   retries: 1,
 
+//To Get the All text of links which are available on the web page
+const allLinks=await page.locator("//a").all();
+
+for(const links of allLinks)
+{
+   const alltext=await links.innerText();  //OR  const alltext=await links.textContent();
+   console.log(alltext);
+ } 
+
+=======================x================================================
+
+//DropDown Handle
+const dropDown = await page.locator("//select[@id='dropdown-class-example']");
+await dropDown.selectOption({label:"Option1"}); //Select by label
+await dropDown.selectOption("Option2"); //select by Value
+await dropDown.selectOption({index:3}); //select by index
+
+//To Get All Dropdown Option text
+const allText=await page.locator("//select[@id='dropdown-class-example']/option").allInnerTexts();
+for(const drpText of allText)
+ {
+     console.log(drpText);
+ }
+
+//To Verify particulatr test with the In build assertion
+await page.goto("https://exmple.com");
+const PageTitle=await page.getByText("Practice Page");
+await expect(PageTitle).toBeVisible();
 
 
 
 
 
+
+
+
+
+
+//VS code commands for Playwright js
+//To Check the HTML report       
+npx playwright show-report
+
+//To Run the all test cases from test folder
+npx playwright test
+
+//To Run the sepecific test
+npx playwright test HomePageTest.spec.js
+
+
+
+
+
+
+       
 
 /*=====> Playwright with Javascript Points < =============
 await page.goto('https://example.com');

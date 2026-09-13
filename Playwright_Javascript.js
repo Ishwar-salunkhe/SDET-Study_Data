@@ -73,6 +73,16 @@ await page.goto("https://exmple.com");
 const PageTitle=await page.getByText("Practice Page");
 await expect(PageTitle).toBeVisible();
 
+//To Handle Alert
+    page.on("dialog", async dialog => {
+
+        console.log(dialog.message());
+        await dialog.accept();
+        await dialog.dismiss();
+    })
+
+    await page.getByText("Confirm").click();
+
 
 
 

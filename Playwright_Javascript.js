@@ -128,6 +128,11 @@ for(let i=0; i<count; i++)
      console.log(await headers.nth(i).innerText());
   }
 
+//Frame Handling
+const frameLocator=page.frameLocator("//iframe[@id='courses-iframe']");
+await frameLocator.locator("//a[text()='Courses']").first().click();
+await expect(frameLocator.getByText("Browse products"));
+
 
 
 

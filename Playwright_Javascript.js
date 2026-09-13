@@ -77,11 +77,20 @@ await expect(PageTitle).toBeVisible();
 page.on("dialog", async dialog => {
 console.log(dialog.message());
 await dialog.accept();
-await dialog.dismiss();
-     
+await dialog.dismiss();    
 })
 
 await page.getByText("Confirm").click();
+
+//To Check all Checkboxes
+const allCheckbox=await page.locator("//div[@id='checkbox-example']/descendant::label");
+const checkCount=await allCheckbox.count();
+
+for(let i=0; i<checkCount; i++)
+ {
+     await allCheckbox.nth(i).click();
+     console.log("Checked all checkbox");
+ }
 
 
 

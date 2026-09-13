@@ -116,24 +116,32 @@ npx playwright test HomePageTest.spec.js
 
 
 
-       
+//=====JS Basics ==========X=======================X=======================
+//Data Types-> String, Number, Boolean, Undefined, Array, Object, 
 
-/*=====> Playwright with Javascript Points < =============
-await page.goto('https://example.com');
-The Java Playwright API is designed to feel synchronous, so you don't write async or await. 
-## Parelle test execution in Playwright javascript
--> Using Playwright.config.js file
-where we can add the workers (Nothing but Thread)
-export default defineConfig({
-workers: 3
+//For Loop Pattern
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 
-## Playwright Retries for re run the failed test cases
--In Playwright config.js file will add the retires value
-export default defineConfig({
-    retries: 2
- -In Playwright Java itself does not provide a direct retries configuration like Playwright Test.
- -Playwright Java + TestNG, you normally use TestNG's retry mechanism.-IRetryAnalyzer
- 
+//Arrays
+const fruits = ["Apple", "Mango", "Banana"];
+console.log(fruits[1]);
+console.log(fruits.length);
+fruits.push("Watermelon"); //To Add New Value In Array
 
-    */
+//Objects-> Object stores data as key-value pairs.
+   const employee={
+    name:"Ishwar",
+    age:20,
+    Address: "Pune"
+   }
+
+   console.log(employee.name);
+
+//typeof -> Used to find the data type.
+
+
+
+
 

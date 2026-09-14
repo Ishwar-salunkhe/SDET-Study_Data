@@ -32,6 +32,10 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     console.log(DataEntrytext);
     //GetByRole Locator ->  //If element is matching with multiple then use first()
     await page.getByRole('button', { name: 'Sign in' }).first().click();
+    await page.getByTestId("login-button").click(); //when you have HTMP like - <button data-testid="login-button">Login</button>
+    //To get the locator for mainly Image type
+    await page.getByAltText("Company Logo").click();
+
 
 //Auto-retrying assertions
 await expect(locator).toBeVisible();
@@ -132,6 +136,39 @@ for(let i=0; i<count; i++)
 const frameLocator=page.frameLocator("//iframe[@id='courses-iframe']");
 await frameLocator.locator("//a[text()='Courses']").first().click();
 await expect(frameLocator.getByText("Browse products"));
+
+//Drag and Drop
+const drgEle=await page.locator("//div[@id='draggable']");
+const dropEle=await page.locator("//div[@id='droppable']");
+await drgEle.dragTo(dropEle);
+expect(await page.getByText("Dropped!")).toBeVisible();
+
+//File Upload- Single File
+const fileUpload =await page.locator("//input[@id='singleFileInput']");
+await fileUpload.setInputFiles("D:\\AutomationTestdata\\SampleScreenShot1.png");
+
+//File Upload - Multiple files
+    const multipleFile=await page.locator("//input[@id='multipleFilesInput']");
+    await multipleFile.scrollIntoViewIfNeeded();
+    await multipleFile.setInputFiles([
+      "D:\\AutomationTestdata\\SampleScreenShot1.png",  //We are passing file in array
+      "D:\\AutomationTestdata\\imageNo1.png"
+
+    ]);
+
+//To Get All Cell Values from Web Table
+await page.goto("https://testautomationpractice.blogspot.com/");
+const allCellValues= await page.locator("//table[@name='BookTable']/tbody/tr/td");
+const allCellCount=await allCellValues.count();
+console.log(allCellCount);
+
+for(let i=0; i<allCellCount; i++)
+    {
+        const textCell=await allCellValues.nth(i).innerText();
+        await console.log(textCell);
+
+    }
+
 
 
 

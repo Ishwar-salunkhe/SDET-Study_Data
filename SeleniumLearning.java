@@ -118,6 +118,11 @@ File source = ts.getScreenshotAs(OutputType.FILE);
 File destination = new File("C:\\Screenshots\\test.png");
 FileUtils.copyFile(source, destination);
 
+//If we want to capture with date and time then
+String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
+File dest = new File("D:\\selenium\\screenshot_" + dateTime + ".png");
+);
+
 //Java script executor
 JavascriptExecutor js= (JavascriptExecutor) driver;  //Type casting becuase driver is variable of WebDriver and if we want to use the same then we need to typecast
 js.executeScript("arguments[0].scrollIntoView(true);",uploadFileText);

@@ -113,6 +113,10 @@ for(let i=0; i<checkCount; i++)
  }
 
 //To Handle Multiple Window
+//Promise.all() returns an array of results.
+//const result = await Promise.all([promise1,promise2]); //Output->[resultOfPromise1, resultOfPromise2]
+//JavaScript lets us use array destructuring: [newPage] -> Take the first value from the returned array and store it in newPage.
+
 const [newPage]=await Promise.all([
 page.waitForEvent("popup"), //here No need to use await as it is in the Promise.All
 page.getByText("Open Window").click(),
@@ -267,6 +271,30 @@ Q- How to Handle Upload file?
     "D:\\sampleTest1.png",
     "D:\\sampleTest2.png"
    ])
+
+   Q-How do you handle iframes?
+   -> const frame = page.frameLocator("#courses-iframe");
+      await frame.getByText("Courses").click();
+
+  Q-How do you handle multiple iframes?
+   -> const innerFrame = page.frameLocator("#outer-frame").frameLocator("#inner-frame");
+      await innerFrame.getByText("Inner Frame Element").click();
+
+  Q-What are fixtures in Playwright?
+  -> Fixture will provide the required environment or setup wich is required for the test
+  -> page, browser, context, request
+
+  Q-How do you take a screenshot?
+  -> await page.screenshot({
+    path: "fullpage.png",
+    fullPage: true
+});
+   
+    
+
+
+
+     
 
     
 

@@ -30,8 +30,12 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     //You can store the String in the element like below
     const DataEntrytext = await page.getByText("Data Entry Form").textContent()
     console.log(DataEntrytext);
+
     //GetByRole Locator ->  //If element is matching with multiple then use first()
+    //For the getByRole-> It is accepting 2 params 1st as String and 2nd as Object -{ name: 'Sign in' }
     await page.getByRole('button', { name: 'Sign in' }).first().click();
+
+
     await page.getByTestId("login-button").click(); //when you have HTMP like - <button data-testid="login-button">Login</button>
     //To get the locator for mainly Image type
     await page.getByAltText("Company Logo").click();
@@ -219,6 +223,65 @@ fruits.push("Watermelon"); //To Add New Value In Array
    console.log(employee.name);
 
 //typeof -> Used to find the data type.
+
+//==========================x==========================================================
+
+//Playwright JS Interview Quetions
+/*
+Q-What is a locator in Playwright?
+-> A locator is used to identify and interact with elements on a webpage.
+
+Q-What is the difference between locator() and getByRole()?
+-> locator() can use CSS/XPath selectors.
+->getByRole-> identifies elements based on their accessible role.
+
+Q-What is auto-waiting in Playwright?
+-> Playwright automatically waits for an element to become actionable before performing actions such as click, fill, or check.
+
+Q-How do you launch a browser?
+import {test,expect} from "@playwright/test";
+test("Launch Browser app",async ({page})=> {
+   await page.goto("https://google.com");
+})
+
+Q-Write the Login Scenario
+-> test("Login to app",async ({page})=> {
+   
+   await page.goto("https://example.com");
+   await page.getByPlaceholder("Enter username").fill("testUser");
+   await page.getByPlaceholder("Enter Password").fill("testpass");
+   await page.getByText("Login").click();
+   await expect(page).toHaveTitle("HomePage"); //Validation for page
+})
+
+Q- How to handle dropdown?
+->   const dropDown = await page.locator("//select[@id='dropdown-class-example']");
+    //await dropDown.selectOption({label:"India"});  //Visible Text on UI
+    //await dropDown.selectOption("IN");  //Select By Value
+    //await dropDown.selectOption({index:3});
+
+Q- How to Handle Upload file?
+->   const upoadFileButton= await page.getByText("UploadFile");
+   upoadFileButton.setInputFile("D:\\sampleTest.png"); //for single file
+   upoadFileButton.setInputFiles([
+    "D:\\sampleTest1.png",
+    "D:\\sampleTest2.png"
+   ])
+
+    
+
+
+
+
+
+
+
+
+
+
+*/
+
+     
 
 
 

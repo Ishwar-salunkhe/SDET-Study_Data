@@ -289,6 +289,69 @@ Q- How to Handle Upload file?
     path: "fullpage.png",
     fullPage: true
 });
+
+Q-How do you record video?
+-> In playwright.config.js file we can add the following
+use: {
+    video: 'on'
+}
+
+Q-What is the difference between expect() and normal JavaScript assertions?
+->Playwright's expect() provides auto-retrying assertions.
+
+Q-How do you execute tests in parallel?
+-> We can add the worked value in the config.js file workers: 4
+
+Q-How do you retry failed tests?
+->retries: 2 
+
+Q-How do you run a specific test?
+-> by using - npx playwright test login.spec.js
+
+Q-How do you run tests in headed mode?
+-> npx playwright test -headed
+-> Playwright Test runs in headless mode by default. 
+We can run it in headed mode using --headed or configure headless: false in the Playwright configuration.
+
+Q-How do you run tests in a specific browser?
+-> npx playwright test --project=chromium
+
+Q-How do you debug Playwright tests?
+-> npx playwright test --debug OR you can use -> await page.pause();
+
+Q-How would you design a Playwright framework?
+-> I would create a scalable framework using Playwright Test with Page Object Model. 
+I would maintain separate folders for pages, tests, utilities, test data and configuration.
+I would implement reusable fixtures, environment configuration, reporting, screenshots/traces on failure, retries and parallel execution.
+I would integrate the framework with Git and CI/CD tools such as Jenkins or GitHub Actions.
+PlaywrightProject
+│
+├── tests
+├── pages
+├── fixtures
+├── utils
+├── test-data
+├── playwright.config.js
+├── package.json
+└── reports
+
+Q-How do you handle flaky tests?
+-> First, I identify the root cause instead of simply adding waits.
+I check locator stability, synchronization issues, network dependency, test-data problems and environment issues. 
+I use Playwright's auto-waiting and retrying assertions, stable locators, proper fixtures and controlled retries.
+I also use trace, screenshot and video to investigate failures.
+
+Q-How do you explain your Playwright framework in an interview?
+-> "I have worked with Playwright using JavaScript and Playwright Test. 
+I follow Page Object Model to maintain locators and reusable actions separately from test cases. 
+I use stable locators such as getByRole, getByLabel and getByTestId. 
+I use Playwright's auto-waiting and auto-retrying assertions instead of unnecessary hard waits. 
+I have worked with frames, popups, multiple pages, file uploads, dialogs, dropdowns, API testing and network interception. 
+I also use fixtures, retries, parallel execution, screenshots, tracing and CI/CD integration."
+
+Q- Build tool for Playwright test javascript projtect
+-> Playwright JavaScript, we use npm/npx and package.json for dependency and project management
+
    
     
 

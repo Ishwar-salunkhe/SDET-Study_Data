@@ -183,6 +183,15 @@ await fileUpload.setInputFiles("D:\\AutomationTestdata\\SampleScreenShot1.png");
 
     ]);
 
+ //File Download
+ const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    page.getByText("Download").click()
+]);
+
+await download.saveAs("C:\\Downloads\\file.pdf");     
+
+
 //To Get All Cell Values from Web Table
 await page.goto("https://testautomationpractice.blogspot.com/");
 const allCellValues= await page.locator("//table[@name='BookTable']/tbody/tr/td");

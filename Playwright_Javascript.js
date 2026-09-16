@@ -33,7 +33,11 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
 
     //GetByRole Locator ->  //If element is matching with multiple then use first()
     //For the getByRole-> It is accepting 2 params 1st as String and 2nd as Object -{ name: 'Sign in' }
+    //getByRole- is indetify OR locate the element based on there accecible role
     await page.getByRole('button', { name: 'Sign in' }).first().click();
+    await page.getByRole("link",{name:"PlaywrightPractice"}).click();
+    await page.getByRole("checkbox", { name: "Accept Terms" }).check();
+    await page.getByRole("textbox", { name: "Username" }).fill("Ishwar");
 
 
     await page.getByTestId("login-button").click(); //when you have HTMP like - <button data-testid="login-button">Login</button>

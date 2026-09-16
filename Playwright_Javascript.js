@@ -133,6 +133,21 @@ await newPage.close();
 await page.bringToFront();  //Back to the main page
 console.log(await page.title());
 
+//If Multiple Windows are open the How to Naviagte to perticular window
+test("Multiple window handle", async ({page,context})=> {
+ 
+await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+const pages = context.pages();
+for (const p of pages) {
+    const pageTitle = await p.title();
+
+    if (pageTitle === "Mobile Page") {
+        await p.bringToFront();
+        console.log("We are in the correct page: " + pageTitle);
+        break;
+    }
+}
+
 //To Get the Count of Web Table Header Row
 const headers=await page.locator("//table[@id='product' and @name='courses']/tbody/tr/th");
 

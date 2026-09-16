@@ -226,6 +226,13 @@ npx playwright test
 //To Run the sepecific test
 npx playwright test HomePageTest.spec.js
 
+npx playwriht test --workers=4  //when we say 4, and if we use chrome, then it will run the test cases in the 4 browser instance(Not Tab/window)
+npx playwriht test --debug 
+npx playwriht test --headed
+npx playwriht test --project=chromium
+npx playwright test --retries=2
+npx playwright test --last-failed     
+
 
 
 
@@ -379,6 +386,9 @@ I also use fixtures, retries, parallel execution, screenshots, tracing and CI/CD
 
 Q- Build tool for Playwright test javascript projtect
 -> Playwright JavaScript, we use npm/npx and package.json for dependency and project management
+
+Q-How do you run last failed test cases?
+-> npx playwright test --last-failed
 
    
     

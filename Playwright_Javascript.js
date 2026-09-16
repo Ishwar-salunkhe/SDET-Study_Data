@@ -45,7 +45,7 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await page.getByAltText("Company Logo").click();
 
 
-//Auto-retrying assertions
+//Auto-retrying assertions //Hard assertion
 await expect(locator).toBeVisible();
 await expect(locator).toBeHidden();
 await expect(locator).toBeEnabled();
@@ -56,6 +56,9 @@ await expect(locator).toHaveValue("Ishwar");
 await expect(locator).toBeChecked();
 await expect(locator).toHaveAttribute("id", "login-button");
 await expect(locator).toHaveCount(5);
+
+//Soft assertion
+await expect.soft(locator).toBeVisible();
 
 //Below are page level
 await expect(page).toHaveTitle("Home Page");
@@ -231,7 +234,8 @@ npx playwriht test --debug
 npx playwriht test --headed
 npx playwriht test --project=chromium
 npx playwright test --retries=2
-npx playwright test --last-failed     
+npx playwright test --last-failed
+npx playwright codegen   //To generate the script      
 
 
 
@@ -262,6 +266,9 @@ fruits.push("Watermelon"); //To Add New Value In Array
    console.log(employee.name);
 
 //typeof -> Used to find the data type.
+
+ //Data Types methods    
+ str.includes("Auto")    
 
 //==========================x==========================================================
 

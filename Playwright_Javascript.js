@@ -425,15 +425,18 @@ test("Test 2", async ({ page }) => {
 });
 
 ===================================x=========================================x=====================
-
+Q-Grouping of test cases
 test.describe("@smoke", () => {
     test("Valid Login", async ({ page }) => {});
     test("Invalid Login", async ({ page }) => {});
 }); 
 
 run through terminal
-npx playwright test -grep "@smoke"     
+npx playwright test -grep "@smoke"
 
+Q- How to do tagging?
+test("Asserion Practice @smoke", async({page})=>{
+We can run thar test cases using - npx playwright test --grep "@smoke"
    
     
 

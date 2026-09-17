@@ -229,13 +229,14 @@ npx playwright test
 //To Run the sepecific test
 npx playwright test HomePageTest.spec.js
 
-npx playwriht test --workers=4  //when we say 4, and if we use chrome, then it will run the test cases in the 4 browser instance(Not Tab/window)
-npx playwriht test --debug 
-npx playwriht test --headed
-npx playwriht test --project=chromium
+npx playwright test --workers=4  //when we say 4, and if we use chrome, then it will run the test cases in the 4 browser instance(Not Tab/window)
+npx playwright test --debug 
+npx playwright test --headed
+npx playwright test --project=chromium
 npx playwright test --retries=2
 npx playwright test --last-failed
-npx playwright codegen   //To generate the script      
+npx playwright codegen   //To generate the script
+npx playwright test --grep "@smoke"
 
 
 
@@ -396,6 +397,42 @@ Q- Build tool for Playwright test javascript projtect
 
 Q-How do you run last failed test cases?
 -> npx playwright test --last-failed
+
+Q-Hooks In Playwright
+-> In Playwright, hooks are special functions that run automatically before or after tests. 
+ They are mainly used for setup and cleanup.
+ -beforeEach -> Will run before every test- Used for setup code
+ after each -> will run after every test - used for teardown/claenup code
+ BeforeAll-> Once before all test
+ AfterAl-> Once after all test
+
+ test.beforeEach(async ({ page }) => {
+    await page.goto("https://example.com");
+});
+
+test.afterEach(async({page}) => {
+  await page.close();
+  console.log("After each block executed");
+
+})
+
+test("Test 1", async ({ page }) => {
+    console.log("Test 1");
+});
+
+test("Test 2", async ({ page }) => {
+    console.log("Test 2");
+});
+
+===================================x=========================================x=====================
+
+test.describe("@smoke", () => {
+    test("Valid Login", async ({ page }) => {});
+    test("Invalid Login", async ({ page }) => {});
+}); 
+
+run through terminal
+npx playwright test -grep "@smoke"     
 
    
     

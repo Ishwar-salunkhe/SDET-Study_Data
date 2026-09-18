@@ -208,6 +208,42 @@ for(let i=0; i<allCellCount; i++)
 
     }
 
+============================x===========================x==========================================
+
+//Run the specific test cases using Tag 
+test("Mytest1 @sanity", async({page})=> {
+ console.log("My test 1 with sanity tag");
+
+})
+
+test("test2npx @regression", async({page})=> {
+   console.log("My test 2 with Regression tag");
+})
+
+//Mulitple tagging allowed
+test('Login functionality @smoke @regression', async ({ page }) => {
+    // test steps
+});
+
+//terminal commad
+npx playwright test --grep "@sanity"
+
+//To Exclude the test case
+npx playwright test --grep-invert @regression
+//We can use like this as well
+npx playwright test --grep "@sanity" --grep-invert "@smoke"    
+
+//Playwriht annotations
+//To Skip the test case
+test.skip("Mytest1 @sanity", async({page})=> {
+ console.log("My test 1 with sanity tag");  
+})
+
+//To Run the particular test case
+test.only("Mytest1 @sanity", async({page})=> {
+ console.log("My test 1 with sanity tag");
+})
+
 
 
 
@@ -445,6 +481,10 @@ It provides a timeline of actions along with screenshots, DOM snapshots, network
 We can use it to identify exactly where and why a test failed.
 We can enable it using the trace option in playwright.config.js and open the generated trace using npx playwright show-trace trace.zip."
 Undr config file we can add property as - trace: 'retain-on-failure'
+
+Q-What is the default time in Playwright?
+-> "Playwright Test has a default test timeout of 30 seconds and a default expect assertion timeout of 5 seconds.
+Action and navigation timeouts are 0 by default, meaning no separate timeout is configured for them."
    
     
 

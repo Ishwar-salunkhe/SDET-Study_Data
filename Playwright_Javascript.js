@@ -237,6 +237,7 @@ npx playwright test --retries=2
 npx playwright test --last-failed
 npx playwright codegen   //To generate the script
 npx playwright test --grep "@smoke"
+npx playwright test JS_Practice.spec.js --project=chromium --headed  //we can use like this as well     
 
 
 

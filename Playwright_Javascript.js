@@ -485,6 +485,11 @@ Undr config file we can add property as - trace: 'retain-on-failure'
 Q-What is the default time in Playwright?
 -> "Playwright Test has a default test timeout of 30 seconds and a default expect assertion timeout of 5 seconds.
 Action and navigation timeouts are 0 by default, meaning no separate timeout is configured for them."
+
+Q-What is package.json?
+it is mainly used to manage dependencies, project information, and test commands/scripts.
+
+Q-Build tool in Playwright JS is -> npm- Node package manager
    
     
 

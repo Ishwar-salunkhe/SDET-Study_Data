@@ -330,7 +330,7 @@ Q- How to Handle Upload file?
   Q-How do you take a screenshot?
   -> await page.screenshot({
     path: "fullpage.png",
-    fullPage: true
+    fullPage: true  //This is optional if we dont pass this param it will capture the normal screenshot
 });
 
 Q-How do you record video?

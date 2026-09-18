@@ -438,6 +438,13 @@ npx playwright test -grep "@smoke"
 Q- How to do tagging?
 test("Asserion Practice @smoke", async({page})=>{
 We can run thar test cases using - npx playwright test --grep "@smoke"
+
+Q-What is Trace Viewer in Playwright?
+-> "Playwright Trace Viewer is a debugging feature that records the complete execution details of a test.
+It provides a timeline of actions along with screenshots, DOM snapshots, network requests, console logs, and errors.
+We can use it to identify exactly where and why a test failed.
+We can enable it using the trace option in playwright.config.js and open the generated trace using npx playwright show-trace trace.zip."
+Undr config file we can add property as - trace: 'retain-on-failure'
    
     
 

@@ -179,6 +179,21 @@ System.out.println(result);
         }
       }
 
+=================================================x=======================================================================
+
+//Replace specific word in the String sentense  
+String str="Welcome to Java and Python Automation";
+String temp="temp";
+
+ str=str.replace("Java",temp);
+ str=str.replace("Python", "Java");
+ str=str.replace(temp,"Python");
+
+System.out.println(str);
+
+===========================================================================
+  
+
   
 
 

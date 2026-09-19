@@ -76,6 +76,13 @@ Q-What is RAG?
 Q-Agentic AI?
 Agentic AI is an AI system that can independently plan, make decisions, use tools, and perform multiple steps to achieve a goal.
 
+Q-What is hallucination?
+-> When AI model giving Incorrect Answers
+-> It is happening due Insufficient Training Data and lack of fine Tunning
+-> To Explain hallucination-> Give example of Tobacco Kheer
+-> When ask to AI model-> Give me recipe of tobacco kheer, There is a no receipe of Tobacco kheer but still it will give you details with confidence. then it is nothing but hallucnation
+
+
 
 
 

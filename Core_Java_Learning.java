@@ -79,6 +79,9 @@ class Employee {
         return name;
     }
 }
+
+//Constructor
+//Used to initilize the object
   
   
 

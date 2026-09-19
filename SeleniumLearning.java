@@ -177,6 +177,10 @@ System.out.println(cellValue);
 //Similar we ave another method to get the Numeric Value
 String cellValue=sheet.getRow(1).getCell(0).getNumericCellValue();
 
+//At the end we can close the file and workbook
+workbook.close();
+file.close();
+
 //Exceptions In selenium
 NoSuchElementException -> //Locator incorrect, Element is not present in the DOM, Page is not loaded properly, Element is inside the frame
 StaleElementReferenceException

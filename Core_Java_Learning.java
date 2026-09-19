@@ -82,6 +82,8 @@ class Employee {
 
 //Constructor
 //Used to initilize the object
+//Constructor is not mandatory to explicitly define.
+//Java provides a default constructor if you don't define any constructor yourself. If you dont define any constructor but still that class have the default constructor. So user can create object of that class as well.
   
   
 

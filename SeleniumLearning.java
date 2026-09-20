@@ -251,6 +251,40 @@ driver.findElement(By.id("search")).sendKeys("Selenium", Keys.ENTER);
 Actions actions = new Actions(driver);
 actions.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();
 actions.sendKeys(Keys.ENTER);
+
+//Page class sample with Page factory
+public class HRM_LoginPage {
+
+    WebDriver driver;
+
+   //Locators
+    @FindBy(xpath="//input[@placeholder='Username']")
+    private WebElement usernameInput;
+
+    @FindBy(xpath="//input[@placeholder='Password']")
+    private WebElement passwordInput;
+
+    @FindBy(xpath="//button[normalize-space(.)='Login']")
+    private WebElement loginButton;
+
+    //Constructor
+   public HRM_LoginPage(WebDriver driver){
+       this.driver=driver;
+       PageFactory.initElements(driver,this);
+   }
+
+   //Actions Methods
+   public void enterUsername(String username){
+       usernameInput.sendKeys("Admin");
+   }
+
+   public void enterPassword(String password){
+       passwordInput.sendKeys("admin123");
+   }
+
+   public void clickOnLoginButton(){
+     loginButton.click();
+   }
    
        
        

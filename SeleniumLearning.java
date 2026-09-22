@@ -289,7 +289,12 @@ public class HRM_LoginPage {
 //How to Open chromebrowser in Incognito
 ChromeOptions option= new ChromeOptions();
 option.addArguments("--incognito");
-WebDriver driver= new ChromeDriver(option);   
+WebDriver driver= new ChromeDriver(option);
+
+//PageFactory
+//We use PageFactory with POM to simplify WebElement initialization and keep locators and actions organized.
+//Using @FindBy makes the Page Class cleaner and reduces repetitive driver.findElement() calls. 
+//However, PageFactory is optional; POM can also be implemented using By locator
     
    
        

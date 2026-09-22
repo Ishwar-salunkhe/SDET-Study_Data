@@ -295,6 +295,88 @@ WebDriver driver= new ChromeDriver(option);
 //We use PageFactory with POM to simplify WebElement initialization and keep locators and actions organized.
 //Using @FindBy makes the Page Class cleaner and reduces repetitive driver.findElement() calls. 
 //However, PageFactory is optional; POM can also be implemented using By locator
+
+//Sample BDD+SElenium+Java Framework Login Test
+
+Feature:Login Test 
+Scenario Outline: Login test with Valid Credentials
+    
+Given User is on the login page
+When User enter the username as "<username>"
+And User enter the password as "<password>"
+And User click on the login button
+Then Verify user landed to home page and page title as "<expectedTitle>"
+
+Examples:
+|username| password | expectedTitle |
+|test    | test123  |Device Details |
+
+//Page Class
+public class LoginPage{
+	
+	WebDriver driver;
+	public LoginPage(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver,this);	
+	}
+	
+    //locators
+	@FindBy(xpath="//input[@id='username']"
+	private WebElement username;
+	
+	@FindBy(xpath="//inoputcscsc")
+	private WebElement password;
+	
+	@FindBy(xpath="loginButton")
+	private WebElement loginButton;
+	
+	//Action Methods
+	public void launchApp(){
+	//this will be perform from Hooks class
+	}
+	
+	public void enterUsername(String username){
+		username.sendKeys(username);
+	}
+	
+	public void enterPass(String password){
+		password.sendKeys(password);	
+	}
+	
+	public void clickOnLoginButton(){
+		loginButton.click();	
+	}
+	
+	publiv String verifyDeviceDetailsPage(){
+		return driver.getTitle();
+	}
+	
+	
+	//Step Defination class
+	WebDriver driver;
+    LoginPage login;
+	
+	@Given("User is on the login page")
+	public void userIsOnLoginPage(){
+		//this will be perform from Hooks class
+	}
+	
+	@When("User enter the username as {string}")
+	public void enterUsername(String username){
+		login.enterUsername(username);
+	}
+	
+	@And("User enter the password as {string}"){
+		login.enterPass(password);
+	}
+	
+	@And("User click on the login button"){
+		login.clickOnLoginButton();
+		
+	@Then("Verify user landed to home page and page title as {string}"){
+		Assert.assertEquals(login.verifyDeviceDetailsPage,expectedTitle);	
+	}	
+}
     
    
        

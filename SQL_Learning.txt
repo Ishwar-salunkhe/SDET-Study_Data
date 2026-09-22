@@ -91,6 +91,16 @@ HAVING COUNT(*) > 1;
 • Data Manipulation Lang: 1.use to manipulate or manage the data in the table 2.coomands are: select, insert, Update  3.We can rollback  4.speed is slow
 • Use select Distinct to fetch the unique data
 The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+Group By
+We use GROUP BY in SQL to group rows having the same value, usually so that we can perform aggregate calculations like COUNT(), SUM(), AVG(), MAX(), and MIN() for each group.
+Here department are same
+
+Example
+Name	Department	Salary
+Amit	IT	        50000
+Rahul	IT	        60000
+Priya	HR	        45000
+Neha	HR	        55000
 
 
 

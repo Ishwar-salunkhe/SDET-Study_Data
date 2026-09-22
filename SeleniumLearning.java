@@ -285,6 +285,12 @@ public class HRM_LoginPage {
    public void clickOnLoginButton(){
      loginButton.click();
    }
+
+//How to Open chromebrowser in Incognito
+ChromeOptions option= new ChromeOptions();
+option.addArguments("--incognito");
+WebDriver driver= new ChromeDriver(option);   
+    
    
        
        

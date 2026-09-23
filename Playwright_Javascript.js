@@ -490,6 +490,9 @@ Q-What is package.json?
 it is mainly used to manage dependencies, project information, and test commands/scripts.
 
 Q-Build tool in Playwright JS is -> npm- Node package manager
+
+Q-Which reports you have used in Playwright framework?
+-> We have used in build Report - HTML report
    
     
 

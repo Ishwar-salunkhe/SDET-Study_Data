@@ -208,6 +208,10 @@ for(let i=0; i<allCellCount; i++)
 
     }
 
+ //Scrolling 
+ await page.evaluate(() => window.scrollBy(0, 500)) //By distance
+ await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); //Go to the bottom     
+
 ============================x===========================x==========================================
 
 //Run the specific test cases using Tag 

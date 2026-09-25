@@ -44,6 +44,10 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     //To get the locator for mainly Image type
     await page.getByAltText("Company Logo").click();
 
+  //If 2 OR more than 2 loctors are matching then we can use as below as well
+await page.locator("//input[@type='radio']").last();
+await page.locator("//input[@type='radio']").first();
+
 
 //Auto-retrying assertions //Hard assertion
 await expect(locator).toBeVisible();
@@ -497,6 +501,9 @@ Q-Build tool in Playwright JS is -> npm- Node package manager
 
 Q-Which reports you have used in Playwright framework?
 -> We have used in build Report - HTML report
+
+If we have multiple file under test folder, then all test files will run Parallely
+And If we have 2-3 test under one test file, then those test will run sequentially
    
     
 

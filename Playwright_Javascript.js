@@ -302,6 +302,11 @@ console.log(fruits[1]);
 console.log(fruits.length);
 fruits.push("Watermelon"); //To Add New Value In Array
 
+//JavaScript split method
+const str="test@RahulSheety.com";
+const array = str.split("@");
+console.log(array[1]);
+
 //Objects-> Object stores data as key-value pairs.
    const employee={
     name:"Ishwar",
@@ -322,6 +327,10 @@ fruits.push("Watermelon"); //To Add New Value In Array
 /*
 Q-What is a locator in Playwright?
 -> A locator is used to identify and interact with elements on a webpage.
+
+-> await only need to use when you perform some action
+ const dropdown= page.locator("#country");  //here you are storing the element only hence Not required. But if you used still
+ it will work
 
 Q-What is the difference between locator() and getByRole()?
 -> locator() can use CSS/XPath selectors.
@@ -364,9 +373,15 @@ Q- How to Handle Upload file?
    -> const frame = page.frameLocator("#courses-iframe");
       await frame.getByText("Courses").click();
 
+   Q- How to handle Blinking link/Element?
+   -> const binkLink = await page.locator("//a[contains(text(),'help you prepare for your next QA job')]");
+      await expect(binkLink).toHaveAttribute("class","blinkingText");  //Blinking element should have always some attribute value
+
   Q-How do you handle multiple iframes?
    -> const innerFrame = page.frameLocator("#outer-frame").frameLocator("#inner-frame");
       await innerFrame.getByText("Inner Frame Element").click();
+
+  -> We Have 3 types of promises-> Pending, Rejected, Fullfilled    
 
   Q-What are fixtures in Playwright?
   -> Fixture will provide the required environment or setup wich is required for the test

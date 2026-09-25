@@ -21,6 +21,12 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
 
 })
 
+//Custome Expect assertion timeout for test method level
+const slowExpect = expect.configure({timeout : 9000});
+await page.goto("https://testautomationpractice.blogspot.com/");
+await slowExpect(await page.getByText("Automation Testing Practice")).toHaveText("Automation Testing Practice")
+
+
 //Locators
     await page.getByPlaceholder("Enter Name").fill("John");
     await page.getByLabel("Name:").fill("John");

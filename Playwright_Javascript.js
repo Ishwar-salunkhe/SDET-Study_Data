@@ -281,7 +281,8 @@ npx playwright test --retries=2
 npx playwright test --last-failed
 npx playwright codegen   //To generate the script
 npx playwright test --grep "@smoke"
-npx playwright test JS_Practice.spec.js --project=chromium --headed  //we can use like this as well     
+npx playwright test JS_Practice.spec.js --project=chromium --headed  //we can use like this as well
+npx playwright test --ui  //This will open Playwright test Runner OR UI test runner where we can run and see the test execution such as screenshot, execution details
 
 
 
@@ -320,6 +321,8 @@ Q-Write the Login Scenario
    await page.getByText("Login").click();
    await expect(page).toHaveTitle("HomePage"); //Validation for page
 })
+
+ //By DEfault timeout is 5 seconds for expect assertion- means it will wait for 5 sec and if not then it will fail    
 
 Q- How to handle dropdown?
 ->   const dropDown = await page.locator("//select[@id='dropdown-class-example']");

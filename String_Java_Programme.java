@@ -192,6 +192,28 @@ String temp="temp";
 System.out.println(str);
 
 ===========================================================================
+
+      //Replace vovels with * in String Tomorrow
+      String str="Tomorrow";
+      str=str.toLowerCase();
+      String result="";
+     
+      for(int i=0; i<str.length(); i++)
+      {
+        char ch=str.charAt(i);
+        if(ch=='a' ||ch=='e' ||ch=='i' ||ch=='o'|| ch=='u')
+        {
+           result=result+"*";
+        }
+        else
+        {
+          result=result+ch;
+        }
+
+      }
+
+      System.out.println(result);
+==============================x==================================x=============x======================
   
 
   

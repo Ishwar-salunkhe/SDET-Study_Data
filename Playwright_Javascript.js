@@ -1,6 +1,7 @@
 import {test} from "@playwright/test" // It is called module- @playwright/test
 
 test("Login test", async({page})=>{
+     test.setTimeout(60000);  //We can add test level custome timeout if that test cases is required more timeout
      await page.goto("https://www.saucedemo.com/");
      await page.locator("//input[@id='user-name']").fill("standard_user");
      await page.locator("//input[@id='password']").fill("secret_sauce");
@@ -25,6 +26,10 @@ await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
 const slowExpect = expect.configure({timeout : 9000});
 await page.goto("https://testautomationpractice.blogspot.com/");
 await slowExpect(await page.getByText("Automation Testing Practice")).toHaveText("Automation Testing Practice")
+
+//Custome Expect assertion timeout for step level
+await page.goto("https://testautomationpractice.blogspot.com/");
+await expect(await page.getByText("Automation Testing Practice")).toBeVisible({timeout: 10000}); //Step level timeout
 
 
 //Locators

@@ -19,6 +19,8 @@ const browser=await chromium.launch();
 const context=await browser.newContext();
 const page=await context.newPage();
 await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+await page.goBack();  //Navigation from Browser back button
+await page.goForward();     
 
 })
 
@@ -512,6 +514,10 @@ Q-Which reports you have used in Playwright framework?
 
 If we have multiple file under test folder, then all test files will run Parallely
 And If we have 2-3 test under one test file, then those test will run sequentially
+
+Q-To Check the Playwriht test report
+-> Will have Playwright-report folder->index.html-> copy Path-> open in the browser
+  and To view the tracee result, we have another folder as test-results
    
     
 

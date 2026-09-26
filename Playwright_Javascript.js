@@ -263,6 +263,18 @@ test.only("Mytest1 @sanity", async({page})=> {
  console.log("My test 1 with sanity tag");
 })
 
+//Q- How to set action timeout globally?
+// In config file, we can add action timeout
+export default defineConfig({
+  use: {
+    // Maximum time each action can take (e.g., 10 seconds)
+    actionTimeout: 10 * 1000, 
+  },
+});
+
+//For step level also we can add like this- IF this click is taking time more than exepcted then we can provide timeout like this
+await page.locator("//input[@id='login-button']").click({timeout:10000});
+
 
 
 
@@ -290,7 +302,7 @@ npx playwright test --headed
 npx playwright test --project=chromium
 npx playwright test --retries=2
 npx playwright test --last-failed
-npx playwright codegen   //To generate the script
+npx playwright codegen websiteURL   //To generate the script
 npx playwright test --grep "@smoke"
 npx playwright test JS_Practice.spec.js --project=chromium --headed  //we can use like this as well
 npx playwright test --ui  //This will open Playwright test Runner OR UI test runner where we can run and see the test execution such as screenshot, execution details
@@ -401,6 +413,7 @@ Q-How do you run tests in a specific browser?
 
 Q-How do you debug Playwright tests?
 -> npx playwright test --debug OR you can use -> await page.pause();
+-> when we run above command, It will open one playwright inspector, from there we can run step over for each step
 
 Q-How would you design a Playwright framework?
 -> I would create a scalable framework using Playwright Test with Page Object Model. 

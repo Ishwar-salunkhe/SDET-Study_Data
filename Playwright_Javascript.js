@@ -320,6 +320,16 @@ npx playwright test --ui  //This will open Playwright test Runner OR UI test run
 Q-What is a locator in Playwright?
 -> A locator is used to identify and interact with elements on a webpage.
 
+Q- Selenium VS Playwright Diff // Playwright advantages
+1.Playwright support UI as well as API testing support
+2.Auto Wait Mechanisam
+3.Playwright provide User facing locator which are more reliable than xpath/CSS - getByRole, getByText, getByPlaceholder
+4. In Build assertion provided by Playwright
+5.In built Parallel testing and Retries we can achieve
+6.Easy to debug failed test cases using trace view feature
+7.Codegen to generate the script from UI
+
+
 -> await only need to use when you perform some action
  const dropdown= page.locator("#country");  //here you are storing the element only hence Not required. But if you used still
  it will work

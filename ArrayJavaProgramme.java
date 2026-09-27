@@ -143,3 +143,25 @@ System.out.println("secodn Higest Number is "+a[a.length-2]); //this is nothing 
         }
     }
   }
+
+=================================================x================================================================
+
+//Find common element in two Arrays
+
+     int a1[]={2,14,7,15};
+     int a2[]={1,15,4,21};
+
+     for(int i=0; i<a1.length; i++)
+     {
+      for(int j=0; j<a2.length;j++)
+      {
+        if(a1[i]==a2[j])
+        {
+          System.out.println("Duplicate ele is "+a1[i]);
+        }
+      }
+     }
+
+=================x========================================================================
+	
+	

@@ -162,6 +162,11 @@ System.out.println("secodn Higest Number is "+a[a.length-2]); //this is nothing 
       }
      }
 
+//We can do the same with String array
+
+     String a1[]={"Marathi","English", "Telugu"};
+     String a2[]={"Marathi","Engli", "Teluguuu"};
+
 =================x========================================================================
 	
 	

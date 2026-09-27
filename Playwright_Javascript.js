@@ -278,6 +278,53 @@ export default defineConfig({
 //For step level also we can add like this- IF this click is taking time more than exepcted then we can provide timeout like this
 await page.locator("//input[@id='login-button']").click({timeout:10000});
 
+========================x=========================x============================================
+//Playwright with POM and test Implementation
+//Page Class
+import {test,expect} from "@playwright/test"
+
+class TestLoginPage{
+
+constructor(page){
+  this.page=page;
+  this.usernameInput= page.locator("#username");
+  this.passwordInput=page.locator("//input[@id='password']");
+  this.submitButton= page.getByRole("button", {name:"Submit"})
+  this.pageTitle=page.getByText("Logged In Successfully");
+}
+
+async gotoLogin(){
+    await this.page.goto("https://practicetestautomation.com/practice-test-login/");
+}
+
+async loginToApp(username,password){
+  await this.usernameInput.fill(username);
+  await this.passwordInput.fill(password);
+  await this.submitButton.click();
+}
+
+async verifyPageTitle(){
+await expect(await this.pageTitle).toBeVisible();
+}
+
+}
+
+module.exports = {TestLoginPage};
+
+//test Fuction class
+import {test,expect} from "@playwright/test"
+
+import { TestLoginPage } from "../pageObject/TestLoginPage"
+
+test("Login test", async({page})=> {
+
+    const loginPage = new TestLoginPage(page);
+    await loginPage.gotoLogin();
+    await loginPage.loginToApp("student","Password123");
+    await loginPage.verifyPageTitle();
+})
+     
+
 
 
 

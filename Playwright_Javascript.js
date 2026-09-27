@@ -193,6 +193,7 @@ expect(await page.getByText("Dropped!")).toBeVisible();
 //File Upload- Single File
 const fileUpload =await page.locator("//input[@id='singleFileInput']");
 await fileUpload.setInputFiles("D:\\AutomationTestdata\\SampleScreenShot1.png");
+//NOTE- setInputFiles method will work only when we have atribute as type=file     
 
 //File Upload - Multiple files
     const multipleFile=await page.locator("//input[@id='multipleFilesInput']");
@@ -518,6 +519,10 @@ Q-What is package.json?
 it is mainly used to manage dependencies, project information, and test commands/scripts.
 
 Q-Build tool in Playwright JS is -> npm- Node package manager
+
+Q- What waitForEvent() will return?
+     -> It will wait until the event get occured
+     -> It will return the promise
 
 Q-Which reports you have used in Playwright framework?
 -> We have used in build Report - HTML report

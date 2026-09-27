@@ -323,6 +323,19 @@ test("Login test", async({page})=> {
     await loginPage.loginToApp("student","Password123");
     await loginPage.verifyPageTitle();
 })
+
+//Same test Login- with Data driven testing by readig test data from JSON file
+import {test,expect} from "@playwright/test"
+import { TestLoginPage } from "../pageObject/TestLoginPage"
+import loginTestData from "../DataDrivenTestData/loginTestData.json";
+
+test("Login test", async({page})=> {
+    const loginPage = new TestLoginPage(page);
+    await loginPage.gotoLogin();
+    //BY Using loginTestData file name- We can access the key so that will get the value from json
+    await loginPage.loginToApp(loginTestData.username,loginTestData.password);  
+    await loginPage.verifyPageTitle();
+})
      
 
 

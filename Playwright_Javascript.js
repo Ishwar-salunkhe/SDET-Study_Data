@@ -518,6 +518,10 @@ And If we have 2-3 test under one test file, then those test will run sequential
 Q-To Check the Playwriht test report
 -> Will have Playwright-report folder->index.html-> copy Path-> open in the browser
   and To view the tracee result, we have another folder as test-results
+
+Q- How to run .js file?
+-> file name is testSameple.js
+-> node pages/testSample.js  //provide full path from folder
    
     
 

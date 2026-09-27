@@ -23,7 +23,6 @@ await page.goBack();  //Navigation from Browser back button
 await page.goForward();     
 
 })
-
 //Custome Expect assertion timeout for test method level
 const slowExpect = expect.configure({timeout : 9000});
 await page.goto("https://testautomationpractice.blogspot.com/");
@@ -51,7 +50,6 @@ await expect(await page.getByText("Automation Testing Practice")).toBeVisible({t
     await page.getByRole("link",{name:"PlaywrightPractice"}).click();
     await page.getByRole("checkbox", { name: "Accept Terms" }).check();
     await page.getByRole("textbox", { name: "Username" }).fill("Ishwar");
-
 
     await page.getByTestId("login-button").click(); //when you have HTMP like - <button data-testid="login-button">Login</button>
     //To get the locator for mainly Image type
@@ -107,8 +105,7 @@ await dropDown.selectOption({index:3}); //select by index
 
 //To Get All Dropdown Option text
 const allText=await page.locator("//select[@id='dropdown-class-example']/option").allInnerTexts();
-for(const drpText of allText)
- {
+for(const drpText of allText){
      console.log(drpText);
  }
 
@@ -164,13 +161,12 @@ for (const p of pages) {
     if (pageTitle === "Mobile Page") {
         await p.bringToFront();
         console.log("We are in the correct page: " + pageTitle);
-        break;
+       break;
     }
 }
 
 //To Get the Count of Web Table Header Row
 const headers=await page.locator("//table[@id='product' and @name='courses']/tbody/tr/th");
-
 const count=await headers.count();
 console.log(count);
 
@@ -201,7 +197,6 @@ await fileUpload.setInputFiles("D:\\AutomationTestdata\\SampleScreenShot1.png");
     await multipleFile.setInputFiles([
       "D:\\AutomationTestdata\\SampleScreenShot1.png",  //We are passing file in array
       "D:\\AutomationTestdata\\imageNo1.png"
-
     ]);
 
  //File Download
@@ -211,7 +206,6 @@ await fileUpload.setInputFiles("D:\\AutomationTestdata\\SampleScreenShot1.png");
 ]);
 
 await download.saveAs("C:\\Downloads\\file.pdf");     
-
 
 //To Get All Cell Values from Web Table
 await page.goto("https://testautomationpractice.blogspot.com/");
@@ -223,13 +217,11 @@ for(let i=0; i<allCellCount; i++)
     {
         const textCell=await allCellValues.nth(i).innerText();
         await console.log(textCell);
-
     }
 
  //Scrolling 
  await page.evaluate(() => window.scrollBy(0, 500)) //By distance
  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); //Go to the bottom     
-
 ============================x===========================x==========================================
 
 //Run the specific test cases using Tag 
@@ -340,15 +332,6 @@ test("Login test", async({page})=> {
 
 
 
-
-
-
-
-
-
-
-
-
 //VS code commands for Playwright js
 //To Check the HTML report       
 npx playwright show-report
@@ -369,10 +352,6 @@ npx playwright codegen websiteURL   //To generate the script
 npx playwright test --grep "@smoke"
 npx playwright test JS_Practice.spec.js --project=chromium --headed  //we can use like this as well
 npx playwright test --ui  //This will open Playwright test Runner OR UI test runner where we can run and see the test execution such as screenshot, execution details
-
-
-
-
 
 
 
@@ -505,7 +484,18 @@ PlaywrightProject
 └── reports
 
 Q-How do you handle flaky tests?
--> First, I identify the root cause instead of simply adding waits.
+-> Flaky test case- The test cases which get passing sometime and getting failed sometime
+First to  verify the flacky test case, i will execute same test case multiple time using command as below
+npx playwright test tests/Login.spec.js --repeat-each=3 (It will execute same test cases to check the flackyness)
+After checking falckyness- will use the approch like
+1.Will add the retries to rerun the failed test case for the specific NUmber of time
+2.Will try to use stable locator such as getByRole, getBytext etc instead of using fragile locator such as xpath/CSS
+3.Will try to make each test case should be independent (Give example how if test cases are dependent then how it is faling
+     if in test case1 we are creating something and using the same created data in test2, if testcase1 is falied then ultimetaly 
+     test case 2 will be failed )
+
+     
+First, I identify the root cause instead of simply adding waits.
 I check locator stability, synchronization issues, network dependency, test-data problems and environment issues. 
 I use Playwright's auto-waiting and retrying assertions, stable locators, proper fixtures and controlled retries.
 I also use trace, screenshot and video to investigate failures.

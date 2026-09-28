@@ -560,6 +560,7 @@ It provides a timeline of actions along with screenshots, DOM snapshots, network
 We can use it to identify exactly where and why a test failed.
 We can enable it using the trace option in playwright.config.js and open the generated trace using npx playwright show-trace trace.zip."
 Undr config file we can add property as - trace: 'retain-on-failure'
+-It Is showing Before and After action as well
 
 Q-What is the default time in Playwright?
 -> "Playwright Test has a default test timeout of 30 seconds and a default expect assertion timeout of 5 seconds.

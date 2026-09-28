@@ -11,11 +11,18 @@ const fruits = ["Apple", "Mango", "Banana"];
 console.log(fruits[1]);
 console.log(fruits.length);
 fruits.push("Watermelon"); //To Add New Value In Array
+fruites.pop();  //To remove the last element
+const fruits = ["Apple", 10, true, {name: "John"}];  //we can store any type of data in the javascript array
 
-//JavaScript split method
+//JavaScript String data methods
+//Split
 const str="test@RahulSheety.com";
 const array = str.split("@");
 console.log(array[1]);
+//length;
+console.log(str.length);
+//charAt(i);
+console.log(data.charAt(3));
 
 //Objects-> Object stores data as key-value pairs.
    const employee={
@@ -30,6 +37,19 @@ console.log(array[1]);
 
  //Data Types methods    
  str.includes("Auto")    
+
+//Function Declaration
+function Demo(){
+    console.log("testing");
+}
+Demo(); //function calling
+
+//Anonymous function
+const greet=function(name){
+    return "Hello i am "+name;
+}
+console.log(greet);
+
 
 //==========================x==========================================================
 

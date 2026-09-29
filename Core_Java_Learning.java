@@ -77,13 +77,7 @@ Concrete method → has method body
 -If in abstract class, IF there is only one concreate mehtod and no abstract method, still class will be abstract
 -We can not create Object of abstract class, but we can create the Object reference
 
-
-
-
-
 */
-
-
 
 
   //Abstract method
@@ -111,27 +105,6 @@ class Employee {
 //Java provides a default constructor if you don't define any constructor yourself. If you dont define any constructor but still that class have the default constructor. 
 //So user can create object of that class as well.
 
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-  
 //String
 String str="ishwar";
 System.out.println(str.indexOf('w'));  //Output==3
@@ -269,7 +242,6 @@ class Singleton {
     }
 }
 
-
 //Read Data from Properties file
 String filepath="src/test/resource/data/GlobalData.properties";
 FileInputStream file= new FileInputStream(filepath);
@@ -277,7 +249,6 @@ Properties properties= new Properties();
 properties.load(file);
 String value=properties.getProperty("Key");
 file.close();
-
 ===============x====================================
   //To Get the Input from User //import java.util.Scanner;
 Scanner sc= new Scanner(System.in);
@@ -311,12 +282,5 @@ int num=sc.nextInt();
   #Stream API
   -> It is used to Process Collections of data in a simple and efficient way using operations like filter(), map(), sort(), and collect().
 
-
-
-  
   */
-
-  
-
-
 

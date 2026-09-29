@@ -214,7 +214,7 @@ System.out.println(str);
 
       System.out.println(result);
 ==============================x==================================x=============x
-//Bothe string are anagrame
+//String Anarame Programme
       String s1="java";
       String s2="vaja";
 

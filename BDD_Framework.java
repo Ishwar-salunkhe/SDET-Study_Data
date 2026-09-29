@@ -1,4 +1,4 @@
-//Feature file for Login test
+/*Feature file for Login test
 
 Feature: Login feature
 Scenario Outline: Login test with valid credentials
@@ -11,17 +11,12 @@ Then Verify user landed on the Home page
 Examples:
 | username | password |
 | ishwar   | test123  |
+*/
+
 
 //Page Class
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
 public class LoginPage {
-
-    WebDriver driver;
+ WebDriver driver;
 
     // Constructor
     public LoginPage(WebDriver driver) {

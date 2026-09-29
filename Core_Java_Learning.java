@@ -47,7 +47,9 @@ HasgMap hm = new HashMap();
 =====================x============================================================================
 
   //Interface Points
-  //Interface contain abstract, default and static method
+  //Main Use to achive 100% abstraction
+  //Use to achive Multiple Inheritance
+  //Interface contain abstract, default, private and static method
   //we can declare default method as below which can have body implementation
   // For default method- we need to declare default keyword
   //Methods are public abstract by default
@@ -56,10 +58,28 @@ HasgMap hm = new HashMap();
   //We can not create object of interface but we can create ref varibale
   //An interface can have a main() method becuase main is a static method so we can have it
   //We cannot override an interface static method in the child class
+  //as Interface allow, only abstract method, so if you try to create concreate method, it will show the error at the time of Declaration
+  //Whatever methods are there in the interface specially abstract, those all methods should be implemented in the child class where we have implemented.
+  //If we have default,static and private method then not not required becuase they already have body
   default void show()
     {     
        System.out.println("Show"); // ✅ default method 
     }
+
+/*Abstract class
+-an abstract class can contain both abstract methods and concrete methods.
+-Abstract methods define what the subclass must implement, while concrete methods provide common implementation that can be inherited by the subclass.
+-Abstract method → no method body
+Concrete method → has method body
+
+
+
+
+
+*/
+
+
+
 
   //Abstract method
     void show();  //No need to declare public and abstartc keyword as it is by default in nature
@@ -83,7 +103,19 @@ class Employee {
 //Constructor
 //Used to initilize the object
 //Constructor is not mandatory to explicitly define.
-//Java provides a default constructor if you don't define any constructor yourself. If you dont define any constructor but still that class have the default constructor. So user can create object of that class as well.
+//Java provides a default constructor if you don't define any constructor yourself. If you dont define any constructor but still that class have the default constructor. 
+//So user can create object of that class as well.
+
+
+
+
+
+
+
+
+
+
+
   
   
 

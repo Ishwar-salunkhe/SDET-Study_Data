@@ -71,6 +71,11 @@ HasgMap hm = new HashMap();
 -Abstract methods define what the subclass must implement, while concrete methods provide common implementation that can be inherited by the subclass.
 -Abstract method → no method body
 Concrete method → has method body
+-If any class have only one abstract method, still we need to declare class as abstract
+-Abstract class will always be parent and we need to extend that class into child class
+ and through child class, we need to provide implementation
+-If in abstract class, IF there is only one concreate mehtod and no abstract method, still class will be abstract
+-We can not create Object of abstract class, but we can create the Object reference
 
 
 

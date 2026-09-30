@@ -80,6 +80,7 @@ src/test/java
  @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinitions",
+        tags = "@smoke",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",

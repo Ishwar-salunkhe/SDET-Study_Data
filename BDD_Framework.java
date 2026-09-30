@@ -47,3 +47,31 @@ public class LoginPage {
         loginButton.click();
     }
 }
+
+
+//Framework Structure
+src/test/java
+│
+├── base
+│   └── BaseClass.java
+│
+├── hooks
+│   └── Hooks.java
+│
+├── pages
+│   ├── LoginPage.java
+│   └── HomePage.java
+│
+├── stepdefinitions
+│   └── LoginPageStep.java
+│
+├── runners
+│   └── TestRunner.java
+│
+└── utils
+    ├── ExcelReader.java
+    └── ConfigReader.java
+
+
+ //Hooks class is used for setup and tear down purpose (Browser launch and Close the browser).If Hooks class is there then we can skip Base class
+ 

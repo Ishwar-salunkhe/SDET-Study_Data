@@ -74,4 +74,23 @@ src/test/java
 
 
  //Hooks class is used for setup and tear down purpose (Browser launch and Close the browser).If Hooks class is there then we can skip Base class
+
+
+ //Test Runner Class
+ @CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepdefinitions",
+        plugin = {
+                "pretty",
+                "html:target/cucumber-report.html",
+                "json:target/cucumber.json"
+        }     
+)
+public class TestRunner extends AbstractTestNGCucumberTests {
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+}
  

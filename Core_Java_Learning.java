@@ -195,8 +195,11 @@ StringBuffer sf= new StringBuffer("welcome");
 System.out.println(sf);
 
 //StringBuilder Declaration
-StringBuilder sf= new StringBuilder("welcome");
-System.out.println(sf);
+StringBuilder sb= new StringBuilder("welcome");
+System.out.println(sb);
+System.out.println(sb.reverse()); 
+System.out.println(sb.append('V')); //It will append the char at the last index
+
 
 //Arrays Method
 Arrays.toString() // To print Array in readable format

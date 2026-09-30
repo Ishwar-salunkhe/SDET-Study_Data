@@ -84,7 +84,7 @@ src/test/java
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
-                "json:target/cucumber.json"
+                "rerun:target/failed-scenario.txt"
         }     
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
@@ -94,4 +94,18 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         return super.scenarios();
     }
 }
+
+//How to re run Only failed test cases
+//-Here will use rerun plugin for that, will add this plugin in the cucumber options and then
+// -will create another test runner class to run the only failed test cases
+//-will Provided the failed scenarion file path in feature file
+
+ @CucumberOptions(
+        features = "@target/failed-scenarios.txt",
+        glue = "stepdefinitions",
+        plugin = {
+                "pretty",
+                "html:target/cucumber-report.html",      
+        }     
+)
  

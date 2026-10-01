@@ -236,6 +236,8 @@ System.out.println(str);
 ===================x==============================x==================================
 
 //Secondary Programme (Non Priority)
+
+//Remove Vowels from String  
 String str="java";
 String result="";
 for(int i=0; i<str.length(); i++)

@@ -1,6 +1,14 @@
 //=====JS Basics ==========X=======================X=======================
 //Data Types-> String, Number, Boolean, Undefined, Array, Object, 
 
+//STring Methods
+charAt();
+concat();
+includes();
+length;  //No Bracket here
+replace();
+replaceAll();
+
 //For Loop Pattern
 for (let i = 0; i < 5; i++) {
     console.log(i);

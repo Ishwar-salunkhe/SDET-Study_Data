@@ -200,7 +200,6 @@ System.out.println(sb);
 System.out.println(sb.reverse()); 
 System.out.println(sb.append('V')); //It will append the char at the last index
 
-
 //Arrays Method
 Arrays.toString() // To print Array in readable format
 Arrays.sort(a); //To sort the array in ascending order
@@ -228,6 +227,22 @@ else
 {
      System.out.println("Invalid");
 }
+
+//Charatcer Wrapper class methods
+Character.isDigit(ch)
+Character.isLetter(ch)
+Character.isLetterOrDigit(ch)
+Character.isUpperCase(ch)
+Character.isLowerCase(ch)
+Character.isWhitespace(ch)
+Character.toUpperCase(ch)
+Character.toLowerCase(ch)
+Character.isAlphabetic(ch)
+
+
+
+
+
 
 //SingleTone class
 class Singleton {

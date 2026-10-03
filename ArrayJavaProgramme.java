@@ -170,21 +170,21 @@ System.out.println("secodn Higest Number is "+a[a.length-2]); //this is nothing 
 =================x========================================================================
 //find the indices of any two elements whose sum equals the target as 17.
 
-        int[] arr = {6, 8, 11, 7, 18};
-        int target = 17;
+      int a[]={2,5,6,11,8};
+      int target=17;
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+      HashMap<Integer, Integer> hm = new HashMap<>();
 
-        for (int i = 0; i < arr.length; i++) {
+      for(int i=0; i<a.length; i++)
+      {
+        int num = target-a[i];
+        if(hm.containsKey(num))
+        {
+            System.out.println("Indices: "+hm.get(num)+" , "+i);
+        }
 
-            int num = target - arr[i];
-
-            if (map.containsKey(num)) {
-                System.out.println("Indices: " + map.get(num) + ", " + i);
-            }
-
-            map.put(arr[i], i);
-        }	
+        hm.put(a[i],i);
+      }	
 	
 	
 	

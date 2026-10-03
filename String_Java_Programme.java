@@ -251,6 +251,30 @@ for(int i=0; i<str.length(); i++)
 
 System.out.println(result);  
 ===================x=========================x=====================
+
+//Move all digit to start and char to end
+  
+String str="KPMG2026QA";
+String digit="";
+String chars="";
+     
+     for(int i=0; i<str.length(); i++)
+     {
+        char ch = str.charAt(i);
+        if(Character.isDigit(ch))
+        {
+          digit = digit+ch;
+        }
+        else
+        {
+          chars=chars+ch;
+        }
+    
+     }
+
+  String result= digit+chars;
+  System.out.println(result);
+  
   
 
   

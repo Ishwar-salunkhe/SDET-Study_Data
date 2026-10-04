@@ -28,6 +28,8 @@ for(Object list:mylist)
 HashMap<Character,Integer> hm= new HashMap<>();
 HasgMap hm = new HashMap();
 //HasnMpa Methods
+//HashMap does not Maitain Insertion order
+//LinkedHashMap- Maintain insertion order
 // 1. put(key, value) → Adds a key-value pair to the HashMap.
 // 2. putAll(map) → Adds all key-value pairs from another Map.
 // 3. get(key) → Returns the value associated with the given key.

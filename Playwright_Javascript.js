@@ -328,6 +328,29 @@ test("Login test", async({page})=> {
     await loginPage.loginToApp(loginTestData.username,loginTestData.password);  
     await loginPage.verifyPageTitle();
 })
+
+========================x==============================x=========================x===================================
+
+//Login Fixture
+import{test as base} from "@playwright/test"
+
+export const test = base.extend({
+  loginPage: async ({ page }, use) => {
+
+    await page.goto('https://www.saucedemo.com/');
+    await page.getByPlaceholder("Username").fill("standard_user");
+    await page.getByPlaceholder("Password").fill("secret_sauce");
+    await page.getByText("Login").click();
+    await use(page);
+  }
+
+})
+
+export { expect } from '@playwright/test';  
+//.extend() = used to add a custom fixture
+// loginPage -> This is the name of our custom fixture.
+
+=================x==============================x==========================x=========
      
 
 

@@ -349,8 +349,15 @@ export const test = base.extend({
 export { expect } from '@playwright/test';  
 //.extend() = used to add a custom fixture
 // loginPage -> This is the name of our custom fixture.
-
 =================x==============================x==========================x=========
+
+ //How to cal Login Fixture in test file
+import { test, expect } from "../myFixture/loginFixture.js"
+
+test("Login Test with Fixture use", async({loginPage})=> {
+    await expect(loginPage).toHaveTitle("Swag Labs");
+})
+     
      
 
 

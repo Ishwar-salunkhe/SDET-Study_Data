@@ -110,6 +110,7 @@ for(int i=0; i<str.length(); i++)
      str=str.replace(" ","");
      char a[]=str.toCharArray();
      HashMap<Character,Integer> hm = new HashMap<>();
+     //LinkedHashMap<Character,Integer> hm = new LinkedHashMap<>(); //If you use this then this will maintain Insertion order
 
      for(char ch:a)
      {

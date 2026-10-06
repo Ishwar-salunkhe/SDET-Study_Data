@@ -14,12 +14,16 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
+//Print statement
+console.log(`even number count is ${even}`);
+
 //Arrays
 const fruits = ["Apple", "Mango", "Banana"];
 console.log(fruits[1]);
 console.log(fruits.length);
 fruits.push("Watermelon"); //To Add New Value In Array
 fruites.pop();  //To remove the last element
+fruites[0]="Pineapple"; //to Replace the Value with other value    
 const fruits = ["Apple", 10, true, {name: "John"}];  //we can store any type of data in the javascript array
 
 //JavaScript String data methods

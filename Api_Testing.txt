@@ -137,7 +137,7 @@ void getUser()
 	    .post("httsp://example.com//api")
 	   
 	   .then()
-	    .statusCode(200)
+	    .statusCode(201)
 		.log().all();
 
  }

@@ -249,6 +249,24 @@ Q-What is POJO?
 -> POJO is a simple Java class mainly used to represent and hold data, typically with private fields, getters, setters, and constructors.
 -> Here we are declaring the variables with private access modifier and with the setter and getter method
 
+//Sample POJO class
+public class User {
+
+    private String name;
+    private String job;
+
+    // Setter
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+}
+
 Q- What is Serialization and Deserialization?
 -> Serialization is converting a Java object or POJO into JSON, usually for sending an API request. Deserialization is converting the JSON API response back into a Java object or POJO so that we can easily validate and use the response data."
 

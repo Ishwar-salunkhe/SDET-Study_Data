@@ -36,6 +36,9 @@ git branch -a → Displays both local and remote branches.
 
 git checkout <branch-name> → Used to switch to another branch.
 
+git rebase // It is used to bring the latest changes from the target branch into feature branch
+For eg - If your remote master branch is already ahead with 2 commits then to get that changes we are using git rebase
+
 git revert <commit-hash> → Used to undo the changes introduced by a specific commit by creating a new commit.
 ls → Used to list all files and folders in the current directory.
 git log → Used to view the complete commit history.

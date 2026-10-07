@@ -82,8 +82,6 @@ Q-Diff bet OAuth 1.0 vs OAuth 2.0
 -New version , Access based token, Simple to use
 
 
-
-
 //Rest Assured
 In given we are passing below things
 -header
@@ -110,12 +108,10 @@ void getUser()
 	 .then()
 	  .statusCode(200
 	  .body("page", equalsTo(20))
-	  .log().all();
-	  
+	  .log().all();  
 }
 
 //Sample Post requets
-
 @Test
  pubic void CreateUser()
  {
@@ -124,7 +120,6 @@ void getUser()
 	   data.put("Name":"Ishwar");
 	   data.put("Role":"QA");
 	   
-	  
 	   given()
 	   .boy(data)
 	   .contentType("application/json")
@@ -132,7 +127,6 @@ void getUser()
 	   .pathParam("id", 123)
 	   .queryParam("page", 2)
         
-	   
 	   .when()
 	    .post("httsp://example.com//api")
 	   
@@ -266,6 +260,20 @@ public class User {
     }
 
 }
+
+POJO class implementation in Rest assured class
+User user = new User();
+
+user.setName("Ishwar");
+user.setJob("QA Automation Engineer");
+
+given()
+    .contentType("application/json")
+    .body(user)
+.when()
+    .post("/users")
+.then()
+    .statusCode(201);
 
 Q- What is Serialization and Deserialization?
 -> Serialization is converting a Java object or POJO into JSON, usually for sending an API request. Deserialization is converting the JSON API response back into a Java object or POJO so that we can easily validate and use the response data."

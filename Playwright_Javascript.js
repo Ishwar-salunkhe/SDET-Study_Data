@@ -388,6 +388,14 @@ export default defineConfig({
         storageState: 'auth.json'
     }
 });
+
+//Keyboard actions
+await page.keyboard.press("Tab");
+await page.keyboard.press("Escape");
+await page.keyboard.press("ArrowDown");
+await page.keyboard.press("ArrowUp");
+await page.keyboard.press("Backspace");     
+await page.keyboard.press("Control+A");
    
 
      
@@ -496,7 +504,7 @@ Q- How to Handle Upload file?
   -> We Have 3 types of promises-> Pending, Rejected, Fullfilled    
 
   Q-What are fixtures in Playwright?
-  -> Fixture will provide the required environment or setup wich is required for the test
+  -> Fixture is a reusable setup which provide the required environment or setup wich is required for the test
   -> page, browser, context, request
 
   Q-How do you take a screenshot?

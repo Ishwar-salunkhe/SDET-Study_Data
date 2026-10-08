@@ -358,6 +358,37 @@ import { test, expect } from "../myFixture/loginFixture.js"
 test("Login Test with Fixture use", async({loginPage})=> {
     await expect(loginPage).toHaveTitle("Swag Labs");
 })
+
+===============x=============================x====================
+/*
+what is storageState in Playwright?
+-storageState is the feature which is provided by Playwright itself and which is used to reuse the browser authentication state.
+So here instead of login for each test cases, will login once and will store the browser authentication state in the json file and 
+Will reuse the same storage state for the all test cases which will reduce the execution time drastically. */
+
+//Create a setup test:  
+import { test } from '@playwright/test';
+test('Login and save state', async ({ page }) => {
+
+    await page.goto('https://example.com/login');
+    await page.fill('#username', 'admin');
+    await page.fill('#password', 'password');
+    await page.click('#login');
+    await page.context().storageState({
+        path: 'auth.json'
+    });
+});
+
+//After successful login, Playwright creates:auth.json- It constains cookies and session data
+//In playwright.config.js:
+import { defineConfig } from '@playwright/test';
+export default defineConfig({
+    use: {
+        storageState: 'auth.json'
+    }
+});
+   
+
      
      
 

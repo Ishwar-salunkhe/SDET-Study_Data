@@ -114,7 +114,7 @@ await page.goto("https://exmple.com");
 const PageTitle=await page.getByText("Practice Page");
 await expect(PageTitle).toBeVisible();
 
-//To Handle Alert
+//To Handle Alert -> dialog is an event and page.on is a method-> ans we can handle popup with dialog event
 page.on("dialog", async dialog => {
 console.log(dialog.message());
 await dialog.accept();

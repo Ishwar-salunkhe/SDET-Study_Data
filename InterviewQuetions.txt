@@ -216,15 +216,22 @@ Q- Flecky test cases handling?
 -Many times test cases are failing not only because of incorrect locator, It is failing many times due to environment issue, Network delay, Incorrect test data, Synchronization issue etc
 -So will indentify those reason and then will try to use stable locator
 
+Q-*** Very Important
+Q-If your test cases are getting pass in local but failing in CICD pipeline, How to debug this issue?
+and what approach you will use to fix this issue?
+-> When an automation build fails in Jenkins or another CI/CD environment, I first check the console logs, reports, screenshots, and error messages. I identify whether the issue is related to the application, automation script, environment, test data, dependency, or configuration.
+Below may be the reason to failed the test cases in CICD pipeline
+1.Environment Diff- Browser version diff, OS diff, 
+2.Dependency mismatch
+3.CI Machine performance can be affected by CPU, RAM etc. IF parallel execution is going on then it will consume the more 
+memory which causes slower execution
+4.Test Data issue
+
 Q-How do you handle pressure and tight deadlines?
 -> First i will check with the lead/Manager that what are the priority things OR task which need to be take as priority. So first will try to complete the priority task and meanwhile i will update the progress that what can be done from my side within the timeline
 
 Q-What do you do when requirements are unclear?
 -First i will do not make any assumptions about the unclear requirements. So what ever the unclear requirements, i will make a n= note of that and then will discuss with the product owner and will get the clarity on the unclear requirements.
-
-Q-Tell me about a time when your automation failed in CI/CD.
--> When an automation build fails in Jenkins or another CI/CD environment, I first check the console logs, reports, screenshots, and error messages. I identify whether the issue is related to the application, automation script, environment, test data, dependency, or configuration. After identifying the root cause, I fix the issue and rerun the affected tests. I try not to immediately assume that every CI failure is an automation issue.
-
 
 Which selenium version you have use?---> Current version you can say 4.1 which was release on Oct 2021. 
 Which java version you are currently using--> Java 21 

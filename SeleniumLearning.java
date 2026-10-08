@@ -196,6 +196,22 @@ ElementNotInteractableException -> //Selenium finds the element, but cannot inte
 
     */
 
+/*	
+//How to Handle Stale element Reference Excpetion
+StaleElementReferenceException occurs when the WebElement we previously located is no longer 
+attached to the current DOM, usually because the page or element was refreshed, updated, or re-rendered.
+We can handle it by locating the element again, using explicit waits, or retrying the operation.
+*/
+	//Example
+WebElement loginButton = driver.findElement(By.id("login"));
+driver.navigate().refresh();
+loginButton.click();  // ❌ StaleElementReferenceException
+//handle this using below approch
+//1.Relocate the elment
+//2.By Using explicit wait
+//3.Retry using try-catch
+	
+
 //Frame and Iframe handling
  driver.switchTo().frame(0);
  driver.switchTo().frame("loginFrame"); //By ID or Name

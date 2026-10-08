@@ -350,6 +350,7 @@ export { expect } from '@playwright/test';
 //.extend() = used to add a custom fixture
 // loginPage -> This is the name of our custom fixture.
 // loginPage: async ({ page }, use)  => this line is nothing but an object as before we have curly braces
+//use is the function parameter
 =================x==============================x==========================x=========
 
  //How to cal Login Fixture in test file

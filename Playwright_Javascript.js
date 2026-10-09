@@ -198,6 +198,9 @@ const drgEle=await page.locator("//div[@id='draggable']");
 const dropEle=await page.locator("//div[@id='droppable']");
 await drgEle.dragTo(dropEle);
 expect(await page.getByText("Dropped!")).toBeVisible();
+//Other Mouse operations
+await buttonRight.click({button:"right"});
+await buttonRight.dblclick();     
 
 //File Upload- Single File
 const fileUpload =await page.locator("//input[@id='singleFileInput']");

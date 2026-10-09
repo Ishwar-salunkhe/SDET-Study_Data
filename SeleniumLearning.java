@@ -267,6 +267,8 @@ driver.findElement(By.id("search")).sendKeys("Selenium", Keys.ENTER);
 Actions actions = new Actions(driver);
 actions.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();
 actions.sendKeys(Keys.ENTER);
+actions.doubleClick(element).perform();
+actions.contextClick(element).perform();
 
 //Page class sample with Page factory
 public class HRM_LoginPage {

@@ -59,6 +59,19 @@ await expect(await page.getByText("Automation Testing Practice")).toBeVisible({t
 await page.locator("//input[@type='radio']").last();
 await page.locator("//input[@type='radio']").first();
 
+//Playwright Architexture
+/*
+Total Three components
+1.Client- Automation script
+2.Playwright Server
+3.Browser engines- Chromium, webkit etc
+
+Our Automation script will commuicate with the Playwright server via websocket connection/Protocol
+And then Playwright server will convert this code into command using CDP protocoal then sens to browsers
+-As it is using WenSocket connection hence in playwriht, Execution speeed is higher than the Selenium
+
+*/
+
 
 //Auto-retrying assertions //Hard assertion
 await expect(locator).toBeVisible();

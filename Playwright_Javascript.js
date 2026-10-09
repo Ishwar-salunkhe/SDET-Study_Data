@@ -409,12 +409,62 @@ await page.keyboard.press("ArrowDown");
 await page.keyboard.press("ArrowUp");
 await page.keyboard.press("Backspace");     
 await page.keyboard.press("Control+A");
+
+//Errors In Playwright
+/*
+1.Strict Mode Violation- When locator is matching with the multiple elements
+2.TimeoutError -> An operation does not complete within the specified timeout.
+3.Navigation timeout -> Navigation does not complete within the configured timeout.
+4.Assertion error - > An expected condition does not match the actual result.
+*/
+//Handle with Try and Catch error
+test('Handle exception', async ({ page }) => {
+  try {
+    await page.goto('https://www.saucedemo.com/');
+
+    await page.locator('#invalidButton').click({
+      timeout: 3000
+    });
+
+  } catch (error) {
+    console.log('Error occurred:', error.message);
+  }
+});
+
+/*--Challenges in Playwright Frameowrk
+1.Handle Dynmic element
+2.handle Flacky test cases
+3.Test Data Conflict/management
+
+Q- Diff between VAR, CONST and LET
+var — can redeclare and reassign
+Example:
+var name = "Ishwar";
+var name = "Rahul";
+name = "Amit";
+console.log(name); // Amit
+
+let — can reassign, but cannot redeclare in the same scope
+let age = 25;
+age = 30; // Allowed
+// let age = 35; // Error in the same scope
+console.log(age); // 30
+
+const — cannot be reassigned
+const browser = "Chrome";
+// browser = "Firefox"; // TypeError
+console.log(browser); // Chrome
+*/
+
+//Q- How to Run test cases in multiple Environment such as Dev, QA staging?
+//For this we need to install dotEnv packages (That will be added under the dependecny package.json)
+//After that will create the .env files such as .env.dev, .env.qa and there will provide the URL, Username, pass etc
+//And then in config file, will add the function as define under that will provide the file path with process.env.TEST_ENV
+
+
    
 
      
-     
-
-
 
 //VS code commands for Playwright js
 //To Check the HTML report       

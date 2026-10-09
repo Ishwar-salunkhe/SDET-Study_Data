@@ -1,6 +1,26 @@
 //=====JS Basics ==========X=======================X=======================
 //Data Types-> String, Number, Boolean, Undefined, Array, Object, Null
 
+//Q- Diff between VAR, CONST and LET
+var — can redeclare and reassign
+Example:
+var name = "Ishwar";
+var name = "Rahul";
+name = "Amit";
+console.log(name); // Amit
+
+let — can reassign, but cannot redeclare in the same scope
+let age = 25;
+age = 30; // Allowed
+// let age = 35; // Error in the same scope
+console.log(age); // 30
+
+const — cannot be reassigned
+const browser = "Chrome";
+// browser = "Firefox"; // TypeError
+console.log(browser); // Chrome
+*/
+
 //STring Methods
 charAt();
 concat();

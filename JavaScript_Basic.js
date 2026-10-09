@@ -1,5 +1,5 @@
 //=====JS Basics ==========X=======================X=======================
-//Data Types-> String, Number, Boolean, Undefined, Array, Object, 
+//Data Types-> String, Number, Boolean, Undefined, Array, Object, Null
 
 //STring Methods
 charAt();

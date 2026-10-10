@@ -19,6 +19,7 @@
 16. What is the difference between findElement() and findElements()?
 17. How do you perform mouse hover actions in Selenium?
 18. How to open browser in Incognito mode?
+18. How to handle stale element reference exception?
 19. What are Preceding Sibling and Following Sibling in XPath?
 20. What is the difference between Selenium 3 and Selenium 4?
 21. How to perform keyboard actions in Selenium?

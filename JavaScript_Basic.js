@@ -1,5 +1,27 @@
 //=====JS Basics ==========X=======================X=======================
-//Data Types-> String, Number, Boolean, Undefined, Array, Object, Null
+//Data Types-> 
+//Premitive Data types 
+//-> String, Number, Boolean, Undefined, Null
+
+//Non Premetive -> Array, Object, Function, date, regex
+
+/*
+Q-What is JavaScript?
+-> Javascript is a scripting language and it is used to convert static web page into
+ dynamic ad intercative web pages
+
+Q- Types of Functions
+-> 1.Named/Generic Function
+   2.Anonymous function
+   3.Arrow Function
+   4.Call Back function
+
+ Q- What is Promises?
+ -> It is the way to handle the asynchronous operations and those are- Pending, Rejection and Fullfilled
+
+
+
+*/
 
 //Q- Diff between VAR, CONST and LET
 var — can redeclare and reassign
@@ -81,6 +103,32 @@ const greet=function(name){
     return "Hello i am "+name;
 }
 console.log(greet);
+
+//CallBack Function
+//callback function is a function which is pass as an argument/parameter to the another function
+//Example
+function greet(name) {
+    console.log("Hello " + name);
+}
+function display(callback) {
+    callback("Ishwar");
+}
+display(greet);
+
+/*Q- Diff between == and === ?
+//  == Compare value only and === compare value and data type as well
+
+Q-What is NaN?
+-> Not a Number -> it indicate that value is not valid number
+
+
+
+
+*/
+
+
+
+
 
 
 //==========================x==========================================================

@@ -116,7 +116,7 @@ for (WebElement option : allDrpOptions)
 TakesScreenshot ts = (TakesScreenshot) driver;
 File source = ts.getScreenshotAs(OutputType.FILE);
 File destination = new File("C:\\Screenshots\\test.png");
-FileUtils.copyFile(source, destination);
+FileHandler.copy(source, destination)
 
 //If we want to capture with date and time then
 String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));

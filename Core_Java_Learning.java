@@ -79,6 +79,16 @@ Concrete method → has method body
 -If in abstract class, IF there is only one concreate mehtod and no abstract method, still class will be abstract
 -We can not create Object of abstract class, but we can create the Object reference
 
+//Diff between Abstract class and Interface
+Abstartc class                            Interface
+1.abstract and concreate methods          1.abstratc, default,static and private method
+2.Achive 0-100% abstraction               2.100% abstratcion achived
+3.Used for abstraction                    3. We can achive abstraction and mulitple inheritance
+4.As it is class hence can have           4.As it is inteerface, so dont have constructor
+constructor
+5.In abstract class, we can declare      5.variable are by default public, static and final
+static and Non static variable        
+
 */
 
 

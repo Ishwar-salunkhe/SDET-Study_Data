@@ -212,6 +212,14 @@ System.out.println(sb);
 System.out.println(sb.reverse()); 
 System.out.println(sb.append('V')); //It will append the char at the last index
 
+/*Diff StringBuffer and StringBuilder
+StringBuffer               StringBuilder
+1.Synchronized             1.Not Synchronized
+2.Slower execution         2.Fatser execution
+3.Thread safe              3.Not Thread Safe
+
+
+*/
 //Arrays Method
 Arrays.toString() // To print Array in readable format
 Arrays.sort(a); //To sort the array in ascending order

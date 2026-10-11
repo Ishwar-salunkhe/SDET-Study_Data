@@ -82,7 +82,8 @@ Can we create an object of an abstract class? Why or why not?
 What is the role of constructors in Java? Can a test class have multiple constructors? 
 Diff between method and contructor? 
 Can we overload main method? 
-Exception in java? 
+Exception in java?
+throw and throws diff?
 Typecasting? 
 Set and list Diff? 
 String class Methods?  Concat, trim, charAt, length, equals (case sensitive), equalsIgnoreCase,  split, ToUpperCase, Lowercase, replace 

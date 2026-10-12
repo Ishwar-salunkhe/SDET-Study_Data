@@ -85,6 +85,11 @@ await expect(locator).toBeChecked();
 await expect(locator).toHaveAttribute("id", "login-button");
 await expect(locator).toHaveCount(5);
 
+//Wait for Load state
+await page.waitForLoadState('load');
+await page.waitForLoadState('domcontentloaded');
+await page.waitForLoadState('networkidle');
+
 //Soft assertion
 await expect.soft(locator).toBeVisible();
 

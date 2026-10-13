@@ -395,6 +395,14 @@ public class LoginPage{
 		Assert.assertEquals(login.verifyDeviceDetailsPage,expectedTitle);	
 	}	
 }
+
+/* Q- If your app have 300 web pages then will you create 3oo page classes?
+-> No, so here we are using Page object model to create seperate page classes but it is not mandatory type of things.
+So here will devide the pages into some reusable component such as HeaderComponent, FooterComponenet, Menu Componnet and 
+like wise will create the Page classes
+*/
+
+	
     
    
        

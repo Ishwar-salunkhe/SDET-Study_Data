@@ -400,6 +400,26 @@ public class LoginPage{
 -> No, so here we are using Page object model to create seperate page classes but it is not mandatory type of things.
 So here will devide the pages into some reusable component such as HeaderComponent, FooterComponenet, Menu Componnet and 
 like wise will create the Page classes
+
+Q- What happens if Implicit Wait and Explicit Wait are used together in the same Selenium test class?How will the script behave?
+->It will increase the time to locate the element and will also increse the execution time as both time will be compound.
+
+Q-Why we use Base class? why we can not use interface instead of base class?
+-> Base class having the common and reusable methods which we can directly used in the other classes by exetnding that class
+But interface having abstract method which having only method signature but implementation body is not there hence we used base class
+
+Q-How will you automate the validation of font, color, CSS attributes, and position of a web element using Selenium?
+-> We can check this using 
+• getCssValue() -> to validate CSS properties like font, color, background, etc.
+• getLocation() ->  to check the position of the element on the page
+• getSize() ->  to verify the height and width of the element
+
+
+
+
+
+
+
 */
 
 	

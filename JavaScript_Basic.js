@@ -115,7 +115,7 @@ function display(callback) {
 }
 display(greet);
 
-/*Q- Diff between == and === ?
+/*Q- Diff between == and === ? (== loose equality and === strict equaliy)
 //  == Compare value only and === compare value and data type as well
 
 Q-What is NaN?

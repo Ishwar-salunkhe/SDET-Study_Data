@@ -281,6 +281,8 @@ Agile Ceremonies?
 34.How to run test cases in multiple environment such as dev, QA staging?
 35.What is WaitForLoadState use?
 36.How to handle shadow DOM in playwright?
+37.What are the errors in playwright?
+38.How to Automate OR read OTP in playwright?
 
 //JavaScript Core Quetions
 1.What is the diff between Var, let and const ?

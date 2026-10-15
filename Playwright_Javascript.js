@@ -716,6 +716,10 @@ Q-To Check the Playwriht test report
 Q- How to run .js file?
 -> file name is testSameple.js
 -> node pages/testSample.js  //provide full path from folder
+
+Q- How to read Handle/Read OTP in playwright?
+-> we can read the OTP from Database, fro API
+If OTP is received through email or SMS, I integrate with an authorized test mailbox or SMS service to retrieve it dynamically.
    
     
 

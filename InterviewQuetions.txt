@@ -252,18 +252,14 @@ Agile Ceremonies?
 //Playwright- java
 1. What is Playwright?
 2. What are the advantages of Playwright over Selenium?
-3. Which browsers are supported by Playwright?
 4. What is the architecture of Playwright?
 5. What is Browser, BrowserContext, and Page in Playwright?
 6. What is the difference between BrowserContext and Page?
 7. How do you launch a browser in Playwright Java?
 8. How do you open a new page in Playwright?
-9. What is the difference between locator() and element handles?
 10. What are the different types of locators available in Playwright?
-11. What is the difference between CSS selector and XPath in Playwright?
 12. How do you handle dynamic elements in Playwright?
 13. What is auto-waiting in Playwright?
-14. What is the difference between auto-waiting and explicit wait?
 15. How do you handle dropdowns in Playwright Java?
 16. How do you handle checkboxes and radio buttons in Playwright?
 17. How do you handle alerts and popups in Playwright?
@@ -274,12 +270,27 @@ Agile Ceremonies?
 22. How do you upload a file in Playwright?
 23. How do you download a file in Playwright?
 24. How do you take screenshots in Playwright?
-25. How do you handle authentication in Playwright?
+25. What is browser Authentication State in playwright?
 26. How do you run Playwright tests in headless and headed mode?
 27. How do you perform assertions in Playwright Java?
-28. How do you handle network requests and API mocking in Playwright?
 29. How do you implement Page Object Model (POM) in Playwright Java?
-30. How do you integrate Playwright Java with BDD Cucumber and CI/CD?
+30.What is package.json?
+31.What is playwright.config.js file? what are the config we can do with this config file?
+32.Diff between async and await?
+33.What are the fixture in Playwright? explain custom fixture?
+34.How to run test cases in multiple environment such as dev, QA staging?
+35.What is WaitForLoadState use?
+36.How to handle shadow DOM in playwright?
+
+//JavaScript Core Quetions
+1.What is the diff between Var, let and const ?
+2.What are the diff functions in JS?
+3.Data Types in JS?
+4.Diff between '==' and '===' ?
+5.Diff between Undefined and Null?
+
+
+
 
 
 

@@ -47,6 +47,12 @@ HasgMap hm = new HashMap();
     hm.put("Roll No",12);
     System.out.println(hm.entrySet());  //Ouput: [Roll No=12, Name=Ishwar]
 =====================x============================================================================
+/* Diff List and Hashmap
+List                                           HashMap
+1.Stores elements in a sequence.               Stores data as key-value pairs.
+2.Allows duplicate elements.                   Keys must be unique; values can be duplicated.
+*/
+  
 
   //Interface Points
   //Main Use to achive 100% abstraction

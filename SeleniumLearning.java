@@ -414,6 +414,14 @@ Q-How will you automate the validation of font, color, CSS attributes, and posit
 • getLocation() ->  to check the position of the element on the page
 • getSize() ->  to verify the height and width of the element
 
+Q-An element is visible but not clickable. How do you investigate?
+->1.Check whether the element is enabled and visible using isDisplayed() and isEnabled().
+2.Check if another element, such as a popup or overlay, is blocking the click.
+3.Check whether the element is inside an iframe or if the page is still loading.
+4.Use explicit waits with WebDriverWait and elementToBeClickable().
+5.If necessary, scroll the element into view using JavascriptExecutor.
+6.Sometime normal click is not working then in that case, will try to perform click using Javascript executor
+
 
 
 

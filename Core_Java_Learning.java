@@ -22,6 +22,21 @@ for(Object list:mylist)
     System.out.println(list);
   }
 
+//Instead of adding, we can use like this
+List<Integer> list = Arrays.asList(1, 2, 3, 2, 4, 3,9); //If you want to store Int data
+List<Object> list = Arrays.asList('C', "test", "test2"); //If you want to store Multiple type of data
+
+//Java 8 feature stream use
+List<Integer> list = Arrays.asList(1, 2, 3, 2, 4, 3,9);
+//To Find the unique data
+list.stream()
+    .distinct()
+    .forEach(System.out::println); 
+    }
+//To sort the data
+    list.stream()
+        .sorted()
+        .forEach(System.out::println);
 
 //HashMap
 //Declaration

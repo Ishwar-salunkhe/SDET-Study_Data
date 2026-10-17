@@ -574,6 +574,10 @@ use: {
 Q-What is the difference between expect() and normal JavaScript assertions?
 ->Playwright's expect() provides auto-retrying assertions.
 
+Q- How to Install Playwright?
+-> npm init playwright@latest
+
+
 Q-How do you execute tests in parallel?
 -> We can add the worked value in the config.js file workers: 4
 
@@ -720,22 +724,14 @@ Q- How to run .js file?
 Q- How to read Handle/Read OTP in playwright?
 -> we can read the OTP from Database, fro API
 If OTP is received through email or SMS, I integrate with an authorized test mailbox or SMS service to retrieve it dynamically.
+
+Q- What is MCP?
+-> Model Context Protocol
+Playwright MCP (Model Context Protocol) is a tool which allows AI assistants like GitHub Copilot or Claude to interact with browsers using Playwright
+It will help AI to perform the actions such as Opening browser, Perform diff actions such as click, enter text and Perform validation
+
    
     
-
-
-
-     
-
-    
-
-
-
-
-
-
-
-
 
 
 */

@@ -21,7 +21,9 @@ Q- Types of Functions
 
  Q- Diff between Null and Undefined?
  -> Undefined-> We have declare the variable but does not assigned any value. Data type will be Undefied
- Null-> we have declare the variable and assigned the value as Null. Data type for null is Object 
+ For undefined, we can assigned value later.
+ Null-> we have declare the variable and assigned the value as Null. Data type for null is Object
+ Null also we can reassigned later
  
 
 

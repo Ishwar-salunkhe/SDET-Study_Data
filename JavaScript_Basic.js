@@ -19,6 +19,11 @@ Q- Types of Functions
  Q- What is Promises?
  -> It is the way to handle the asynchronous operations and those are- Pending, Rejection and Fullfilled
 
+ Q- Diff between Null and Undefined?
+ -> Undefined-> We have declare the variable but does not assigned any value. Data type will be Undefied
+ Null-> we have declare the variable and assigned the value as Null. Data type for null is Object 
+ 
+
 
 
 */

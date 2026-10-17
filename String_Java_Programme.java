@@ -292,6 +292,27 @@ String chars="";
      }
 
      System.out.println(result);
+
+======================x=================================x==========================x=============================
+
+//Write the permutaion Programme for the String
+        String str = "abc";
+        List<String> list = new ArrayList<>();
+        list.add("");
+
+        for (char ch : str.toCharArray()) {
+            List<String> newList = new ArrayList<>();
+
+            for (String s : list) {
+                for (int i = 0; i <= s.length(); i++) {
+                    newList.add(s.substring(0, i) + ch + s.substring(i));
+                }
+            }
+            list = newList;
+        }
+
+        System.out.println(list);
+
   
   
 

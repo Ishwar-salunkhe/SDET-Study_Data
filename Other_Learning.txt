@@ -62,7 +62,6 @@ top
 free -h
 df -h
 ps -ef
-
 ===========================================x================================================
 
 // AI Related =====
@@ -81,6 +80,14 @@ Q-What is hallucination?
 -> It is happening due Insufficient Training Data and lack of fine Tunning
 -> To Explain hallucination-> Give example of Tobacco Kheer
 -> When ask to AI model-> Give me recipe of tobacco kheer, There is a no receipe of Tobacco kheer but still it will give you details with confidence. then it is nothing but hallucnation
+
+Q How you will test AI Model chat bot functionality?
+-> 1. Functional testing-> Give correct prompt and check how it responsed
+2.Halucination Testing-> Will provide the invalid input such as Provide the invalid method which is not availbale in the Java
+and check the reponse.
+3.Context base testing-> Provide the prompt and after getting response, will ask the follow up question to check whether it is storing previous context or not
+4.Boundary level testing-> Provide the large length of data and check how it respond
+5.Inout/Output voice testing- > Give the prompt with voice input and Check the response in voice
 
 
 

@@ -62,6 +62,9 @@ pm.test("response time", function () {
 2. Basic Auth – Uses a username and password to authenticate the API request.
 
 3. Bearer Token – Sends an access token in the Authorization header as "Bearer <token>".
+-> "We use a Bearer Token to authenticate requests to protected APIs. After login, 
+the server provides an access token, which we pass in the Authorization header as Bearer token. 
+The server validates the token before granting access."
 
 4. API Key – Uses a unique key to identify and authorize the API request.
 

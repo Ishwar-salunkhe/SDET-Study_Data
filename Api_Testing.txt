@@ -188,6 +188,8 @@ Gateway/proxy did not receive a response from the upstream server in time.
 //TO use the Environment variable we can use like below
 //{{base_url}} 	//enter {{ it will automatically show the env url
 
+//In API- Ideal response should be return within or below than 1000 ms
+
 
 
 Q- How do you validate API data against the database?

@@ -65,6 +65,11 @@ pm.test("response time", function () {
 -> "We use a Bearer Token to authenticate requests to protected APIs. After login, 
 the server provides an access token, which we pass in the Authorization header as Bearer token. 
 The server validates the token before granting access."
+-we can generate or obtain the Bearer Token by calling the Login API,
+-Once hit the req it will return the token in the response
+-We can store the generated token by adding the after script
+pm.environment.set("token", data.accessToken);
+-IN another GET request, Under auth tab we can access token as {{token}}
 
 4. API Key – Uses a unique key to identify and authorize the API request.
 

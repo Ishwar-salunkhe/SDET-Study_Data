@@ -439,6 +439,33 @@ test('Handle exception', async ({ page }) => {
   }
 });
 
+//Q-Where you are maintaining your Sensible data such as App URL, Username and password?
+// WE are creating .env file and there we are maintaining app URL, username and password
+//sample .evn file-> We have install .dotenv package
+BASE_URL=https://www.saucedemo.com/
+USERNAME=standard_user
+PASSWORD=secret_sauce
+//Under Play config file we have added baseURL like this
+  use: {
+    baseURL: process.env.BASE_URL
+  }
+
+//We are accessing in test file like below
+test("@EnvFile Login test with Env data", async ({page})=> {
+
+    await page.goto(process.env.BASE_URL);
+    await page.getByPlaceholder("Username").fill(process.env.USERNAME);
+    await page.getByPlaceholder("Password").fill(process.env.PASSWORD);
+    await page.getByRole("button", {name:"Login"}).click();
+})
+
+     
+
+
+
+
+
+
 /*--Challenges in Playwright Frameowrk
 1.Handle Dynmic element
 2.handle Flacky test cases
@@ -506,6 +533,9 @@ Q-What is the difference between locator() and getByRole()?
 -> locator() can use CSS/XPath selectors.
 ->getByRole-> identifies elements based on their accessible role.
 
+
+
+
 Q-What is auto-waiting in Playwright?
 -> Playwright automatically waits for an element to become actionable before performing actions such as click, fill, or check.
 
@@ -527,19 +557,6 @@ Q-Write the Login Scenario
 
  //By DEfault timeout is 5 seconds for expect assertion- means it will wait for 5 sec and if not then it will fail    
 
-Q- How to handle dropdown?
-->   const dropDown = await page.locator("//select[@id='dropdown-class-example']");
-    //await dropDown.selectOption({label:"India"});  //Visible Text on UI
-    //await dropDown.selectOption("IN");  //Select By Value
-    //await dropDown.selectOption({index:3});
-
-Q- How to Handle Upload file?
-->   const upoadFileButton= await page.getByText("UploadFile");
-   upoadFileButton.setInputFile("D:\\sampleTest.png"); //for single file
-   upoadFileButton.setInputFiles([
-    "D:\\sampleTest1.png",
-    "D:\\sampleTest2.png"
-   ])
 
    Q-How do you handle iframes?
    -> const frame = page.frameLocator("#courses-iframe");

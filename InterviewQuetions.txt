@@ -58,6 +58,8 @@
 53.How do you capture screenshots on test failures and attach them to Extent Reports?
 54.How to integrate your Selenium suite with Jenkins or GitHub Actions
 55.How would you handle a situation where the application has frequent UI changes?
+56.How to prevent Our Sensitive information such as app URL, username and pass should not be push to repo?
+-> Then add that respective file to .gitignore so credentials are not committed to GitHub.
 
 
 ---------> Java <-----------------

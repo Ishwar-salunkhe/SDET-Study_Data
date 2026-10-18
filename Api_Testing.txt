@@ -103,6 +103,7 @@ void getUser()
 
 	 .when
 	  .get("https://example.com//useres")
+      .queryParam("id",2);
 	  
 	
 	 .then()
@@ -110,6 +111,9 @@ void getUser()
 	  .body("page", equalsTo(20))
 	  .log().all();  
 }
+
+//We can pass query paramter in get request as well
+//ex: https://www.google.com/search?q=postman
 
 //Sample Post requets
 @Test

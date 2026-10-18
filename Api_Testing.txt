@@ -10,8 +10,14 @@ What things we are Validating in api testing
 -409 Conflict- When we trying to create the same data in the database which is already present
 -204 No Content- will get this code when we use Delete request
 
-In Postman we have chai assertion framework
+Q- Diff PUT and PATHC request?
+-> PUT                                                 PATCH
+1.Used to replace/modify the existing data         -Used for partial update only
+2.Entire request body need to pass                 -Need to pass only data which need to be update
+3.Return 200 response code                         -Return 200 response code
 
+
+In Postman we have chai assertion framework
 //=====> We Can add the chai assertion validation under the script tab =======>
 pm.test("status code name has string", () => {
    pm.response.to.have.status(200)

@@ -309,6 +309,17 @@ ChromeOptions option= new ChromeOptions();
 option.addArguments("--incognito");
 WebDriver driver= new ChromeDriver(option);
 
+//Shadow Element Handling //Hieracrhy - Shadow Host-> Shadow Root-> Shadow Element
+// Locate the shadow host
+WebElement shadowHost = driver.findElement(By.cssSelector("#shadow-host"));
+
+// Access the Shadow DOM
+SearchContext shadowRoot = shadowHost.getShadowRoot();
+
+// Locate the element inside Shadow DOM
+WebElement element = shadowRoot.findElement(By.cssSelector("#username"));
+element.sendKeys("Ishwar");
+
 //PageFactory
 //We use PageFactory with POM to simplify WebElement initialization and keep locators and actions organized.
 //Using @FindBy makes the Page Class cleaner and reduces repetitive driver.findElement() calls. 
@@ -422,6 +433,9 @@ Q-An element is visible but not clickable. How do you investigate?
 5.If necessary, scroll the element into view using JavascriptExecutor.
 6.Sometime normal click is not working then in that case, will try to perform click using Javascript executor
 
+Q-DOM?
+-> Dom page will be crate at the run time
+
 
 
 
@@ -429,20 +443,6 @@ Q-An element is visible but not clickable. How do you investigate?
 
 
 */
-
-	
-    
-   
-       
-       
-      
-
-
-
-    
-    
-
-
 
 
 

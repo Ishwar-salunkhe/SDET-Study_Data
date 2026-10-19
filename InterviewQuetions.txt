@@ -250,8 +250,7 @@ Agile Ceremonies?
 2. What are the advantages of Playwright over Selenium?
 4. What is the architecture of Playwright?
 5. What is Browser, BrowserContext, and Page in Playwright?
-6. What is the difference between BrowserContext and Page?
-7. How do you launch a browser in Playwright Java?
+7. How do you launch a browser in Playwright?
 8. How do you open a new page in Playwright?
 10. What are the different types of locators available in Playwright?
 12. How do you handle dynamic elements in Playwright?

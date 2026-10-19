@@ -130,6 +130,9 @@ String dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-M
 File dest = new File("D:\\selenium\\screenshot_" + dateTime + ".png");
 );
 
+//To Locate and Get the count of all Links
+List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+
 //Java script executor
 JavascriptExecutor js= (JavascriptExecutor) driver;  //Type casting becuase driver is variable of WebDriver and if we want to use the same then we need to typecast
 js.executeScript("arguments[0].scrollIntoView(true);",uploadFileText);

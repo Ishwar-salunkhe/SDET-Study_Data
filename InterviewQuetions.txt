@@ -255,7 +255,7 @@ Agile Ceremonies?
 10. What are the different types of locators available in Playwright?
 12. How do you handle dynamic elements in Playwright?
 13. What is auto-waiting in Playwright?
-15. How do you handle dropdowns in Playwright Java?
+15. How do you handle dropdowns in Playwright?
 16. How do you handle checkboxes and radio buttons in Playwright?
 17. How do you handle alerts and popups in Playwright?
 18. How do you handle multiple tabs or multiple pages in Playwright?
@@ -268,7 +268,7 @@ Agile Ceremonies?
 25. What is browser Authentication State in playwright?
 26. How do you run Playwright tests in headless and headed mode?
 27. How do you perform assertions in Playwright Java?
-29. How do you implement Page Object Model (POM) in Playwright Java?
+29. How do you implement Page Object Model (POM) in Playwright JS?
 30.What is package.json?
 31.What is playwright.config.js file? what are the config we can do with this config file?
 32.Diff between async and await?
@@ -278,6 +278,8 @@ Agile Ceremonies?
 36.How to handle shadow DOM in playwright?
 37.What are the errors in playwright?
 38.How to Automate OR read OTP in playwright?
+39.Terminal command in Playwright?
+
 
 //JavaScript Core Quetions
 1.What is the diff between Var, let and const ?
@@ -285,6 +287,9 @@ Agile Ceremonies?
 3.Data Types in JS?
 4.Diff between '==' and '===' ?
 5.Diff between Undefined and Null?
+6.What is Hoisting?
+7.String methods?
+8.Array methods?
 
 
 

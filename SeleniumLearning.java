@@ -112,6 +112,13 @@ for (WebElement option : allDrpOptions)
     System.out.println(optionName);
 }
 
+//To Check Dropdown is Multi option and select Multiple Options
+if(ss.isMultiple())
+{
+	ss.selectByVisibleText("India");
+	ss.selectByVisibleText("USA");
+}
+
 //TakesScreenshot Code
 TakesScreenshot ts = (TakesScreenshot) driver;
 File source = ts.getScreenshotAs(OutputType.FILE);

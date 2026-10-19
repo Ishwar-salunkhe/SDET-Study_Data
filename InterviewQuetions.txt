@@ -245,7 +245,7 @@ Challenges in Agile?
 Agile Ceremonies? 
 
 
-//Playwright- java
+//Playwright- JS
 1. What is Playwright?
 2. What are the advantages of Playwright over Selenium?
 4. What is the architecture of Playwright?

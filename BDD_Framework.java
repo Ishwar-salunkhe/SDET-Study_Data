@@ -126,6 +126,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         System.out.println("Browser closed");
     }
 
+   //DataTable in BDD is used to pass multiple sets of data from a feature file to a step definition in a structured table format.
    //Data Table example
    Feature: Login functionality
    Scenario: Login with multiple input values
@@ -146,5 +147,22 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         driver.findElement(By.id("user-name")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
     }
+
+   //Another Example
+  Scenario: Search for multiple products
+  Given user searches for the following products
+    | product  |
+    | Laptop   |
+    | Mobile   |
+    | Keyboard |
+
+   //Step Defination
+   @Given("user searches for the following products")
+    public void searchProducts(DataTable dataTable) {
+    List<String> products = dataTable.asList(String.class);
+    for (String product : products) {
+        System.out.println("Searching for: " + product);
+    }
+}
 
  

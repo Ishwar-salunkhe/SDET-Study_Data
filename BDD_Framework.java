@@ -125,4 +125,26 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         driver.quit();
         System.out.println("Browser closed");
     }
+
+   //Data Table example
+   Feature: Login functionality
+   Scenario: Login with multiple input values
+    Given user enters login details
+      | username      | password     |
+      | standard_user | secret_sauce |
+
+   //Step Defination class Implementaion
+    @Given("user enters login details")
+    public void userEntersLoginDetails(DataTable dataTable) {
+
+        List<Map<String, String>> data =
+                dataTable.asMaps(String.class, String.class);
+
+        String username = data.get(0).get("username");
+        String password = data.get(0).get("password");
+
+        driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
+    }
+
  

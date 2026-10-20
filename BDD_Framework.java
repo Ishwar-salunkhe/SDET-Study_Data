@@ -80,7 +80,7 @@ src/test/java
  @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@smoke",
+        tags = "@smoke and not @Sanity"
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
@@ -108,4 +108,21 @@ public class TestRunner extends AbstractTestNGCucumberTests {
                 "html:target/cucumber-report.html",      
         }     
 )
+
+  //Sample Hooks class
+  public class Hooks {
+
+    @Before
+    public void setUp() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.saucedemo.com/");
+        System.out.println("Browser launched successfully");
+    }
+
+    @After
+    public void tearDown() {
+        driver.quit();
+        System.out.println("Browser closed");
+    }
  

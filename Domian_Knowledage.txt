@@ -1,1 +1,31 @@
+## Banking Domain
+1. What is the banking domain?
+The banking domain deals with financial services such as deposits, withdrawals, 
+fund transfers, loans, payments, and account management.
+
+2. What are the different types of bank accounts?
+- Savings Account
+- Current Account
+- Fixed Deposit (FD)
+- Recurring Deposit (RD)
+
+4. What is the difference between NEFT, RTGS, and IMPS?
+- NEFT: National Electronic fund transfer processed in batches or settlement cycles.
+- RTGS: Real-time gross settlement, generally used for high-value transfers.
+- IMPS: Immediate Payment Service, which supports instant fund transfers.
+
+5. What is KYC?
+KYC stands for Know Your Customer. Banks use it to verify customer identity and address to help prevent fraud and money laundering.
+
+6. What is a transaction ID?
+A transaction ID is a unique identifier assigned to a financial transaction to help track and investigate it.
+
+11. How would you test a fund transfer functionality?
+I would test valid and invalid beneficiaries, sufficient and insufficient balances, transfer limits, correct debit and credit amounts, transaction status, duplicate requests, and transaction history.
+
+12. How would you test an ATM withdrawal?
+I would test valid and invalid PINs, sufficient and insufficient balances, withdrawal limits, cash availability, account debit, receipt generation, and reversal when cash is not dispensed.
+
+13. How would you test a login page in a banking application?
+I would test valid and invalid credentials, account lockout, session timeout, MFA/OTP validation, password masking, and security against unauthorized access.
 

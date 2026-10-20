@@ -216,8 +216,8 @@ System.out.println(str);
       System.out.println(result);
 ==============================x==================================x=============x
 //String Anarame Programme
-      String s1="java";
-      String s2="vaja";
+      String s1="listen";
+      String s2="silent";
 
       char arr1[]= s1.toCharArray();
       char arr2[]=s2.toCharArray();

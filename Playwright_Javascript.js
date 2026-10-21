@@ -533,6 +533,10 @@ Q-What is the difference between locator() and getByRole()?
 -> locator() can use CSS/XPath selectors.
 ->getByRole-> identifies elements based on their accessible role.
 
+Q-Diff between package.json and package-lock.json?
+-> package.json defines project dependencies and scripts,
+while package-lock.json locks the exact dependency versions installed in the project.
+
 
 
 

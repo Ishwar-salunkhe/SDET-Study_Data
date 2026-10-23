@@ -122,14 +122,20 @@ function display(callback) {
 }
 display(greet);
 
+//Try Catch Block
+try {
+    console.log("Inside try block");
+} catch (error) {
+    console.log("Error occurred");
+} finally {
+    console.log("Finally block executed");
+}
+
 /*Q- Diff between == and === ? (== loose equality and === strict equaliy)
 //  == Compare value only and === compare value and data type as well
 
 Q-What is NaN?
 -> Not a Number -> it indicate that value is not valid number
-
-
-
 
 */
 

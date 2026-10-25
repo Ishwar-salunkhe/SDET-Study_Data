@@ -121,6 +121,13 @@ await dropDown.selectOption({label:"Option1"}); //Select by label
 await dropDown.selectOption("Option2"); //select by Value
 await dropDown.selectOption({index:3}); //select by index
 
+//If Dropdown is multip Options
+await dropDown.selectOption([
+    'java',
+    'playwright',
+    'api'
+]);
+
 //To Get All Dropdown Option text
 const allText=await page.locator("//select[@id='dropdown-class-example']/option").allInnerTexts();
 for(const drpText of allText){

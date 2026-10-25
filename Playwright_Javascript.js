@@ -151,6 +151,21 @@ for(let i=0; i<checkCount; i++)
      console.log("Checked all checkbox");
  }
 
+//WaitFor
+const loader = page.locator("#loading-spinner");
+
+// Wait until the loading spinner disappears
+await loader.waitFor({ state: "hidden" });
+// Wait until the element is visible
+await loader.waitFor({ state: "visible" });
+
+// Wait until the element is attached to the DOM
+await loader.waitFor({ state: "attached" });
+
+// Wait until the element is detached from the DOM
+await loader.waitFor({ state: "detached" });
+
+
 //To Handle Multiple Window
 //Promise.all() returns an array of results.
 //const result = await Promise.all([promise1,promise2]); //Output->[resultOfPromise1, resultOfPromise2]

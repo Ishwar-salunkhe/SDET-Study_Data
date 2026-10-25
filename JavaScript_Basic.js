@@ -137,6 +137,25 @@ try {
 Q-What is NaN?
 -> Not a Number -> it indicate that value is not valid number
 
+Q- What is Hoisting in Javascript?
+-> Hoisting is a Javascript behaviour of moving variable and function declaration to the top of there scope before the executions
+
+Q- What is the diff between the map(), filter(), find() and forEach()?
+-> All are the Arrays methods
+map()-> It transform the element and return new array
+filter()-> It return the new array which contains the elements that satisfy the conditions
+find()-> it return the firts mathcing element
+forEach()-> It will iterate through the each element .Not returing new aray
+Example: 
+const numbers = [10, 20, 30, 40, 50];
+const result = numbers.map(n => n * 2);
+console.log(result);
+// [20, 40, 60, 80, 100]
+
+const result = numbers.filter(n => n > 25);
+console.log(result);
+// [30, 40, 50]
+
 */
 
 

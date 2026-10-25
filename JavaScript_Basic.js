@@ -2,6 +2,7 @@
 //Data Types-> 
 //Premitive Data types 
 //-> String, Number, Boolean, Undefined, Null
+//JavaScript is a single Threaded language
 
 //Non Premetive -> Array, Object, Function, date, regex
 

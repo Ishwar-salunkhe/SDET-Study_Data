@@ -90,6 +90,28 @@ and check the reponse.
 5.Inout/Output voice testing- > Give the prompt with voice input and Check the response in voice
 
 
+Other Tricky Quetions
+What will be the output for here?
+class Adder {    
+   
+    static int add(int a, int b) {    
+        return a + b;    
+    }    
+ 
+    static double add(double a, double b) {    
+        return a + b;    
+    }    
+}    
+public class Main {    
+    public static void main(String[] args) {    
+     
+        System.out.println(Adder.add(11, 11));     //Ans =22   
+          
+        System.out.println(Adder.add(12.3, 12.6));    //Ans = 24.9
+    }    
+} 
+
+
 
 
 

@@ -452,6 +452,14 @@ Assert.assertNotEquals(actual, expected)	=> Checks whether two values are differ
 Assert.assertTrue(condition)	=> Passes if the condition is true
 Assert.assertFalse(condition)
 
+Q- You Have 500 test cases and It required 3 hr to execute, How you will reduce the execution time?
+(Applicable for Both selenium as well as Playwright)
+1. I will use the Parallel execution
+2. I will devide the test cases into roups such as smoke, sanity etc and will run the particular pipeline
+3.Will remove the hard Waits if we have used
+4.Avoid UI login in every test: log in via API or reuse cookies
+5.Run headless in CI
+
 
 
 

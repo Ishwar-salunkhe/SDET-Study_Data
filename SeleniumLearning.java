@@ -329,13 +329,13 @@ ChromeOptions option= new ChromeOptions();
 option.addArguments("--incognito");
 WebDriver driver= new ChromeDriver(option);
 
+//What is shadow DOM?
+//-> Shadow DOM is part of main DOM page but it is completly seperate and it is used to Encapsulate the HTML elements
 //Shadow Element Handling //Hieracrhy - Shadow Host-> Shadow Root-> Shadow Element
 // Locate the shadow host
 WebElement shadowHost = driver.findElement(By.cssSelector("#shadow-host"));
-
 // Access the Shadow DOM
 SearchContext shadowRoot = shadowHost.getShadowRoot();
-
 // Locate the element inside Shadow DOM
 WebElement element = shadowRoot.findElement(By.cssSelector("#username"));
 element.sendKeys("Ishwar");

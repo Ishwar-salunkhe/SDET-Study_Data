@@ -41,6 +41,11 @@ wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
 //IMplicitly Wait
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+//Fluient Waits
+//Fluent: explicit wait with custom polling interval and ignored exceptions
+//Fluent Wait is a type of wait that checks for a condition repeatedly at specified intervals
+ //until the condition is met or the maximum timeout is reached.
+
 //All Driver Methods
 1. driver.get()
 2. driver.getTitle()

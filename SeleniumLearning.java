@@ -475,6 +475,16 @@ Q- You Have 500 test cases and It required 3 hr to execute, How you will reduce 
 4.Avoid UI login in every test: log in via API or reuse cookies
 5.Run headless in CI
 
+Q. How do you capture screenshots on failure?
+Use a TestNG listener:
+public class TestListener implements ITestListener {
+    @Override
+    public void onTestFailure(ITestResult result) {
+        WebDriver driver = DriverManager.getDriver();
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        // save with test name + timestamp, then attach to Extent/Allure report
+    }
+
 
 
 

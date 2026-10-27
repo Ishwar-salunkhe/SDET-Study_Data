@@ -45,6 +45,11 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //Fluent: explicit wait with custom polling interval and ignored exceptions
 //Fluent Wait is a type of wait that checks for a condition repeatedly at specified intervals
  //until the condition is met or the maximum timeout is reached.
+Wait<WebDriver> wait = new FluentWait<>(driver)
+        .withTimeout(Duration.ofSeconds(30))
+        .pollingEvery(Duration.ofSeconds(2))
+        .ignoring(NoSuchElementException.class);
+
 
 //All Driver Methods
 1. driver.get()

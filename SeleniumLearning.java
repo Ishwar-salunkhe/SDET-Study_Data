@@ -446,6 +446,12 @@ Q-An element is visible but not clickable. How do you investigate?
 Q-DOM?
 -> Dom page will be crate at the run time
 
+Q- What are the Test NG Assertion methods you have used?
+Assert.assertEquals(actual, expected)	=> Checks whether two values are equal
+Assert.assertNotEquals(actual, expected)	=> Checks whether two values are different
+Assert.assertTrue(condition)	=> Passes if the condition is true
+Assert.assertFalse(condition)
+
 
 
 

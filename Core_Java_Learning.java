@@ -280,11 +280,7 @@ Character.toUpperCase(ch)
 Character.toLowerCase(ch)
 Character.isAlphabetic(ch)
 
-
-
-
-
-
+  ========================x============================x=================================
 //SingleTone class
 class Singleton {
 
@@ -340,6 +336,16 @@ int num=sc.nextInt();
 
   #Stream API
   -> It is used to Process Collections of data in a simple and efficient way using operations like filter(), map(), sort(), and collect().
+
+  Q- Access Modifier in Java?
+  -> Private: Accessible only within the same class.
+    Default: Accessible within the same package.
+    Protected: Accessible within the same package and by subclasses in other packages, subject to inheritance access rules.
+    Public: Accessible from anywhere, subject to class and module visibility.
+
+
+
+
 
   */
 

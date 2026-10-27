@@ -154,6 +154,20 @@ void getUser()
 
  }
 
+//Sample code to Fetch the JSON path/Body 
+
+Response response = given()
+        .when()
+        .get("/users/101");
+
+String name = response.jsonPath().getString("name");
+int id = response.jsonPath().getInt("id");
+String city = response.jsonPath().getString("address.city");
+
+System.out.println(name);
+System.out.println(id);
+System.out.println(city);
+
 //
 HTTP Response Codes:
 

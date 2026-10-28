@@ -279,6 +279,8 @@ Agile Ceremonies?
 37.What are the errors in playwright?
 38.How to Automate OR read OTP in playwright?
 39.Terminal command in Playwright?
+40.What is the default time out for test and Assertion? => 30 sec and 5 sec
+
 
 
 //JavaScript Core Quetions

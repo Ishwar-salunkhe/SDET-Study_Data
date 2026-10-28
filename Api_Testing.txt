@@ -135,8 +135,8 @@ void getUser()
  {
        
 	   HashMap data = new HashMap();
-	   data.put("Name":"Ishwar");
-	   data.put("Role":"QA");
+	   data.put("Name","Ishwar");
+	   data.put("Role","QA");
 	   
 	   given()
 	   .boy(data)

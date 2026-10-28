@@ -384,6 +384,7 @@ test("Login test", async({page})=> {
     //BY Using loginTestData file name- We can access the key so that will get the value from json
     await loginPage.loginToApp(loginTestData.username,loginTestData.password);
     await loginPage.loginToApp(loginTestData.address.area);  //To Access Nested json value
+   await loginPage.loginToApp(loginTestData.intrest[0]);  //To Access data from array
     await loginPage.verifyPageTitle();
 })
 

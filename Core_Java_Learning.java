@@ -343,6 +343,9 @@ int num=sc.nextInt();
     Protected: Accessible within the same package and by subclasses in other packages, subject to inheritance access rules.
     Public: Accessible from anywhere, subject to class and module visibility.
 
+  Q- In the same class, can we call static method without class name?
+  -YES
+
 
 
 

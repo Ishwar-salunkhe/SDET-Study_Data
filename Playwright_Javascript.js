@@ -360,6 +360,20 @@ test("Login test", async({page})=> {
 })
 
 //Same test Login- with Data driven testing by readig test data from JSON file
+
+//Sample Test data JSON file 
+{
+    "username":"mukesh@gmail.com",
+    "password":"admin@123",
+    "name":"Mukesh",
+    "interest":["Cypress","Java","API"],
+    "gender":"Male",
+    "address":{        //It is called Nested json
+        "area" : "HSR",
+        "city" :"Bangalore",
+        "pincode": 556699
+    }
+}
 import {test,expect} from "@playwright/test"
 import { TestLoginPage } from "../pageObject/TestLoginPage"
 import loginTestData from "../DataDrivenTestData/loginTestData.json";
@@ -368,7 +382,8 @@ test("Login test", async({page})=> {
     const loginPage = new TestLoginPage(page);
     await loginPage.gotoLogin();
     //BY Using loginTestData file name- We can access the key so that will get the value from json
-    await loginPage.loginToApp(loginTestData.username,loginTestData.password);  
+    await loginPage.loginToApp(loginTestData.username,loginTestData.password);
+    await loginPage.loginToApp(loginTestData.address.area);  //To Access Nested json value
     await loginPage.verifyPageTitle();
 })
 

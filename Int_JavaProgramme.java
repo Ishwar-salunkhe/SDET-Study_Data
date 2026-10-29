@@ -189,6 +189,12 @@ if (sum == original) {
     System.out.println("Not Armstrong Number");
 }
 
+========================================================================
+//To Get Ascii Value of Charatcer
+char ch = 'A';
+int ascii = ch;
+System.out.println(ascii);
+
 
 
 

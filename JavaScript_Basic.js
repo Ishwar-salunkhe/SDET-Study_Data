@@ -68,6 +68,7 @@ for (let i = 0; i < 5; i++) {
 console.log(`even number count is ${even}`);
 
 //Arrays
+//typeOf- Array type of will be Object
 const fruits = ["Apple", "Mango", "Banana"];
 console.log(fruits[1]);
 console.log(fruits.length);

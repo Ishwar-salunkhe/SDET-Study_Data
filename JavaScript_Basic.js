@@ -56,6 +56,8 @@ includes();
 length;  //No Bracket here
 replace();
 replaceAll();
+slice();
+splice();
 
 //For Loop Pattern
 for (let i = 0; i < 5; i++) {
@@ -113,6 +115,8 @@ console.log(data.charAt(3));
 const name = "JavaScript";
 const result = name.slice(0, 4);
 console.log(result); //output = Java
+
+//splice() => Used to add,remove and replace the element, It will change the original array
 
 //Objects-> Object stores data as key-value pairs.
    const employee={

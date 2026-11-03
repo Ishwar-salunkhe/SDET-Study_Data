@@ -1,7 +1,7 @@
 //=====JS Basics ==========X=======================X=======================
 //Data Types-> 
 //Premitive Data types 
-//-> String, Number, Boolean, Undefined, Null
+//-> String, Number, Boolean, Undefined, Null, BigInt, symbol
 //JavaScript is a single Threaded language
 
 //Non Premetive -> Array, Object, Function, date, regex
@@ -26,8 +26,6 @@ Q- Types of Functions
  Null-> we have declare the variable and assigned the value as Null. Data type for null is Object
  Null also we can reassigned later
  
-
-
 
 */
 
@@ -64,7 +62,13 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
-//Print statement
+//for of loop
+for(const n of num)
+{
+ console.log("test");
+}
+
+//Template Literals - Use backtick
 console.log(`even number count is ${even}`);
 
 //Arrays
@@ -72,10 +76,28 @@ console.log(`even number count is ${even}`);
 const fruits = ["Apple", "Mango", "Banana"];
 console.log(fruits[1]);
 console.log(fruits.length);
-fruits.push("Watermelon"); //To Add New Value In Array
+fruits.push("Watermelon"); //To Add New Value In Array at the last index
+fruits.unshift("Watermelon"); //To Add New Value In Array at the start of the array
 fruites.pop();  //To remove the last element
+fruits.shift("Watermelon"); //delete the start element from an array
 fruites[0]="Pineapple"; //to Replace the Value with other value    
 const fruits = ["Apple", 10, true, {name: "John"}];  //we can store any type of data in the javascript array
+
+const marks =[10,20,30];
+marks[2]=300; //Use to change the value of element
+makrs[5] //Error as Undefined
+consol.log(marks) // [10,20,300]
+
+const books = ["marathi", "Hindi", "English"];
+for(const book of books)
+{
+  console.log(book.toUpperCase());  //we can print all this in Uppercase
+}
+
+//slice method
+const fruits = ["Apple", "Mango", "Banana","Kivi", "Grapes"];
+console.log(fruits.slice(1));    //output= ["Mango", "Banana","Kivi", "Grapes"];
+console.log(fruits.slice(2,5));  //output= ["Banana","Kivi", "Grapes"];
 
 //JavaScript String data methods
 //Split
@@ -86,6 +108,11 @@ console.log(array[1]);
 console.log(str.length);
 //charAt(i);
 console.log(data.charAt(3));
+
+//Slice-> it is used to extract the small portion of the string OR Array (Similar to Java substring method)
+const name = "JavaScript";
+const result = name.slice(0, 4);
+console.log(result); //output = Java
 
 //Objects-> Object stores data as key-value pairs.
    const employee={

@@ -269,7 +269,7 @@ Agile Ceremonies?
 26. How do you run Playwright tests in headless and headed mode?
 27. How do you perform assertions in Playwright Java?
 29. How do you implement Page Object Model (POM) in Playwright JS?
-30.What is package.json?
+30.What is package.json? Diff between package.json and package-lock.json?
 31.What is playwright.config.js file? what are the config we can do with this config file?
 32.Diff between async and await?
 33.What are the fixture in Playwright? explain custom fixture?
@@ -280,6 +280,7 @@ Agile Ceremonies?
 38.How to Automate OR read OTP in playwright?
 39.Terminal command in Playwright?
 40.What is the default time out for test and Assertion? => 30 sec and 5 sec
+41. How to locate spinner OR loading icon? (in both sele and Play we can locate with CSS selector using class value-> .loading-spinner
 
 
 
@@ -292,6 +293,10 @@ Agile Ceremonies?
 6.What is Hoisting?
 7.String methods?
 8.Array methods?
+9.Diff between slice() and splice()?
+10.What is the diff between map(), Filter(), find() and forEach()?
+11.OOPS concept in JavaScript?
+12.a++ and ++a related quetions
 
 
 

@@ -183,6 +183,16 @@ page.waitForEvent("popup"), //here No need to use await as it is in the Promise.
 page.getByText("Open Window").click(),
 ]);
 
+//Both approch are correct , Here along with page fixture we need to use context as well
+const [newPage] = await Promise.all([
+context.waitForEvent("page"),
+ page.getByText("New Tab").click()
+  ])
+
+//context.waitForEvent("page") – Waits for a new page opened within the browser context.
+//page.waitForEvent("popup") – Waits for a popup opened by the current page.
+
+
 await newPage.bringToFront();
 const pageTitle= await newPage.title();
 console.log(pageTitle);

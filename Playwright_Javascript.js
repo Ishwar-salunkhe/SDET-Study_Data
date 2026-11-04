@@ -162,7 +162,7 @@ for(let i=0; i<checkCount; i++)
 const loader = page.locator("#loading-spinner");
 
 // Wait until the loading spinner disappears
-await loader.waitFor({ state: "hidden" });
+await loader.waitFor({ state: "hidden" });  //It return the Promise<void> hence we can not direct use, first locate the ele, then store and then use
 // Wait until the element is visible
 await loader.waitFor({ state: "visible" });
 

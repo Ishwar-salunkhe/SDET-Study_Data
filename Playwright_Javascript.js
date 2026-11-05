@@ -432,7 +432,7 @@ test("Login Test with Fixture use", async({loginPage})=> {
 ===============x=============================x====================
 /*
 what is storageState in Playwright?
--storageState is the feature which is provided by Playwright itself and which is used to reuse the browser authentication state.
+-storageState is the feature which is provided by Playwright itself and which is used to save and reuse the browser authentication state.
 So here instead of login for each test cases, will login once and will store the browser authentication state in the json file and 
 Will reuse the same storage state for the all test cases which will reduce the execution time drastically. */
 

@@ -49,6 +49,20 @@ const browser = "Chrome";
 console.log(browser); // Chrome
 */
 
+ //Object
+ const users= {
+  name:"ishwar",
+  RollNo: 201,
+  Desination: {  //Nested object
+    Grade:"A"
+  }
+}
+console.log(users.name);  //ishwar
+console.log(users.Desination);  //{Grade:'A'};
+console.log(users.Desination.Grade); //A
+
+
+
 //STring Methods
 charAt();
 concat();

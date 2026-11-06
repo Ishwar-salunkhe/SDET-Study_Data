@@ -576,6 +576,13 @@ test.only("Sample test", async ({page,context})=> {
   await atp.enterFirstName("Ramesh"); 
 })
 
+
+//How do you click Edit or Delete for a particular row?
+const row = page.locator("//table[@id='employees']//tr")
+    .filter({ hasText: "Rahul" });
+
+await row.getByRole("button", { name: "Edit" }).click();
+
      
 
 
@@ -595,6 +602,9 @@ test.only("Sample test", async ({page,context})=> {
 //And then in config file, will add the function as define under that will provide the file path with process.env.TEST_ENV
 //will add like below
 // baseURL: process.env.BASE_URL,  //thi will read the env variable value
+
+
+   
 
 
    

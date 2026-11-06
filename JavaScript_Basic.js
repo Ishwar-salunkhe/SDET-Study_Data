@@ -25,6 +25,9 @@ Q- Types of Functions
  For undefined, we can assigned value later.
  Null-> we have declare the variable and assigned the value as Null. Data type for null is Object
  Null also we can reassigned later
+
+ Q-What is Array Destrcturing?
+ -> Extracting values from objects or arrays.
  
 
 */
@@ -60,6 +63,18 @@ console.log(browser); // Chrome
 console.log(users.name);  //ishwar
 console.log(users.Desination);  //{Grade:'A'};
 console.log(users.Desination.Grade); //A
+
+//Spread operator
+//Copies or expands object/array properties.
+//Important: This creates a shallow copy, not a deep copy.
+const user = {
+    name: "John",
+    city: "Pune"
+};
+
+const copy = { ...user };   //Spread operator
+
+console.log(copy);
 
 
 

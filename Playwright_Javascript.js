@@ -553,6 +553,8 @@ export default defineConfig({   //This is defineConfig fucntion
 //For this we need to install dotEnv packages (That will be added under the dependecny package.json)
 //After that will create the .env files such as .env.dev, .env.qa and there will provide the URL, Username, pass etc
 //And then in config file, will add the function as define under that will provide the file path with process.env.TEST_ENV
+//will add like below
+// baseURL: process.env.BASE_URL,  //thi will read the env variable value
 
 
    

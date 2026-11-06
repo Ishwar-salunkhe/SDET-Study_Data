@@ -507,6 +507,35 @@ test("@EnvFile Login test with Env data", async ({page})=> {
     await page.getByRole("button", {name:"Login"}).click();
 })
 
+//
+
+export default defineConfig({   //This is defineConfig fucntion
+  testDir: './tests',
+  timeout:30000,    //we can confoigure gobal level timeout for test
+  //timeout:30,
+  fullyParallel: false,
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  forbidOnly: !!process.env.CI,
+  /* Retry on CI only */
+  retries: process.env.CI ? 2 : 0,
+  /* Opt out of parallel tests on CI. */
+  workers: 2,
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  reporter: 'html',
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  use: {   //this is nested object
+    video:"retain-on-failure",
+          launchOptions: {
+            slowMo: 1000
+        },
+    baseURL: process.env.BASE_URL,
+    //baseURL: 'https://www.saucedemo.com/',    
+    headless:false,
+    trace:"on",
+    viewport:null,
+    screenshot:"only-on-failure",
+  },
+
      
 
 

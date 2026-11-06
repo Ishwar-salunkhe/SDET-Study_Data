@@ -571,10 +571,12 @@ npx playwright test
 //To Run the sepecific test
 npx playwright test HomePageTest.spec.js
 
-//To run the test cases and run to create allure report
-npx playwright test --grep "@smoke" --reporter=line,allure-playwright
-npx allure generate ./allure-results --clean  //To generate the allure report
-npx allure open ./allure-report  //To open the Allure report
+//To create the allure report
+npx playwriht test  -> Once execution done then use below cmd
+npx allure serve allure-results
+
+
+
 
 npx playwright test --workers=4  //when we say 4, and if we use chrome, then it will run the test cases in the 4 browser instance(Not Tab/window)
 npx playwright test --debug 

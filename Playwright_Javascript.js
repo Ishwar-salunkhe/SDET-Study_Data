@@ -539,6 +539,43 @@ export default defineConfig({   //This is defineConfig fucntion
     screenshot:"only-on-failure",
   },
 
+
+ //Utils Class/methods
+ class Utils{
+      
+  async enterText(locator,text){
+    await locator.fill(text);
+  }
+
+}
+
+export default Utils;  
+
+//Utils Page class
+import Utils from "../utils/utilMethod";
+class ATP_HomePage {
+    constructor(page) {
+        this.page = page;
+        this.nameInputBox = page.getByPlaceholder("Enter Name");
+        this.utils = new Utils();
+    }
+
+    async enterFirstName(text) {
+        await this.utils.enterText(this.nameInputBox, text);
+    }
+}
+export default ATP_HomePage;
+
+//Utils Test file/class Implementation
+
+import ATP_HomePage from "../pageObject/ATP_HomePage";
+test.only("Sample test", async ({page,context})=> {
+
+  const atp= new ATP_HomePage(page);
+  await page.goto("https://testautomationpractice.blogspot.com/");
+  await atp.enterFirstName("Ramesh"); 
+})
+
      
 
 

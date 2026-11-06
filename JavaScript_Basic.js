@@ -73,8 +73,25 @@ const user = {
 };
 
 const copy = { ...user };   //Spread operator
-
 console.log(copy);
+
+//Array Methods
+//map()
+const names = ["ishwar", "rahul", "amit"];
+const newNames = names.map(name => name.toUpperCase());
+console.log(newNames);  //[ 'ISHWAR', 'RAHUL', 'AMIT' ]
+
+const employees = [
+    { name: "Amit", salary: 40000 },
+    { name: "Rahul", salary: 60000 },
+    { name: "Priya", salary: 75000 }
+];
+
+const name = employees.map(emp => emp.name);
+console.log(name); // [ 'Amit', 'Rahul', 'Priya' ]
+
+       
+
 
 
 

@@ -133,6 +133,25 @@ for(int i=0; i<str.length(); i++)
 
 ===========================================x=============================================
 
+  //Get the put put as 3a2b4p like that
+
+      String str="aaabbppppCC";
+      str = str.replace(" ","");
+      LinkedHashMap<Character, Integer> hm = new LinkedHashMap<>();
+      char a[] = str.toCharArray();
+
+      for(char ch:a)
+      {
+        hm.put(ch, hm.getOrDefault(ch,0)+1);
+      }
+
+      for(char c:hm.keySet())
+      {
+        System.out.print(hm.get(c)+""+c);
+      }
+
+=====================================x================================================
+
      //Get the count of each word-(Not character) in the string
         String str="i love my india india is my love";
         String a[]=str.split(" ");

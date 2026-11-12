@@ -192,6 +192,13 @@ CREATE TABLE Persons (
 | Example: `customer_id` in Customer table | Example: `customer_id` in Orders table    |
 
 
+Q-Fetch the employee who join in last 30 days
+SELECT * FROM employees
+WHERE joining_date BETWEEN 
+      DATE_SUB(CURDATE(), INTERVAL 30 DAY)
+      AND CURDATE();
+
+
 
 
 

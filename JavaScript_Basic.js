@@ -75,7 +75,20 @@ const user = {
 const copy = { ...user };   //Spread operator
 console.log(copy);
 
+//Imp Quetion in int asking for output
+const user = {
+    name: "John",
+    address: {
+        city: "Pune"
+    }
+};
+
+const copy = {...user};
+copy.address.city = "Mumbai";
+console.log(user.address.city); //Output- Mumbai 
+
 //Array Methods
+//Direct reverse method is also there
 //map()
 const names = ["ishwar", "rahul", "amit"];
 const newNames = names.map(name => name.toUpperCase());
@@ -90,12 +103,8 @@ const employees = [
 const name = employees.map(emp => emp.name);
 console.log(name); // [ 'Amit', 'Rahul', 'Priya' ]
 
-       
 
-
-
-
-//STring Methods
+//String Methods
 charAt();
 concat();
 includes();
@@ -235,12 +244,21 @@ const result = numbers.filter(n => n > 25);
 console.log(result);
 // [30, 40, 50]
 
+console.log(5 + "5");  //55
+console.log(5 - "2"); //3
+console.log("10" * 2); //20
+Explain- + performs string concatenation when one operand is a string. Other arithmetic operators convert numeric strings into numbers.
+
+const user = {
+    name: "John"
+};
+
+user.name = "Rahul";
+console.log(user.name); //output -> Rahul
+//You can modify object properties declared using const. You cannot reassign the entire object variable.
+
+
 */
-
-
-
-
-
 
 //==========================x==========================================================
 

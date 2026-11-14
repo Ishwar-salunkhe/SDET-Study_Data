@@ -88,6 +88,7 @@ List                                           HashMap
   //as Interface allow, only abstract method, so if you try to create concreate method, it will show the error at the time of Declaration
   //Whatever methods are there in the interface specially abstract, those all methods should be implemented in the child class where we have implemented.
   //If we have default,static and private method then not not required becuase they already have body
+  //In Interface, static, private and default method should have body
   default void show()
     {     
        System.out.println("Show"); // ✅ default method 

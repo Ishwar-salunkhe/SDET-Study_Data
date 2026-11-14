@@ -38,6 +38,19 @@ for(String id:tabIds)
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
 
+//we can use like below when we have store element in the variable
+// Wait until element is visible
+wait.until(ExpectedConditions.visibilityOf(sampleEle));
+
+// Wait until element is clickable
+wait.until(ExpectedConditions.elementToBeClickable(sampleEle));
+
+// Wait until element becomes invisible
+wait.until(ExpectedConditions.invisibilityOf(sampleEle));
+
+// Wait until element is selected (checkbox/radio button)
+wait.until(ExpectedConditions.elementToBeSelected(sampleEle));
+
 //IMplicitly Wait
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 

@@ -1,3 +1,7 @@
+//Data Types
+//Primitive -> int, char, boolean, double, float etc
+//Non Premitive-> String, Array, Class, Object, Interface
+
 //Collection
 // -Collection used to store Group of elements
 // -Collection is an root interface and this is extended in the another interfaces such as List and set interface
@@ -238,6 +242,10 @@ StringBuffer               StringBuilder
 1.Synchronized             1.Not Synchronized
 2.Slower execution         2.Fatser execution
 3.Thread safe              3.Not Thread Safe
+
+//Why string is immutable?
+->Security: Strings are commonly used for passwords, file paths, URLs, and database connections.
+Immutability prevents accidental modification.
 
 
 */

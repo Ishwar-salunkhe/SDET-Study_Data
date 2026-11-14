@@ -243,6 +243,11 @@ StringBuffer               StringBuilder
 2.Slower execution         2.Fatser execution
 3.Thread safe              3.Not Thread Safe
 
+String and StringBuilder Diff
+1.immutable                       1.mutable
+2.Once object created             2.Object can be modified
+can not modify
+
 //Why string is immutable?
 ->Security: Strings are commonly used for passwords, file paths, URLs, and database connections.
 Immutability prevents accidental modification.
@@ -353,6 +358,12 @@ int num=sc.nextInt();
 
   Q- In the same class, can we call static method without class name?
   -YES
+
+  Q- Diff JVM, JRE and JDK
+  -> JVM- Java Virtual machine-> IT execute java byte code
+  -JRE-> It provide the environment to run the java application
+  JDK-> It is sued to develop the java application
+
 
 
 

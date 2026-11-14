@@ -198,6 +198,14 @@ WHERE joining_date BETWEEN
       DATE_SUB(CURDATE(), INTERVAL 30 DAY)
       AND CURDATE();
 
+//DElete, Truncate and DROP
+DELETE FROM employees
+WHERE employee_id = 101;
+
+TRUNCATE TABLE employees;
+
+DROP TABLE employees;
+
 
 
 

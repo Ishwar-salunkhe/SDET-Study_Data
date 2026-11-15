@@ -84,6 +84,8 @@ What are access modifiers in Java?
 Diff between Array and ArrayList()? 
 24. StringBuilder and String Buffer diff?
 25. Single ton class?
+26. Diff between String and StrigBuilder?
+27.Why string is immutable?
 
 ------------> BDD- Cucumber <-------------------- 
 
@@ -272,6 +274,7 @@ Agile Ceremonies?
 39.Terminal command in Playwright?
 40.What is the default time out for test and Assertion? => 30 sec and 5 sec
 41. How to locate spinner OR loading icon? (in both sele and Play we can locate with CSS selector using class value-> .loading-spinner
+42.What are the waits in Playwright?
 
 
 
@@ -288,6 +291,7 @@ Agile Ceremonies?
 10.What is the diff between map(), Filter(), find() and forEach()?
 11.OOPS concept in JavaScript?
 12.a++ and ++a related quetions
+13.What is Array Destructuring?
 
 
 

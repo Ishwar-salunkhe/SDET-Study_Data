@@ -214,6 +214,20 @@ String cellValue=sheet.getRow(1).getCell(0).getNumericCellValue();
 workbook.close();
 file.close();
 
+//We can have one Utils class Common method to read and get the data from excel sheet
+   public static String getCellData(String filePath, String sheetName,int rowNum, int cellNum)
+	//More logic will be there but added here at high level only, It will rec 4 parameters
+//Calling in the page classes
+public class LoginPage {
+    String filePath = "TestData/LoginData.xlsx";
+	
+    public void enterLoginDetails() {
+        String username = ExcelUtils.getCellData(
+            filePath, "Login", 1, 0);
+        String password = ExcelUtils.getCellData(
+            filePath, "Login", 1, 1);	   
+	   
+
 //Exceptions In selenium
 NoSuchElementException -> //Locator incorrect, Element is not present in the DOM, Page is not loaded properly, Element is inside the frame
 StaleElementReferenceException

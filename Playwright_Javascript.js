@@ -635,6 +635,19 @@ test("Login Test", async ({ page }) => {
 // baseURL: process.env.BASE_URL,  //thi will read the env variable value
 
 
+1. Planner Agent
+Planner Agent explores the application, understands its functionality and creates test plans with different
+test scenarios and steps in Markdown format.
+
+2. Generator Agent
+Generator Agent takes the test plan created by Planner Agent and generates Playwright automation
+test scripts (.spec.ts) based on those scenarios.
+
+3. Healer Agent
+Healer Agent analyzes failed Playwright test cases, identifies possible issues such as locator changes or timing problems,
+suggests or applies fixes, and reruns tests to verify them.
+
+
    
 
 

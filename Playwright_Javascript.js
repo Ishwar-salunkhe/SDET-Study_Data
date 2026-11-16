@@ -592,18 +592,33 @@ test.only("Sample test", async ({page,context})=> {
   await atp.enterFirstName("Ramesh"); 
 })
 
-
+==========================x=================================x================================
 //How do you click Edit or Delete for a particular row?
 const row = page.locator("//table[@id='employees']//tr")
     .filter({ hasText: "Rahul" });
 
 await row.getByRole("button", { name: "Edit" }).click();
 
+===============================x========================================
+ //How to use Logger- have you use Logger in your framework
+// we can use the Winston logging library. and install with -> npm install winston
+//Will create one loggerUtils.js and there we will have loger method code
+  //Use logger in Login.spec.js
+     
+import logger from '../utils/LoggerUtils.js';
+
+test("Login Test", async ({ page }) => {
+
+    logger.info("Login test started");
+    await page.goto("https://example.com");
+    logger.info("Navigated to login page");
+    await page.getByPlaceholder("Enter username").fill("admin");
+     //Other logger
+    logger.warn("Warning message");
+    logger.error("Warning message"); 
      
 
-
-
-
+     
 
 
 /*--Challenges in Playwright Frameowrk

@@ -336,6 +336,7 @@ constructor(page){
   this.passwordInput=page.locator("//input[@id='password']");
   this.submitButton= page.getByRole("button", {name:"Submit"})
   this.pageTitle=page.getByText("Logged In Successfully");
+  this.pageTitle = "Dashboard";   //we can verify with page title as well. will store like this
 }
 
 async gotoLogin(){
@@ -349,7 +350,12 @@ async loginToApp(username,password){
 }
 
 async verifyPageTitle(){
-await expect(await this.pageTitle).toBeVisible();
+await expect(this.pageTitle).toBeVisible();
+}
+
+//verify page title
+async verifyPageTitle(){
+await expect(this.page).toHaveTitle(this.pageTitle);
 }
 
 }

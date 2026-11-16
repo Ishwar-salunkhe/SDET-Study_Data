@@ -1,4 +1,4 @@
-import {test} from "@playwright/test" // It is called module- @playwright/test
+import {test} from "@playwright/test" // It is called module- @playwright/test 
 
 test("Login test", async({page})=>{
      test.setTimeout(60000);  //We can add test level custome timeout if that test cases is required more timeout

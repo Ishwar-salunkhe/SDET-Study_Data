@@ -3,11 +3,10 @@ import {test} from "@playwright/test" // It is called module- @playwright/test
 test("Login test", async({page})=>{
      test.setTimeout(60000);  //We can add test level custome timeout if that test cases is required more timeout
      await page.goto("https://www.saucedemo.com/");
-     await page.locator("//input[@id='user-name']").fill("standard_user");
-     await page.locator("//input[@id='password']").fill("secret_sauce");
-     await page.locator("//input[@id='login-button']").click();
-     let status=await page.getByText("Swag Labs").isVisible()
-     console.log("It Is visible "+status)
+     await page.getByPlaceholder("Enter username").fill("admin");
+     await page.getByPlaceholder("Enter password").fill("admin123");
+     await page.getByRole("button", { name: "Login" }).click();
+     await expect(page).toHaveTitle("Dashboard");
 })
 
 //If You do not use page fixture the you need to launch browser and app like below
@@ -553,6 +552,13 @@ export default defineConfig({   //This is defineConfig fucntion
     await locator.fill(text);
   }
 
+   //WE can create direct static method as well   
+      static async captureScreenshot(page, screenshotName) {
+        await page.screenshot({
+            path: `screenshots/${screenshotName}.png`,
+            fullPage: true
+        });    
+
 }
 
 export default Utils;  
@@ -569,6 +575,10 @@ class ATP_HomePage {
     async enterFirstName(text) {
         await this.utils.enterText(this.nameInputBox, text);
     }
+
+   //Call static method directly using utils
+      await Utils.captureScreenshot(page, "LoginSuccess");
+
 }
 export default ATP_HomePage;
 

@@ -858,6 +858,18 @@ Action and navigation timeouts are 0 by default, meaning no separate timeout is 
 
 Q-What is package.json?
 it is mainly used to manage dependencies, project information, and test commands/scripts.
+WE can add script like this
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
+  },
+
+  //to run command
+  npm run test
+  npm run test:headed
+
+  
 
 Q-Build tool in Playwright JS is -> npm- Node package manager
 

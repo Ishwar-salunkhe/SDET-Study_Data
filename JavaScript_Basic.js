@@ -179,8 +179,19 @@ console.log(result); //output = Java
     age:20,
     Address: "Pune"
    }
-
    console.log(employee.name);
+
+//Object Destructring sample
+let user = {
+    name: "Rahul",
+    age: 28
+};
+
+let { name, age } = user;
+
+console.log(name);
+console.log(age);
+
 
 //typeof -> Used to find the data type.
 

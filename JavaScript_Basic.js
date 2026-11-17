@@ -125,7 +125,7 @@ for(const n of num)
  console.log("test");
 }
 
-//Template Literals - Use backtick
+//Template Literals - Use backtick- It is used to join exepression with the variable
 console.log(`even number count is ${even}`);
 
 //Arrays
@@ -199,6 +199,10 @@ const greet=function(name){
 }
 console.log(greet);
 
+//Arraow Function sample
+const add = (a, b) => a + b;
+console.log(add(10, 20));
+
 //CallBack Function
 //callback function is a function which is pass as an argument/parameter to the another function
 //Example
@@ -218,6 +222,31 @@ try {
 } finally {
     console.log("Finally block executed");
 }
+
+
+//JavaScript Array methods use
+//Filter method
+const numbers = [1,2,3,5,6,7,8];  //output= [2,6,8]
+const result = numbers.filter(n => n%2==0);  //to find even number and for Odd n%2!==0
+console.log(result)
+
+//map
+const numbers = [1,2,3];
+const result = numbers.map(n => n*2);
+console.log(result)  //output: [2,4,6]
+
+//Find=> Return first macthing element
+const numbers = [1,2,3,5,6,7,8];
+const result = numbers.find(n => n>2);
+console.log(result) // output 3
+
+
+
+
+
+
+
+
 
 /*Q- Diff between == and === ? (== loose equality and === strict equaliy)
 //  == Compare value only and === compare value and data type as well

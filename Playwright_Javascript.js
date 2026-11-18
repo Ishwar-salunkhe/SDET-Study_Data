@@ -647,6 +647,13 @@ test scripts (.spec.ts) based on those scenarios.
 Healer Agent analyzes failed Playwright test cases, identifies possible issues such as locator changes or timing problems,
 suggests or applies fixes, and reruns tests to verify them.
 
+Q- OOPS Concepts used on the Framework
+Encapsulation
+Inheritance
+Polymorphism -> We can implement polymorphism using method overriding.
+For example, different page classes can override a common BasePage method to provide page-specific behavior.
+Abstraction
+
 
    
 

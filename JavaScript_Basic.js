@@ -79,6 +79,9 @@ const employees = [
 const name = employees.map(emp => emp.name);
 console.log(name); // [ 'Amit', 'Rahul', 'Priya' ]
 
+//Slice method use in array
+
+
 
 //String Methods
 charAt();

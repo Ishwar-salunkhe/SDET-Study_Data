@@ -1,36 +1,12 @@
-//=====JS Basics ==========X=======================X=======================
-//Data Types-> 
-//Premitive Data types 
-//-> String, Number, Boolean, Undefined, Null, BigInt, symbol
-//JavaScript is a single Threaded language
+//VAR type-> It is global scoped
+var a=10;
+if(a=10)
+{
+    a=30;  //here value can be change
+}
+console.log(a); //output will be //30
 
-//Non Premetive -> Array, Object, Function, date, regex
 
-/*
-Q-What is JavaScript?
--> Javascript is a scripting language and it is used to convert static web page into
- dynamic ad intercative web pages
-
-Q- Types of Functions
--> 1.Named/Generic Function
-   2.Anonymous function
-   3.Arrow Function
-   4.Call Back function
-
- Q- What is Promises?
- -> It is the way to handle the asynchronous operations and those are- Pending, Rejection and Fullfilled
-
- Q- Diff between Null and Undefined?
- -> Undefined-> We have declare the variable but does not assigned any value. Data type will be Undefied
- For undefined, we can assigned value later.
- Null-> we have declare the variable and assigned the value as Null. Data type for null is Object
- Null also we can reassigned later
-
- Q-What is Array Destrcturing?
- -> Extracting values from objects or arrays.
- 
-
-*/
 
 //Q- Diff between VAR, CONST and LET
 var — can redeclare and reassign
@@ -296,6 +272,40 @@ const user = {
 user.name = "Rahul";
 console.log(user.name); //output -> Rahul
 //You can modify object properties declared using const. You cannot reassign the entire object variable.
+
+//=====JS Basics ==========X=======================X=======================
+//Data Types-> 
+//Premitive Data types 
+//-> String, Number, Boolean, Undefined, Null, BigInt, symbol
+//JavaScript is a single Threaded language
+
+//Non Premetive -> Array, Object, Function, date, regex
+
+/*
+Q-What is JavaScript?
+-> Javascript is a scripting language and it is used to convert static web page into
+ dynamic ad intercative web pages
+
+Q- Types of Functions
+-> 1.Named/Generic Function
+   2.Anonymous function
+   3.Arrow Function
+   4.Call Back function
+
+ Q- What is Promises?
+ -> It is the way to handle the asynchronous operations and those are- Pending, Rejection and Fullfilled
+
+ Q- Diff between Null and Undefined?
+ -> Undefined-> We have declare the variable but does not assigned any value. Data type will be Undefied
+ For undefined, we can assigned value later.
+ Null-> we have declare the variable and assigned the value as Null. Data type for null is Object
+ Null also we can reassigned later
+
+ Q-What is Array Destrcturing?
+ -> Extracting values from objects or arrays.
+ 
+
+*/
 
 
 */

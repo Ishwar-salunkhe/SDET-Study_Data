@@ -239,7 +239,7 @@ Agile Ceremonies?
 
 
 //Playwright- JS
-1. What is Playwright?
+1. What is Playwright? -> Playwright version we have used as 1.60
 2. What are the advantages of Playwright over Selenium?
 4. What is the architecture of Playwright?
 5. What is Browser, BrowserContext, and Page in Playwright?

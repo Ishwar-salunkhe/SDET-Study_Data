@@ -312,6 +312,7 @@ class Singleton {
 }
 
 //Read Data from Properties file
+//FileInputStream is a predefined Java class used to read data from a file in the form of bytes.
 String filepath="src/test/resource/data/GlobalData.properties";
 FileInputStream file= new FileInputStream(filepath);
 Properties properties= new Properties();

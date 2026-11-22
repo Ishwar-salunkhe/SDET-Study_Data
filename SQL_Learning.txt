@@ -67,7 +67,6 @@ GROUP BY employee_name
 HAVING COUNT(*) > 1;
 
 
-
 //From One Notes
 1. Joins in SQL? Inner join, left join, right join and Full outer join
 2. Contraint in SQL- Primary key, Forein key?
@@ -75,6 +74,7 @@ HAVING COUNT(*) > 1;
 4. Write the query to fetch the 2nd Highest salary?
 5. Write the query to fetch the Nth Highest salary?
 6. Self join- It is join in table which join table itslef
+- What is Normalization in SQL-?
 7. Schema means-> what type of data we are storing such as String, Integer, varchar like that
 • WHERE → Used to filter the rows. Does not use aggragate function such as max, avg, sum
 • HAVING → Used to Filter the Groups.after grouping.-> use agregate function
@@ -101,11 +101,6 @@ Amit	IT	        50000
 Rahul	IT	        60000
 Priya	HR	        45000
 Neha	HR	        55000
-
-
-
-
-
 
 
 Table employee:
@@ -203,8 +198,11 @@ DELETE FROM employees
 WHERE employee_id = 101;
 
 TRUNCATE TABLE employees;
-
 DROP TABLE employees;
+
+q-What is Normalization in SQL-?
+-> It is a process of organizing the data in database to reduce the data duplication OR redundancy
+-> Types-> first Normal form, Second Normal form, Third Normal form
 
 
 

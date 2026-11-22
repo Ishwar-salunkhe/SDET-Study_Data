@@ -4,6 +4,10 @@ test("Get Useres", async ({request}) => {
     console.log(await response.json());
     const statusCode = await response.status();
     expect(statusCode).toBe(200);
+    const time  = await response.timing();  //we can validate time as well
+    console.log(time);
+    const statusText = await response.statusText();  //validate statusText
+    console.log(statusText);  //Output: OK
 })
 
 //POST Request

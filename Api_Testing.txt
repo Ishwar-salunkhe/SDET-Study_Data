@@ -57,7 +57,7 @@ pm.test("response time", function () {
 
 
 //Auths used in API testing Postman
-1. No Auth – No authentication is required to access the API.
+1. No Auth – No authentication is required to access the API..
 
 2. Basic Auth – Uses a username and password to authenticate the API request.
 

@@ -20,7 +20,9 @@ test("Post Request Create user" , async ({request}) => {
                        } 
                       });
                  
-    console.log(await response.json());
-    expect(await response.status()).toBe(201);                  
+    const responseBody = await response.json();
+    console.log(responseBody);
+    expect(await response.status()).toBe(201);
+    expect(responseBody.name).toBe('Ishwar');
 })
 

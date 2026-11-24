@@ -279,7 +279,15 @@ for(let i=0; i<allCellCount; i++)
 //Run the specific test cases using Tag 
 test("Mytest1 @sanity", async({page})=> {
  console.log("My test 1 with sanity tag");
+})
 
+//Calender Date handling
+test("Date handling", async ({page})=>{
+   await page.goto("https://testautomationpractice.blogspot.com/");
+   await page.locator("//input[@id='txtDate']").click();
+   await page.locator("//select[@aria-label='Select year']").selectOption('2025');
+   await page.locator("//select[@aria-label='Select month']").selectOption('Oct');
+   await page.locator("//a[text()='15']").click();
 })
 
 test("test2npx @regression", async({page})=> {

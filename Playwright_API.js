@@ -39,3 +39,20 @@ test('API Headers', async ({ request }) => {
         }
     );
 
+
+ //How to pass Query Parameter
+ test('Query Parameters', async ({ request }) => {
+
+    const response = await request.get(
+        'https://api.example.com/users',
+        {
+            params: {
+                page: 2,
+                limit: 10
+            }
+        }
+    );
+
+    expect(response.status()).toBe(200);
+});   
+

@@ -26,3 +26,16 @@ test("Post Request Create user" , async ({request}) => {
     expect(responseBody.name).toBe('Ishwar');
 })
 
+//How to pass headers in api
+test('API Headers', async ({ request }) => {
+
+    const response = await request.get(
+        'https://api.example.com/users',
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer token123'
+            }
+        }
+    );
+

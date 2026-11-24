@@ -544,6 +544,25 @@ export default defineConfig({   //This is defineConfig fucntion
     screenshot:"only-on-failure",
   },
 
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },  //here we are creating the copy of devices config and storing into use object
+    },
+
+     {
+       name: 'firefox',
+       use: { ...devices['Desktop Firefox'] },
+     },
+
+     {
+       name: 'webkit',
+       use: { ...devices['Desktop Safari'] },
+     },     
+       
+
+       
+
 
  //Utils Class/methods
  class Utils{

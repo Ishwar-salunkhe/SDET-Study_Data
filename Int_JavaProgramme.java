@@ -195,6 +195,26 @@ char ch = 'A';
 int ascii = ch;
 System.out.println(ascii);
 
+//Find missing number is Array
+       int a[] = {1,3,5,6,7,8};
+
+       HashSet<Integer> set = new HashSet<>();
+
+       for(int num:a)
+       {
+          set.add(num);
+       }
+
+       for(int i=1; i<=8; i++)
+       {
+        if(!set.contains(i))
+        {
+          System.out.println("Missing number is "+i);
+        }
+       }
+
+
+
 
 
 
